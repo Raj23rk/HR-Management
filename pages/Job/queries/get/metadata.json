@@ -2,7 +2,7 @@
   "pluginType": "DB",
   "pluginId": "mongo-plugin",
   "unpublishedAction": {
-    "name": "Query1",
+    "name": "get",
     "datasource": {
       "name": "HR PROJECT",
       "pluginId": "mongo-plugin",
@@ -23,25 +23,61 @@
         "aggregate": {
           "limit": {
             "data": "10"
+          },
+          "arrayPipelines": {
+            "data": ""
           }
         },
         "body": {
-          "data": "{\n  \"insert\": \"job_list_Add\",\n  \"documents\": [\n    {\n      \"Description\": \"new value\",\n      \"YearsofExperience\": \"new value\",\n      \"_id\": ObjectId(\"a_valid_object_id_hex\"),\n      \"enddate\": \"new value\",\n      \"jobname\": \"new value\",\n      \"jobtype\": \"new value\",\n      \"n0ofvacancies\": \"new value\",\n      \"postdate\": \"new value\",\n      \"startdate\": \"new value\",\n    }\n  ]\n}\n"
+          "data": "{\n  \"find\": \"job_list_Add\",\n  \"filter\": {\n    \"Description\": \"This is the initial <b>content</b> of the editor\"\n  },\n  \"sort\": {\n    \"_id\": 1\n  },\n  \"limit\": 10\n}\n"
         },
         "collection": {
           "data": "job_list_Add"
         },
         "command": {
-          "data": "INSERT"
+          "data": "FIND"
+        },
+        "count": {
+          "query": {
+            "data": ""
+          }
         },
         "delete": {
           "limit": {
             "data": "SINGLE"
+          },
+          "query": {
+            "data": ""
+          }
+        },
+        "distinct": {
+          "query": {
+            "data": ""
+          },
+          "key": {
+            "data": ""
+          }
+        },
+        "find": {
+          "query": {
+            "data": ""
+          },
+          "limit": {
+            "data": "10"
+          },
+          "sort": {
+            "data": "{\"_id\": 1}"
+          },
+          "skip": {
+            "data": ""
+          },
+          "projection": {
+            "data": ""
           }
         },
         "insert": {
           "documents": {
-            "data": "[{      \"Description\": \"new value\",\n      \"YearsofExperience\": \"new value\",\n      \"_id\": ObjectId(\"a_valid_object_id_hex\"),\n      \"enddate\": \"new value\",\n      \"jobname\": \"new value\",\n      \"jobtype\": \"new value\",\n      \"n0ofvacancies\": \"new value\",\n      \"postdate\": \"new value\",\n      \"startdate\": \"new value\",\n}]"
+            "data": ""
           }
         },
         "smartSubstitution": {
@@ -50,11 +86,18 @@
         "updateMany": {
           "limit": {
             "data": "SINGLE"
+          },
+          "query": {
+            "data": ""
+          },
+          "update": {
+            "data": ""
           }
         }
       }
     },
-    "executeOnLoad": false,
+    "executeOnLoad": true,
+    "dynamicBindingPathList": [],
     "isValid": true,
     "invalids": [],
     "messages": [],
@@ -64,7 +107,7 @@
     "policies": [],
     "userPermissions": []
   },
-  "id": "Job_Query1",
+  "id": "Job_get",
   "deleted": false,
-  "gitSyncId": "64081d9720d355269dd6b6f0_6412ab48ddb1fc13e492d477"
+  "gitSyncId": "64081d9720d355269dd6b6f0_6412b3add67ea94e3d971f35"
 }

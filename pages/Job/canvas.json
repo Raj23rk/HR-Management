@@ -719,24 +719,12 @@
                     },
                     {
                       "boxShadow": "none",
-                      "widgetName": "EndDate",
-                      "minDate": "1920-12-31T18:30:00.000Z",
-                      "dateFormat": "DD/MM/YYYY",
-                      "displayName": "DatePicker",
+                      "dateFormat": "DD-MM-YYYY",
                       "iconSVG": "/static/media/icon.300e5ab8e2e1c26c7a0bad06116842b7.svg",
-                      "searchTags": [
-                        "calendar"
-                      ],
                       "topRow": 10,
-                      "bottomRow": 14,
-                      "shortcuts": false,
-                      "parentRowSpace": 10,
                       "labelWidth": "8",
                       "type": "DATE_PICKER_WIDGET2",
-                      "hideCard": false,
                       "animateLoading": true,
-                      "parentColumnSpace": 11.4375,
-                      "dynamicTriggerPathList": [],
                       "leftColumn": 33,
                       "dynamicBindingPathList": [
                         {
@@ -746,31 +734,49 @@
                           "key": "borderRadius"
                         }
                       ],
-                      "labelPosition": "Left",
                       "isDisabled": false,
-                      "key": "trjehw19n9",
-                      "labelTextSize": "0.875rem",
                       "isRequired": false,
-                      "isDeprecated": false,
-                      "rightColumn": 62,
                       "dynamicHeight": "FIXED",
-                      "widgetId": "jx24mtasuy",
                       "accentColor": "{{appsmith.theme.colors.primaryColor}}",
-                      "minWidth": 450,
                       "isVisible": true,
                       "datePickerType": "DATE_PICKER",
-                      "label": "End Date",
                       "version": 2,
+                      "isLoading": false,
+                      "timePrecision": "minute",
+                      "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+                      "closeOnSelection": true,
+                      "widgetName": "EndDate",
+                      "minDate": "1920-12-31T18:30:00.000Z",
+                      "dynamicPropertyPathList": [
+                        {
+                          "key": "defaultDate"
+                        }
+                      ],
+                      "displayName": "DatePicker",
+                      "searchTags": [
+                        "calendar"
+                      ],
+                      "bottomRow": 14,
+                      "shortcuts": false,
+                      "parentRowSpace": 10,
+                      "hideCard": false,
+                      "parentColumnSpace": 11.4375,
+                      "dynamicTriggerPathList": [],
+                      "labelPosition": "Left",
+                      "key": "trjehw19n9",
+                      "labelTextSize": "0.875rem",
+                      "isDeprecated": false,
+                      "rightColumn": 62,
+                      "defaultDate": "",
+                      "widgetId": "jx24mtasuy",
+                      "minWidth": 450,
+                      "label": "End Date",
                       "parentId": "q2ttq88j8t",
                       "labelAlignment": "left",
                       "renderMode": "CANVAS",
-                      "isLoading": false,
-                      "timePrecision": "minute",
                       "responsiveBehavior": "fill",
-                      "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
                       "maxDynamicHeight": 9000,
                       "firstDayOfWeek": 0,
-                      "closeOnSelection": true,
                       "maxDate": "2121-12-31T18:29:00.000Z",
                       "minDynamicHeight": 4
                     },
@@ -855,15 +861,6 @@
                           "key": "tableData"
                         },
                         {
-                          "key": "primaryColumns.skils.computedValue"
-                        },
-                        {
-                          "key": "primaryColumns.yearsofexperience.computedValue"
-                        },
-                        {
-                          "key": "primaryColumns.fluency.computedValue"
-                        },
-                        {
                           "key": "primaryColumns.EditActions1.saveButtonColor"
                         },
                         {
@@ -877,6 +874,15 @@
                         },
                         {
                           "key": "primaryColumns.customColumn1.computedValue"
+                        },
+                        {
+                          "key": "primaryColumns.skils.computedValue"
+                        },
+                        {
+                          "key": "primaryColumns.yearsofexperience.computedValue"
+                        },
+                        {
+                          "key": "primaryColumns.fluency.computedValue"
                         }
                       ],
                       "needsHeightForContent": true,
@@ -915,7 +921,7 @@
                         }
                       },
                       "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
-                      "columnUpdatedAt": 1678783951924,
+                      "columnUpdatedAt": 1678953799126,
                       "defaultSelectedRowIndices": [
                         0
                       ],
@@ -923,10 +929,10 @@
                       "defaultPageSize": 0,
                       "columnOrder": [
                         "customColumn1",
+                        "EditActions1",
                         "skils",
                         "yearsofexperience",
-                        "fluency",
-                        "EditActions1"
+                        "fluency"
                       ],
                       "dynamicPropertyPathList": [
                         {
@@ -961,93 +967,6 @@
                       ],
                       "borderWidth": "1",
                       "primaryColumns": {
-                        "skils": {
-                          "allowCellWrapping": false,
-                          "index": 0,
-                          "width": 150,
-                          "originalId": "skils",
-                          "id": "skils",
-                          "alias": "skils",
-                          "horizontalAlignment": "LEFT",
-                          "verticalAlignment": "CENTER",
-                          "columnType": "text",
-                          "textColor": "",
-                          "textSize": "0.875rem",
-                          "fontStyle": "",
-                          "enableFilter": true,
-                          "enableSort": true,
-                          "isVisible": true,
-                          "isDisabled": false,
-                          "isCellEditable": true,
-                          "isEditable": true,
-                          "isCellVisible": true,
-                          "isDerived": false,
-                          "label": "skils",
-                          "isSaveVisible": true,
-                          "isDiscardVisible": true,
-                          "computedValue": "{{Table1.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"skils\"]))}}",
-                          "sticky": "",
-                          "validation": {},
-                          "cellBackground": ""
-                        },
-                        "yearsofexperience": {
-                          "allowCellWrapping": false,
-                          "index": 1,
-                          "width": 150,
-                          "originalId": "yearsofexperience",
-                          "id": "yearsofexperience",
-                          "alias": "yearsofexperience",
-                          "horizontalAlignment": "LEFT",
-                          "verticalAlignment": "CENTER",
-                          "columnType": "number",
-                          "textColor": "",
-                          "textSize": "0.875rem",
-                          "fontStyle": "",
-                          "enableFilter": true,
-                          "enableSort": true,
-                          "isVisible": true,
-                          "isDisabled": false,
-                          "isCellEditable": true,
-                          "isEditable": true,
-                          "isCellVisible": true,
-                          "isDerived": false,
-                          "label": "yearsofexperience",
-                          "isSaveVisible": true,
-                          "isDiscardVisible": true,
-                          "computedValue": "{{Table1.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"yearsofexperience\"]))}}",
-                          "sticky": "",
-                          "validation": {},
-                          "cellBackground": ""
-                        },
-                        "fluency": {
-                          "allowCellWrapping": false,
-                          "index": 2,
-                          "width": 150,
-                          "originalId": "fluency",
-                          "id": "fluency",
-                          "alias": "fluency",
-                          "horizontalAlignment": "LEFT",
-                          "verticalAlignment": "CENTER",
-                          "columnType": "number",
-                          "textColor": "",
-                          "textSize": "0.875rem",
-                          "fontStyle": "",
-                          "enableFilter": true,
-                          "enableSort": true,
-                          "isVisible": true,
-                          "isDisabled": false,
-                          "isCellEditable": true,
-                          "isEditable": true,
-                          "isCellVisible": true,
-                          "isDerived": false,
-                          "label": "fluency",
-                          "isSaveVisible": true,
-                          "isDiscardVisible": true,
-                          "computedValue": "{{Table1.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"fluency\"]))}}",
-                          "sticky": "",
-                          "validation": {},
-                          "cellBackground": ""
-                        },
                         "EditActions1": {
                           "allowCellWrapping": false,
                           "index": 4,
@@ -1114,6 +1033,93 @@
                           "validation": {},
                           "buttonStyle": "rgb(3, 179, 101)",
                           "labelColor": "#FFFFFF"
+                        },
+                        "skils": {
+                          "allowCellWrapping": false,
+                          "index": 0,
+                          "width": 150,
+                          "originalId": "skils",
+                          "id": "skils",
+                          "alias": "skils",
+                          "horizontalAlignment": "LEFT",
+                          "verticalAlignment": "CENTER",
+                          "columnType": "text",
+                          "textColor": "",
+                          "textSize": "0.875rem",
+                          "fontStyle": "",
+                          "enableFilter": true,
+                          "enableSort": true,
+                          "isVisible": true,
+                          "isDisabled": false,
+                          "isCellEditable": false,
+                          "isEditable": false,
+                          "isCellVisible": true,
+                          "isDerived": false,
+                          "label": "skils",
+                          "isSaveVisible": true,
+                          "isDiscardVisible": true,
+                          "computedValue": "{{Table1.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"skils\"]))}}",
+                          "sticky": "",
+                          "validation": {},
+                          "cellBackground": ""
+                        },
+                        "yearsofexperience": {
+                          "allowCellWrapping": false,
+                          "index": 1,
+                          "width": 150,
+                          "originalId": "yearsofexperience",
+                          "id": "yearsofexperience",
+                          "alias": "yearsofexperience",
+                          "horizontalAlignment": "LEFT",
+                          "verticalAlignment": "CENTER",
+                          "columnType": "number",
+                          "textColor": "",
+                          "textSize": "0.875rem",
+                          "fontStyle": "",
+                          "enableFilter": true,
+                          "enableSort": true,
+                          "isVisible": true,
+                          "isDisabled": false,
+                          "isCellEditable": false,
+                          "isEditable": false,
+                          "isCellVisible": true,
+                          "isDerived": false,
+                          "label": "yearsofexperience",
+                          "isSaveVisible": true,
+                          "isDiscardVisible": true,
+                          "computedValue": "{{Table1.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"yearsofexperience\"]))}}",
+                          "sticky": "",
+                          "validation": {},
+                          "cellBackground": ""
+                        },
+                        "fluency": {
+                          "allowCellWrapping": false,
+                          "index": 2,
+                          "width": 150,
+                          "originalId": "fluency",
+                          "id": "fluency",
+                          "alias": "fluency",
+                          "horizontalAlignment": "LEFT",
+                          "verticalAlignment": "CENTER",
+                          "columnType": "number",
+                          "textColor": "",
+                          "textSize": "0.875rem",
+                          "fontStyle": "",
+                          "enableFilter": true,
+                          "enableSort": true,
+                          "isVisible": true,
+                          "isDisabled": false,
+                          "isCellEditable": false,
+                          "isEditable": false,
+                          "isCellVisible": true,
+                          "isDerived": false,
+                          "label": "fluency",
+                          "isSaveVisible": true,
+                          "isDiscardVisible": true,
+                          "computedValue": "{{Table1.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"fluency\"]))}}",
+                          "sticky": "",
+                          "validation": {},
+                          "cellBackground": ""
                         }
                       },
                       "key": "jss1lfcek9",
@@ -1330,6 +1336,9 @@
                         },
                         {
                           "key": "borderRadius"
+                        },
+                        {
+                          "key": "defaultText"
                         }
                       ],
                       "labelPosition": "Left",
@@ -1356,7 +1365,7 @@
                       "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
                       "maxDynamicHeight": 9000,
                       "iconAlign": "left",
-                      "defaultText": "",
+                      "defaultText": "{{joblist.selectedRow.jobname}}",
                       "minDynamicHeight": 4
                     },
                     {
@@ -1374,7 +1383,7 @@
                       "labelWidth": "8",
                       "type": "SINGLE_SELECT_TREE_WIDGET",
                       "hideCard": false,
-                      "defaultOptionValue": "{{get_job_list.data[0].jobtype}}",
+                      "defaultOptionValue": "{{joblist.selectedRow.jobtype}}",
                       "animateLoading": true,
                       "parentColumnSpace": 9.125,
                       "dynamicTriggerPathList": [],
@@ -1598,6 +1607,9 @@
                         },
                         {
                           "key": "borderRadius"
+                        },
+                        {
+                          "key": "defaultText"
                         }
                       ],
                       "labelPosition": "Left",
@@ -1624,7 +1636,7 @@
                       "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
                       "maxDynamicHeight": 9000,
                       "iconAlign": "left",
-                      "defaultText": "",
+                      "defaultText": "{{get.data[0].n0ofvacancies}}",
                       "minDynamicHeight": 4
                     },
                     {
@@ -1656,6 +1668,9 @@
                         },
                         {
                           "key": "borderRadius"
+                        },
+                        {
+                          "key": "defaultText"
                         }
                       ],
                       "labelPosition": "Left",
@@ -1684,7 +1699,7 @@
                       "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
                       "maxDynamicHeight": 9000,
                       "iconAlign": "left",
-                      "defaultText": "",
+                      "defaultText": "{{get.data[0].YearsofExperience}}",
                       "minDynamicHeight": 4
                     },
                     {
@@ -1702,6 +1717,9 @@
                         },
                         {
                           "key": "borderRadius"
+                        },
+                        {
+                          "key": "defaultDate"
                         }
                       ],
                       "labelStyle": "BOLD",
@@ -1736,7 +1754,7 @@
                       "labelPosition": "Left",
                       "key": "trjehw19n9",
                       "labelTextSize": "0.875rem",
-                      "defaultDate": "",
+                      "defaultDate": "{{get.data[0].startdate}}",
                       "isDeprecated": false,
                       "rightColumn": 30,
                       "widgetId": "3dggy6txkq",
@@ -2070,10 +2088,13 @@
                         },
                         {
                           "key": "borderRadius"
+                        },
+                        {
+                          "key": "defaultDate"
                         }
                       ],
                       "isDisabled": false,
-                      "isRequired": false,
+                      "isRequired": true,
                       "dynamicHeight": "FIXED",
                       "accentColor": "{{appsmith.theme.colors.primaryColor}}",
                       "isVisible": true,
@@ -2095,7 +2116,7 @@
                         "calendar"
                       ],
                       "bottomRow": 16,
-                      "shortcuts": false,
+                      "shortcuts": true,
                       "parentRowSpace": 10,
                       "hideCard": false,
                       "parentColumnSpace": 15.903125,
@@ -2103,7 +2124,7 @@
                       "labelPosition": "Left",
                       "key": "tae2vfi2c7",
                       "labelTextSize": "0.875rem",
-                      "defaultDate": "",
+                      "defaultDate": "{{joblist.selectedRow.enddate}}",
                       "isDeprecated": false,
                       "rightColumn": 63,
                       "widgetId": "eca9nn70ga",
@@ -2114,30 +2135,18 @@
                       "renderMode": "CANVAS",
                       "responsiveBehavior": "fill",
                       "maxDynamicHeight": 9000,
-                      "firstDayOfWeek": 0,
+                      "firstDayOfWeek": "0",
                       "maxDate": "2121-12-31T18:29:00.000Z",
                       "minDynamicHeight": 4
                     },
                     {
                       "boxShadow": "none",
-                      "widgetName": "DatePicker2",
-                      "minDate": "1920-12-31T18:30:00.000Z",
-                      "dateFormat": "DD-MM-YYYY",
-                      "displayName": "DatePicker",
+                      "dateFormat": "YYYY-MM-DD",
                       "iconSVG": "/static/media/icon.300e5ab8e2e1c26c7a0bad06116842b7.svg",
-                      "searchTags": [
-                        "calendar"
-                      ],
                       "topRow": 19,
-                      "bottomRow": 24,
-                      "shortcuts": false,
-                      "parentRowSpace": 10,
                       "labelWidth": "8",
                       "type": "DATE_PICKER_WIDGET2",
-                      "hideCard": false,
                       "animateLoading": true,
-                      "parentColumnSpace": 15.903125,
-                      "dynamicTriggerPathList": [],
                       "leftColumn": 33,
                       "dynamicBindingPathList": [
                         {
@@ -2145,33 +2154,54 @@
                         },
                         {
                           "key": "borderRadius"
+                        },
+                        {
+                          "key": "defaultDate"
                         }
                       ],
-                      "labelPosition": "Left",
                       "isDisabled": false,
-                      "key": "tae2vfi2c7",
-                      "labelTextSize": "0.875rem",
                       "isRequired": false,
-                      "isDeprecated": false,
-                      "rightColumn": 63,
                       "dynamicHeight": "FIXED",
-                      "widgetId": "en36rgw2la",
                       "accentColor": "{{appsmith.theme.colors.primaryColor}}",
-                      "minWidth": 450,
                       "isVisible": true,
                       "datePickerType": "DATE_PICKER",
-                      "label": "PostDate",
                       "version": 2,
+                      "isLoading": false,
+                      "timePrecision": "None",
+                      "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+                      "closeOnSelection": true,
+                      "widgetName": "DatePicker2",
+                      "minDate": "1920-12-31T18:30:00.000Z",
+                      "dynamicPropertyPathList": [
+                        {
+                          "key": "defaultDate"
+                        }
+                      ],
+                      "displayName": "DatePicker",
+                      "searchTags": [
+                        "calendar"
+                      ],
+                      "bottomRow": 24,
+                      "shortcuts": false,
+                      "parentRowSpace": 10,
+                      "hideCard": false,
+                      "parentColumnSpace": 15.903125,
+                      "dynamicTriggerPathList": [],
+                      "labelPosition": "Left",
+                      "key": "tae2vfi2c7",
+                      "labelTextSize": "0.875rem",
+                      "isDeprecated": false,
+                      "rightColumn": 63,
+                      "defaultDate": "{{joblist.selectedRow.postdate}}",
+                      "widgetId": "en36rgw2la",
+                      "minWidth": 450,
+                      "label": "PostDate",
                       "parentId": "4v4ftu1wwf",
                       "labelAlignment": "left",
                       "renderMode": "CANVAS",
-                      "isLoading": false,
-                      "timePrecision": "minute",
                       "responsiveBehavior": "fill",
-                      "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
                       "maxDynamicHeight": 9000,
                       "firstDayOfWeek": 0,
-                      "closeOnSelection": true,
                       "maxDate": "2121-12-31T18:29:00.000Z",
                       "minDynamicHeight": 4
                     }
@@ -2212,7 +2242,7 @@
               "borderColor": "#f4f4f5",
               "isVisibleDownload": false,
               "iconSVG": "/static/media/icon.db8a9cbd2acd22a31ea91cc37ea2a46c.svg",
-              "topRow": 4,
+              "topRow": 5,
               "isSortable": true,
               "type": "TABLE_WIDGET_V2",
               "inlineEditingSaveOption": "ROW_LEVEL",
@@ -2235,9 +2265,6 @@
                 },
                 {
                   "key": "primaryColumns._id.computedValue"
-                },
-                {
-                  "key": "tableData"
                 },
                 {
                   "key": "primaryColumns.postdate.computedValue"
@@ -2265,6 +2292,9 @@
                 },
                 {
                   "key": "primaryColumns.skills_.computedValue"
+                },
+                {
+                  "key": "tableData"
                 }
               ],
               "needsHeightForContent": true,
@@ -2334,7 +2364,7 @@
                 }
               ],
               "displayName": "Table",
-              "bottomRow": 26,
+              "bottomRow": 27,
               "columnWidthMap": {
                 "task": 245,
                 "step": 70,
@@ -2757,7 +2787,7 @@
               "rightColumn": 64,
               "textSize": "0.875rem",
               "widgetId": "3i8nieyoaz",
-              "tableData": "{{get_job_list.data}}",
+              "tableData": "{{get.data}}",
               "label": "Data",
               "searchKey": "",
               "parentId": "0",
@@ -2773,8 +2803,8 @@
         "layoutOnLoadActions": [
           [
             {
-              "id": "Job_get_job_list",
-              "name": "get_job_list",
+              "id": "Job_get",
+              "name": "get",
               "confirmBeforeExecute": false,
               "pluginType": "DB",
               "jsonPathKeys": [],

@@ -91,7 +91,7 @@
             "data": "{ \"_id\": ObjectId({{joblist.selectedRow._id}}) }"
           },
           "update": {
-            "data": "{ \"$set\": { \"Description\": \"{{edit_desc.text}}\",\n      \"YearsofExperience\": \"{{}}\",\n      \"_id\": ObjectId(\"a_valid_object_id_hex\"),\n      \"enddate\": \"new value\",\n      \"jobname\": \"new value\",\n      \"jobtype\": \"new value\",\n      \"n0ofvacancies\": \"new value\",\n      \"postdate\": \"new value\",\n      \"startdate\": \"new value\" } }"
+            "data": "{ \"$set\": { \"Description\": \"{{edit_desc.text}}\",\n      \"YearsofExperience\": \"{{edit_year.text}}\",\n      \n      \"enddate\": \"{{DatePicker1.formattedDate}}\",\n      \"jobname\": \"{{edit_jobname.text}}\",\n      \"jobtype\": \"{{edit_jobtype.selectedOptionLabel}}\",\n      \"n0ofvacancies\": \"{{edit_vac.text}}\",\n      \"postdate\": \"{{DatePicker2.formattedDate}}\",\n      \"startdate\": \"{{edit_date.formattedDate}}\" } }"
           }
         }
       }
@@ -109,8 +109,14 @@
     "invalids": [],
     "messages": [],
     "jsonPathKeys": [
-      "",
+      "DatePicker1.formattedDate",
+      "DatePicker2.formattedDate",
+      "edit_date.formattedDate",
       "edit_desc.text",
+      "edit_jobname.text",
+      "edit_jobtype.selectedOptionLabel",
+      "edit_vac.text",
+      "edit_year.text",
       "joblist.selectedRow._id"
     ],
     "userSetOnLoad": false,

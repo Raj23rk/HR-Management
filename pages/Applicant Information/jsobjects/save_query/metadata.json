@@ -1,0 +1,15 @@
+{
+  "unpublishedCollection": {
+    "name": "save_query",
+    "pageId": "Applicant Information",
+    "pluginId": "js-plugin",
+    "pluginType": "JS",
+    "actions": [],
+    "archivedActions": [],
+    "variables": [],
+    "userPermissions": []
+  },
+  "id": "Applicant Information_save_query",
+  "deleted": false,
+  "gitSyncId": "64081d9720d355269dd6b6f0_6412bbcf806a4f4f793fcb8b"
+}

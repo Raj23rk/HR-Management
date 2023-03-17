@@ -13,7 +13,7 @@
           "detachFromLayout": true,
           "widgetId": "0",
           "topRow": 0,
-          "bottomRow": 670,
+          "bottomRow": 680,
           "containerStyle": "none",
           "snapRows": 63,
           "parentRowSpace": 1,
@@ -504,7 +504,7 @@
               "borderColor": "#E0DEDE",
               "isVisibleDownload": true,
               "iconSVG": "/static/media/icon.db8a9cbd2acd22a31ea91cc37ea2a46c.svg",
-              "topRow": 44,
+              "topRow": 45,
               "isSortable": true,
               "type": "TABLE_WIDGET_V2",
               "inlineEditingSaveOption": "ROW_LEVEL",
@@ -583,7 +583,7 @@
                 }
               },
               "borderRadius": "0px",
-              "columnUpdatedAt": 1678954691163,
+              "columnUpdatedAt": 1678964275358,
               "defaultSelectedRowIndices": [
                 0
               ],
@@ -610,7 +610,7 @@
                 }
               ],
               "displayName": "Table",
-              "bottomRow": 67,
+              "bottomRow": 68,
               "columnWidthMap": {
                 "task": 245,
                 "step": 70,
@@ -697,7 +697,7 @@
                   "customAlias": "",
                   "menuItemsSource": "STATIC",
                   "placeholderText": "Select Type",
-                  "selectOptions": "[\n  {\n    \"label\": \"INTERVIEW\",\n    \"value\": \"BLUE\",\n    \"children\": [\n      {\n        \"label\": \"Dark Blue\",\n        \"value\": \"DARK BLUE\"\n      },\n      {\n        \"label\": \"Light Blue\",\n        \"value\": \"LIGHT BLUE\"\n      }\n    ]\n  },\n  {\n    \"label\": \"EXAM\",\n    \"value\": \"GREEN\"\n  },\n  {\n    \"label\": \"HRMANAGER\",\n    \"value\": \"RED\"\n  }\n]"
+                  "selectOptions": "[\n  {\n    \"label\": \"INTERVIEW\",\n    \"value\": \"INTERVIEW\",\n    \"children\": [\n      {\n        \"label\": \"Dark Blue\",\n        \"value\": \"DARK BLUE\"\n      },\n      {\n        \"label\": \"Light Blue\",\n        \"value\": \"LIGHT BLUE\"\n      }\n    ]\n  },\n  {\n    \"label\": \"EXAM\",\n    \"value\": \"EXAM\"\n  },\n  {\n    \"label\": \"HR\",\n    \"value\": \"HR\"\n  }\n]"
                 },
                 "interviewerremark": {
                   "allowCellWrapping": false,

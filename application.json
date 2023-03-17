@@ -11,6 +11,10 @@
     {
       "id": "Applicant Information",
       "isDefault": false
+    },
+    {
+      "id": "employee ",
+      "isDefault": false
     }
   ],
   "viewMode": false,

@@ -1344,7 +1344,7 @@
                 }
               },
               "borderRadius": "0px",
-              "columnUpdatedAt": 1679046524131,
+              "columnUpdatedAt": 1679046601093,
               "defaultSelectedRowIndices": [
                 0
               ],
@@ -1353,14 +1353,14 @@
               "columnOrder": [
                 "customColumn3",
                 "projectname",
-                "members",
+                "_members",
                 "status",
-                "description",
-                "remark",
-                "_id",
                 "customColumn1",
                 "customColumn2",
-                "_members"
+                "_id",
+                "remark",
+                "members",
+                "description"
               ],
               "dynamicPropertyPathList": [],
               "displayName": "Table",

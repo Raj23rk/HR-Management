@@ -13,7 +13,7 @@
       "policies": [],
       "userPermissions": []
     },
-    "pageId": "Add job",
+    "pageId": "Project",
     "actionConfiguration": {
       "timeoutInMillisecond": 10000,
       "paginationType": "NONE",
@@ -29,10 +29,10 @@
           }
         },
         "body": {
-          "data": "{\n  \"find\": \"job_list_Add\",\n  \"filter\": {\n    \"Description\": \"This is the initial <b>content</b> of the editor\"\n  },\n  \"sort\": {\n    \"_id\": 1\n  },\n  \"limit\": 10\n}\n"
+          "data": "{\n  \"find\": \"project\",\n  \"filter\": {\n    \"description\": \"new value\"\n  },\n  \"sort\": {\n    \"_id\": 1\n  },\n  \"limit\": 10\n}\n"
         },
         "collection": {
-          "data": "job_list_Add"
+          "data": "project"
         },
         "command": {
           "data": "FIND"
@@ -63,7 +63,7 @@
             "data": ""
           },
           "limit": {
-            "data": "50"
+            "data": "10"
           },
           "sort": {
             "data": "{\"_id\": 1}"
@@ -107,7 +107,7 @@
     "policies": [],
     "userPermissions": []
   },
-  "id": "Add job_get",
+  "id": "Project_get",
   "deleted": false,
-  "gitSyncId": "64081d9720d355269dd6b6f0_64117ccac182ff53e439cd26"
+  "gitSyncId": "64081d9720d355269dd6b6f0_64144c4dec20775f76c4c270"
 }

@@ -1,0 +1,15 @@
+{
+  "unpublishedCollection": {
+    "name": "node_query",
+    "pageId": "Application List",
+    "pluginId": "js-plugin",
+    "pluginType": "JS",
+    "actions": [],
+    "archivedActions": [],
+    "variables": [],
+    "userPermissions": []
+  },
+  "id": "Application List_node_query",
+  "deleted": false,
+  "gitSyncId": "64081d9720d355269dd6b6f0_64143e197d14f758304b725e"
+}

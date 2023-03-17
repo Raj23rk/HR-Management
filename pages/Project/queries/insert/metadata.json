@@ -2,7 +2,7 @@
   "pluginType": "DB",
   "pluginId": "mongo-plugin",
   "unpublishedAction": {
-    "name": "insert_project",
+    "name": "insert",
     "datasource": {
       "name": "HR PROJECT",
       "pluginId": "mongo-plugin",
@@ -29,7 +29,7 @@
           }
         },
         "body": {
-          "data": "{\n  \"insert\": \"project\",\n  \"documents\": [\n    {\n      \"Team members\": \"new value\",\n      \"_id\": ObjectId(\"a_valid_object_id_hex\"),\n      \"description\": \"new value\",\n      \"projectname\": \"new value\",\n      \"remark\": \"new value\",\n      \"status\": \"new value\",\n    }\n  ]\n}\n"
+          "data": "{\n  \"insert\": \"project\",\n  \"documents\": [\n    {\n      \"_id\": ObjectId(\"a_valid_object_id_hex\"),\n      \"description\": \"new value\",\n      \"members\": \"new value\",\n      \"projectname\": \"new value\",\n      \"remark\": \"new value\",\n      \"status\": \"new value\",\n    }\n  ]\n}\n"
         },
         "collection": {
           "data": "project"
@@ -77,7 +77,7 @@
         },
         "insert": {
           "documents": {
-            "data": "[{      \" members\": \"{{team_members.text}}\",\n     \n      \"description\": \"{{prj_description.text}}\",\n      \"projectname\": \"{{prj_name.text}}\",\n      \"remark\": \"{{remark.text}}\",\n      \"status\": \"{{status.text}}\",\n}]"
+            "data": "[{      \n      \"description\": \"{{prj_description.text}}\",\n      \"members\": \"{{team_members.text}}\",\n      \"projectname\": \"{{prj_name.text}}\",\n      \"remark\": \"{{remark.text}}\",\n      \"status\": \"{{status.text}}\",\n}]"
           }
         },
         "smartSubstitution": {
@@ -117,7 +117,7 @@
     "policies": [],
     "userPermissions": []
   },
-  "id": "Project_insert_project",
+  "id": "Project_insert",
   "deleted": false,
-  "gitSyncId": "64081d9720d355269dd6b6f0_64140286ddb1fc13e492e2e0"
+  "gitSyncId": "64081d9720d355269dd6b6f0_641448c3128e99063d826c04"
 }

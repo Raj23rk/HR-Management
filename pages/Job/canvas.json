@@ -883,9 +883,6 @@
                         },
                         {
                           "key": "primaryColumns.fluency.computedValue"
-                        },
-                        {
-                          "key": "primaryColumns.SNO.computedValue"
                         }
                       ],
                       "needsHeightForContent": true,
@@ -924,7 +921,7 @@
                         }
                       },
                       "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
-                      "columnUpdatedAt": 1679040527225,
+                      "columnUpdatedAt": 1679049433908,
                       "defaultSelectedRowIndices": [
                         0
                       ],
@@ -932,11 +929,10 @@
                       "defaultPageSize": 0,
                       "columnOrder": [
                         "customColumn1",
-                        "EditActions1",
                         "skils",
                         "yearsofexperience",
                         "fluency",
-                        "SNO"
+                        "EditActions1"
                       ],
                       "dynamicPropertyPathList": [
                         {
@@ -1121,35 +1117,6 @@
                           "isSaveVisible": true,
                           "isDiscardVisible": true,
                           "computedValue": "{{Table1.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"fluency\"]))}}",
-                          "sticky": "",
-                          "validation": {},
-                          "cellBackground": ""
-                        },
-                        "SNO": {
-                          "allowCellWrapping": false,
-                          "index": 3,
-                          "width": 150,
-                          "originalId": "SNO",
-                          "id": "SNO",
-                          "alias": "SNO",
-                          "horizontalAlignment": "LEFT",
-                          "verticalAlignment": "CENTER",
-                          "columnType": "text",
-                          "textColor": "",
-                          "textSize": "0.875rem",
-                          "fontStyle": "",
-                          "enableFilter": true,
-                          "enableSort": true,
-                          "isVisible": true,
-                          "isDisabled": false,
-                          "isCellEditable": true,
-                          "isEditable": true,
-                          "isCellVisible": true,
-                          "isDerived": false,
-                          "label": "SNO",
-                          "isSaveVisible": true,
-                          "isDiscardVisible": true,
-                          "computedValue": "{{Table1.processedTableData.map((currentRow, currentIndex) => ( currentIndex + 1))}}",
                           "sticky": "",
                           "validation": {},
                           "cellBackground": ""
@@ -1550,7 +1517,7 @@
                   "boxShadow": "{{joblist.processedTableData.map((currentRow, currentIndex) => ( 'none'))}}",
                   "customAlias": "",
                   "buttonLabel": "View",
-                  "onClick": "{{\t\tnavigateTo('Add job', {jobname });\n}}"
+                  "onClick": "{{\t\tnavigateTo('Application List', {jobname: joblist.triggeredRow.jobname,\nNoofvacancies:joblist.triggeredRow.n0ofvacancies\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t });\n}}"
                 },
                 "postdate": {
                   "allowCellWrapping": false,
@@ -1688,7 +1655,7 @@
                   "isEditable": false,
                   "isCellVisible": true,
                   "isDerived": false,
-                  "label": "n0ofvacancies",
+                  "label": "No of vacancies",
                   "isSaveVisible": true,
                   "isDiscardVisible": true,
                   "computedValue": "{{joblist.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"n0ofvacancies\"]))}}",
@@ -1850,7 +1817,7 @@
               "key": "nl11hy57g3",
               "canFreezeColumn": true,
               "isDeprecated": false,
-              "rightColumn": 60,
+              "rightColumn": 64,
               "textSize": "0.875rem",
               "widgetId": "3i8nieyoaz",
               "tableData": "{{get.data}}",
@@ -1952,9 +1919,6 @@
                         },
                         {
                           "key": "primaryColumns.fluency.computedValue"
-                        },
-                        {
-                          "key": "primaryColumns.SNO.computedValue"
                         }
                       ],
                       "needsHeightForContent": true,
@@ -1993,7 +1957,7 @@
                         }
                       },
                       "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
-                      "columnUpdatedAt": 1679039832377,
+                      "columnUpdatedAt": 1679048947618,
                       "defaultSelectedRowIndices": [
                         0
                       ],
@@ -2004,8 +1968,7 @@
                         "EditActions1",
                         "skils",
                         "yearsofexperience",
-                        "fluency",
-                        "SNO"
+                        "fluency"
                       ],
                       "dynamicPropertyPathList": [
                         {
@@ -2192,35 +2155,6 @@
                           "isSaveVisible": true,
                           "isDiscardVisible": true,
                           "computedValue": "{{edit_skils.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"fluency\"]))}}",
-                          "sticky": "",
-                          "validation": {},
-                          "cellBackground": ""
-                        },
-                        "SNO": {
-                          "allowCellWrapping": false,
-                          "index": 3,
-                          "width": 150,
-                          "originalId": "SNO",
-                          "id": "SNO",
-                          "alias": "SNO",
-                          "horizontalAlignment": "LEFT",
-                          "verticalAlignment": "CENTER",
-                          "columnType": "text",
-                          "textColor": "",
-                          "textSize": "0.875rem",
-                          "fontStyle": "",
-                          "enableFilter": true,
-                          "enableSort": true,
-                          "isVisible": true,
-                          "isDisabled": false,
-                          "isCellEditable": false,
-                          "isEditable": false,
-                          "isCellVisible": true,
-                          "isDerived": false,
-                          "label": "SNO",
-                          "isSaveVisible": true,
-                          "isDiscardVisible": true,
-                          "computedValue": "{{edit_skils.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"SNO\"]))}}",
                           "sticky": "",
                           "validation": {},
                           "cellBackground": ""

@@ -13,7 +13,7 @@
           "detachFromLayout": true,
           "widgetId": "0",
           "topRow": 0,
-          "bottomRow": 390,
+          "bottomRow": 380,
           "containerStyle": "none",
           "snapRows": 51,
           "parentRowSpace": 1,
@@ -331,7 +331,7 @@
                       "resetFormOnClick": false,
                       "boxShadow": "none",
                       "widgetName": "Button7",
-                      "onClick": "{{insert_project.run()}}",
+                      "onClick": "{{insert.run()}}",
                       "buttonColor": "{{appsmith.theme.colors.primaryColor}}",
                       "displayName": "Button",
                       "iconSVG": "/static/media/icon.cca026338f1c8eb6df8ba03d084c2fca.svg",
@@ -510,7 +510,7 @@
                         "number",
                         "textarea"
                       ],
-                      "topRow": 15,
+                      "topRow": 16,
                       "bottomRow": 20,
                       "parentRowSpace": 10,
                       "labelWidth": "13",
@@ -941,7 +941,7 @@
                       "resetFormOnClick": false,
                       "boxShadow": "none",
                       "widgetName": "Button7Copy",
-                      "onClick": "{{update_project.run()}}",
+                      "onClick": "{{up_project.run(() => get.run(), () => {})}}",
                       "buttonColor": "{{appsmith.theme.colors.primaryColor}}",
                       "displayName": "Button",
                       "iconSVG": "/static/media/icon.cca026338f1c8eb6df8ba03d084c2fca.svg",
@@ -1260,7 +1260,7 @@
               "borderColor": "#E0DEDE",
               "isVisibleDownload": false,
               "iconSVG": "/static/media/icon.db8a9cbd2acd22a31ea91cc37ea2a46c.svg",
-              "topRow": 12,
+              "topRow": 13,
               "isSortable": false,
               "type": "TABLE_WIDGET_V2",
               "inlineEditingSaveOption": "ROW_LEVEL",
@@ -1303,9 +1303,6 @@
                   "key": "primaryColumns.members.computedValue"
                 },
                 {
-                  "key": "primaryColumns._members.computedValue"
-                },
-                {
                   "key": "tableData"
                 }
               ],
@@ -1344,7 +1341,7 @@
                 }
               },
               "borderRadius": "0px",
-              "columnUpdatedAt": 1679046601093,
+              "columnUpdatedAt": 1679051405145,
               "defaultSelectedRowIndices": [
                 0
               ],
@@ -1353,18 +1350,17 @@
               "columnOrder": [
                 "customColumn3",
                 "projectname",
-                "_members",
                 "status",
+                "members",
                 "customColumn1",
                 "customColumn2",
                 "_id",
                 "remark",
-                "members",
                 "description"
               ],
               "dynamicPropertyPathList": [],
               "displayName": "Table",
-              "bottomRow": 39,
+              "bottomRow": 36,
               "columnWidthMap": {
                 "task": 245,
                 "step": 70,
@@ -1629,7 +1625,7 @@
                   "fontStyle": "",
                   "enableFilter": true,
                   "enableSort": true,
-                  "isVisible": false,
+                  "isVisible": true,
                   "isDisabled": false,
                   "isCellEditable": false,
                   "isEditable": false,
@@ -1642,35 +1638,6 @@
                   "sticky": "",
                   "validation": {},
                   "cellBackground": ""
-                },
-                "_members": {
-                  "allowCellWrapping": false,
-                  "index": 6,
-                  "width": 150,
-                  "originalId": " members",
-                  "id": "_members",
-                  "alias": " members",
-                  "horizontalAlignment": "LEFT",
-                  "verticalAlignment": "CENTER",
-                  "columnType": "text",
-                  "textColor": "",
-                  "textSize": "0.875rem",
-                  "fontStyle": "",
-                  "enableFilter": true,
-                  "enableSort": true,
-                  "isVisible": true,
-                  "isDisabled": false,
-                  "isCellEditable": false,
-                  "isEditable": false,
-                  "isCellVisible": true,
-                  "isDerived": false,
-                  "label": " members",
-                  "isSaveVisible": true,
-                  "isDiscardVisible": true,
-                  "computedValue": "{{project_list.processedTableData.map((currentRow, currentIndex) => ( currentRow[\" members\"]))}}",
-                  "sticky": "",
-                  "validation": {},
-                  "cellBackground": ""
                 }
               },
               "key": "zao0dupto1",
@@ -1680,7 +1647,7 @@
               "textSize": "0.875rem",
               "widgetId": "9gm9n9dhzx",
               "minWidth": 450,
-              "tableData": "{{find.data}}",
+              "tableData": "{{get.data}}",
               "label": "Data",
               "searchKey": "",
               "parentId": "0",
@@ -1696,8 +1663,8 @@
         "layoutOnLoadActions": [
           [
             {
-              "id": "Project_find",
-              "name": "find",
+              "id": "Project_get",
+              "name": "get",
               "confirmBeforeExecute": false,
               "pluginType": "DB",
               "jsonPathKeys": [],

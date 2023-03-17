@@ -2,7 +2,7 @@
   "pluginType": "DB",
   "pluginId": "mongo-plugin",
   "unpublishedAction": {
-    "name": "find",
+    "name": "Register",
     "datasource": {
       "name": "HR PROJECT",
       "pluginId": "mongo-plugin",
@@ -13,7 +13,7 @@
       "policies": [],
       "userPermissions": []
     },
-    "pageId": "Project",
+    "pageId": "Application List",
     "actionConfiguration": {
       "timeoutInMillisecond": 10000,
       "paginationType": "NONE",
@@ -29,10 +29,10 @@
           }
         },
         "body": {
-          "data": "{\n  \"find\": \"project\",\n  \"filter\": {\n    \"Team members\": \"3\"\n  },\n  \"sort\": {\n    \"_id\": 1\n  },\n  \"limit\": 10\n}\n"
+          "data": "{\n  \"find\": \"Register\",\n  \"filter\": {\n    \"12th year of passing\": \"2018\"\n  },\n  \"sort\": {\n    \"_id\": 1\n  },\n  \"limit\": 10\n}\n"
         },
         "collection": {
-          "data": "project"
+          "data": "Register"
         },
         "command": {
           "data": "FIND"
@@ -107,7 +107,7 @@
     "policies": [],
     "userPermissions": []
   },
-  "id": "Project_find",
+  "id": "Application List_Register",
   "deleted": false,
-  "gitSyncId": "64081d9720d355269dd6b6f0_64140570ddb1fc13e492e30f"
+  "gitSyncId": "64081d9720d355269dd6b6f0_6411aafdc182ff53e439cf87"
 }

@@ -2,7 +2,7 @@
   "pluginType": "DB",
   "pluginId": "mongo-plugin",
   "unpublishedAction": {
-    "name": "update_project",
+    "name": "up_project",
     "datasource": {
       "name": "HR PROJECT",
       "pluginId": "mongo-plugin",
@@ -29,7 +29,7 @@
           }
         },
         "body": {
-          "data": "{\n  \"update\": \"project\",\n  \"updates\": [\n    {\n      \"q\": {\n        \"_id\": ObjectId(\"id_of_document_to_update\")\n      },\n      \"u\": { \"$set\": { \"Team members\": \"new value\" } }\n    }\n  ]\n}\n"
+          "data": "{\n  \"update\": \"project\",\n  \"updates\": [\n    {\n      \"q\": {\n        \"_id\": ObjectId(\"id_of_document_to_update\")\n      },\n      \"u\": { \"$set\": { \"description\": \"new value\" } }\n    }\n  ]\n}\n"
         },
         "collection": {
           "data": "project"
@@ -91,7 +91,7 @@
             "data": "{ \"_id\": ObjectId({{project_list.selectedRow._id}}) }"
           },
           "update": {
-            "data": "{ \"$set\": { \" members\": \"new value\" } }"
+            "data": "{ \"$set\": { \"projectname\": \"{{prjnmae_edit.text}}\",\n           \"members\": \"{{team_membersedit.text}}\",\n          \"status\": \"{{status_edit.text}}\",} }"
           }
         }
       }
@@ -100,20 +100,26 @@
     "dynamicBindingPathList": [
       {
         "key": "formData.updateMany.query.data"
+      },
+      {
+        "key": "formData.updateMany.update.data"
       }
     ],
     "isValid": true,
     "invalids": [],
     "messages": [],
     "jsonPathKeys": [
-      "project_list.selectedRow._id"
+      "prjnmae_edit.text",
+      "project_list.selectedRow._id",
+      "status_edit.text",
+      "team_membersedit.text"
     ],
     "userSetOnLoad": false,
     "confirmBeforeExecute": false,
     "policies": [],
     "userPermissions": []
   },
-  "id": "Project_update_project",
+  "id": "Project_up_project",
   "deleted": false,
-  "gitSyncId": "64081d9720d355269dd6b6f0_641411d1ddb1fc13e492e36e"
+  "gitSyncId": "64081d9720d355269dd6b6f0_6414516871d5213f118d2d8c"
 }

@@ -1256,12 +1256,12 @@
               "minDynamicHeight": 24
             },
             {
-              "boxShadow": "{{appsmith.theme.boxShadow.appBoxShadow}}",
+              "boxShadow": "none",
               "borderColor": "#E0DEDE",
-              "isVisibleDownload": true,
+              "isVisibleDownload": false,
               "iconSVG": "/static/media/icon.db8a9cbd2acd22a31ea91cc37ea2a46c.svg",
               "topRow": 12,
-              "isSortable": true,
+              "isSortable": false,
               "type": "TABLE_WIDGET_V2",
               "inlineEditingSaveOption": "ROW_LEVEL",
               "animateLoading": true,
@@ -1271,12 +1271,6 @@
                 },
                 {
                   "key": "accentColor"
-                },
-                {
-                  "key": "borderRadius"
-                },
-                {
-                  "key": "boxShadow"
                 },
                 {
                   "key": "primaryColumns.projectname.computedValue"
@@ -1320,7 +1314,7 @@
               "delimiter": ",",
               "defaultSelectedRowIndex": 0,
               "accentColor": "{{appsmith.theme.colors.primaryColor}}",
-              "isVisibleFilters": true,
+              "isVisibleFilters": false,
               "isVisible": true,
               "enableClientSideSearch": true,
               "version": 1,
@@ -1349,8 +1343,8 @@
                   "discardBorderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}"
                 }
               },
-              "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
-              "columnUpdatedAt": 1679039921246,
+              "borderRadius": "0px",
+              "columnUpdatedAt": 1679046524131,
               "defaultSelectedRowIndices": [
                 0
               ],
@@ -1635,7 +1629,7 @@
                   "fontStyle": "",
                   "enableFilter": true,
                   "enableSort": true,
-                  "isVisible": true,
+                  "isVisible": false,
                   "isDisabled": false,
                   "isCellEditable": false,
                   "isEditable": false,
@@ -1680,7 +1674,7 @@
                 }
               },
               "key": "zao0dupto1",
-              "canFreezeColumn": true,
+              "canFreezeColumn": false,
               "isDeprecated": false,
               "rightColumn": 64,
               "textSize": "0.875rem",
@@ -1692,9 +1686,9 @@
               "parentId": "0",
               "renderMode": "CANVAS",
               "horizontalAlignment": "LEFT",
-              "isVisibleSearch": true,
+              "isVisibleSearch": false,
               "responsiveBehavior": "fill",
-              "isVisiblePagination": true,
+              "isVisiblePagination": false,
               "verticalAlignment": "CENTER"
             }
           ]

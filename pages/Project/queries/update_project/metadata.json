@@ -2,7 +2,7 @@
   "pluginType": "DB",
   "pluginId": "mongo-plugin",
   "unpublishedAction": {
-    "name": "update_list",
+    "name": "update_project",
     "datasource": {
       "name": "HR PROJECT",
       "pluginId": "mongo-plugin",
@@ -13,7 +13,7 @@
       "policies": [],
       "userPermissions": []
     },
-    "pageId": "Job",
+    "pageId": "Project",
     "actionConfiguration": {
       "timeoutInMillisecond": 10000,
       "paginationType": "NONE",
@@ -29,10 +29,10 @@
           }
         },
         "body": {
-          "data": "{\n  \"update\": \"job_list_Add\",\n  \"updates\": [\n    {\n      \"q\": {\n        \"_id\": ObjectId(\"id_of_document_to_update\")\n      },\n      \"u\": { \"$set\": { \"Description\": \"new value\" } }\n    }\n  ]\n}\n"
+          "data": "{\n  \"update\": \"project\",\n  \"updates\": [\n    {\n      \"q\": {\n        \"_id\": ObjectId(\"id_of_document_to_update\")\n      },\n      \"u\": { \"$set\": { \"Team members\": \"new value\" } }\n    }\n  ]\n}\n"
         },
         "collection": {
-          "data": "job_list_Add"
+          "data": "project"
         },
         "command": {
           "data": "UPDATE"
@@ -88,10 +88,10 @@
             "data": "ALL"
           },
           "query": {
-            "data": "{ \"_id\": ObjectId({{joblist.selectedRow._id}}) }"
+            "data": "{ \"_id\": ObjectId({{project_list.selectedRow._id}}) }"
           },
           "update": {
-            "data": "{ \"$set\": {  \"Description\": \"{{job_desc.text}}\",\n      \"YearsofExperience\": \"{{Year_ex.text}}\",\n     \n      \"enddate\": \"{{End_dat.formattedDate}}\",\n      \"jobname\": \"{{job_name.text}}\",\n      \"jobtype\": \"{{job_type.text}}\",\n      \"n0ofvacancies\": \"{{job_vac.text}}\",\n      \"postdate\": \"{{Post_dat.formattedDate}}\",\n      \"skills\t\": [1, 2, 3],\n      \"startdate\": \"{{start_dat.formattedDate}}\", } }"
+            "data": "{ \"$set\": { \" members\": \"new value\" } }"
           }
         }
       }
@@ -100,31 +100,20 @@
     "dynamicBindingPathList": [
       {
         "key": "formData.updateMany.query.data"
-      },
-      {
-        "key": "formData.updateMany.update.data"
       }
     ],
     "isValid": true,
     "invalids": [],
     "messages": [],
     "jsonPathKeys": [
-      "End_dat.formattedDate",
-      "Post_dat.formattedDate",
-      "Year_ex.text",
-      "job_desc.text",
-      "job_name.text",
-      "job_type.text",
-      "job_vac.text",
-      "joblist.selectedRow._id",
-      "start_dat.formattedDate"
+      "project_list.selectedRow._id"
     ],
     "userSetOnLoad": false,
     "confirmBeforeExecute": false,
     "policies": [],
     "userPermissions": []
   },
-  "id": "Job_update_list",
+  "id": "Project_update_project",
   "deleted": false,
-  "gitSyncId": "64081d9720d355269dd6b6f0_64140583ddb1fc13e492e313"
+  "gitSyncId": "64081d9720d355269dd6b6f0_641411d1ddb1fc13e492e36e"
 }

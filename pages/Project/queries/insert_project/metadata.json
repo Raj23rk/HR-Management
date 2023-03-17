@@ -2,7 +2,7 @@
   "pluginType": "DB",
   "pluginId": "mongo-plugin",
   "unpublishedAction": {
-    "name": "update_list",
+    "name": "insert_project",
     "datasource": {
       "name": "HR PROJECT",
       "pluginId": "mongo-plugin",
@@ -13,7 +13,7 @@
       "policies": [],
       "userPermissions": []
     },
-    "pageId": "Job",
+    "pageId": "Project",
     "actionConfiguration": {
       "timeoutInMillisecond": 10000,
       "paginationType": "NONE",
@@ -29,13 +29,13 @@
           }
         },
         "body": {
-          "data": "{\n  \"update\": \"job_list_Add\",\n  \"updates\": [\n    {\n      \"q\": {\n        \"_id\": ObjectId(\"id_of_document_to_update\")\n      },\n      \"u\": { \"$set\": { \"Description\": \"new value\" } }\n    }\n  ]\n}\n"
+          "data": "{\n  \"insert\": \"project\",\n  \"documents\": [\n    {\n      \"Team members\": \"new value\",\n      \"_id\": ObjectId(\"a_valid_object_id_hex\"),\n      \"description\": \"new value\",\n      \"projectname\": \"new value\",\n      \"remark\": \"new value\",\n      \"status\": \"new value\",\n    }\n  ]\n}\n"
         },
         "collection": {
-          "data": "job_list_Add"
+          "data": "project"
         },
         "command": {
-          "data": "UPDATE"
+          "data": "INSERT"
         },
         "count": {
           "query": {
@@ -77,7 +77,7 @@
         },
         "insert": {
           "documents": {
-            "data": ""
+            "data": "[{      \" members\": \"{{team_members.text}}\",\n     \n      \"description\": \"{{prj_description.text}}\",\n      \"projectname\": \"{{prj_name.text}}\",\n      \"remark\": \"{{remark.text}}\",\n      \"status\": \"{{status.text}}\",\n}]"
           }
         },
         "smartSubstitution": {
@@ -85,13 +85,13 @@
         },
         "updateMany": {
           "limit": {
-            "data": "ALL"
+            "data": "SINGLE"
           },
           "query": {
-            "data": "{ \"_id\": ObjectId({{joblist.selectedRow._id}}) }"
+            "data": ""
           },
           "update": {
-            "data": "{ \"$set\": {  \"Description\": \"{{job_desc.text}}\",\n      \"YearsofExperience\": \"{{Year_ex.text}}\",\n     \n      \"enddate\": \"{{End_dat.formattedDate}}\",\n      \"jobname\": \"{{job_name.text}}\",\n      \"jobtype\": \"{{job_type.text}}\",\n      \"n0ofvacancies\": \"{{job_vac.text}}\",\n      \"postdate\": \"{{Post_dat.formattedDate}}\",\n      \"skills\t\": [1, 2, 3],\n      \"startdate\": \"{{start_dat.formattedDate}}\", } }"
+            "data": ""
           }
         }
       }
@@ -99,32 +99,25 @@
     "executeOnLoad": false,
     "dynamicBindingPathList": [
       {
-        "key": "formData.updateMany.query.data"
-      },
-      {
-        "key": "formData.updateMany.update.data"
+        "key": "formData.insert.documents.data"
       }
     ],
     "isValid": true,
     "invalids": [],
     "messages": [],
     "jsonPathKeys": [
-      "End_dat.formattedDate",
-      "Post_dat.formattedDate",
-      "Year_ex.text",
-      "job_desc.text",
-      "job_name.text",
-      "job_type.text",
-      "job_vac.text",
-      "joblist.selectedRow._id",
-      "start_dat.formattedDate"
+      "prj_description.text",
+      "prj_name.text",
+      "remark.text",
+      "status.text",
+      "team_members.text"
     ],
     "userSetOnLoad": false,
     "confirmBeforeExecute": false,
     "policies": [],
     "userPermissions": []
   },
-  "id": "Job_update_list",
+  "id": "Project_insert_project",
   "deleted": false,
-  "gitSyncId": "64081d9720d355269dd6b6f0_64140583ddb1fc13e492e313"
+  "gitSyncId": "64081d9720d355269dd6b6f0_64140286ddb1fc13e492e2e0"
 }

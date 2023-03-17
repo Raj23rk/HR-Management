@@ -1261,7 +1261,7 @@
               "borderColor": "#f4f4f5",
               "isVisibleDownload": false,
               "iconSVG": "/static/media/icon.db8a9cbd2acd22a31ea91cc37ea2a46c.svg",
-              "topRow": 5,
+              "topRow": 6,
               "isSortable": true,
               "type": "TABLE_WIDGET_V2",
               "inlineEditingSaveOption": "ROW_LEVEL",
@@ -1393,13 +1393,13 @@
                 }
               ],
               "displayName": "Table",
-              "bottomRow": 27,
+              "bottomRow": 28,
               "columnWidthMap": {
                 "task": 245,
                 "step": 70,
                 "status": 230,
                 "Years_of_Experience": 193,
-                "_id": 64,
+                "_id": 62,
                 "customColumn2": 126,
                 "YearsofExperience": 234,
                 "customColumn1": 274,
@@ -1550,7 +1550,7 @@
                   "boxShadow": "{{joblist.processedTableData.map((currentRow, currentIndex) => ( 'none'))}}",
                   "customAlias": "",
                   "buttonLabel": "View",
-                  "onClick": "{{navigateTo('Add job', {}, 'SAME_WINDOW')}}"
+                  "onClick": "{{\t\tnavigateTo('Add job', {jobname });\n}}"
                 },
                 "postdate": {
                   "allowCellWrapping": false,
@@ -1850,7 +1850,7 @@
               "key": "nl11hy57g3",
               "canFreezeColumn": true,
               "isDeprecated": false,
-              "rightColumn": 62,
+              "rightColumn": 60,
               "textSize": "0.875rem",
               "widgetId": "3i8nieyoaz",
               "tableData": "{{get.data}}",
@@ -3043,7 +3043,9 @@
               "pluginType": "DB",
               "jsonPathKeys": [],
               "timeoutInMillisecond": 10000
-            },
+            }
+          ],
+          [
             {
               "id": "Job_save_queries.loadTableData",
               "name": "save_queries.loadTableData",

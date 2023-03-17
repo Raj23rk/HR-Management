@@ -206,7 +206,7 @@
                       "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
                       "maxDynamicHeight": 9000,
                       "iconAlign": "left",
-                      "defaultText": "{{get.data[0].jobname}}",
+                      "defaultText": "{{get.data.m}}",
                       "minDynamicHeight": 4
                     },
                     {

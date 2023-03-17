@@ -487,7 +487,7 @@
                       "resetFormOnClick": false,
                       "boxShadow": "none",
                       "widgetName": "Button4",
-                      "onClick": "{{job_list.run(() => closeModal('Add_jobs'), () => {})}}",
+                      "onClick": "{{job_list.run(() => get.run(), () => {})}}",
                       "buttonColor": "{{appsmith.theme.colors.primaryColor}}",
                       "dynamicPropertyPathList": [],
                       "displayName": "Button",
@@ -883,6 +883,9 @@
                         },
                         {
                           "key": "primaryColumns.fluency.computedValue"
+                        },
+                        {
+                          "key": "primaryColumns.SNO.computedValue"
                         }
                       ],
                       "needsHeightForContent": true,
@@ -921,7 +924,7 @@
                         }
                       },
                       "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
-                      "columnUpdatedAt": 1678953799126,
+                      "columnUpdatedAt": 1679040527225,
                       "defaultSelectedRowIndices": [
                         0
                       ],
@@ -932,7 +935,8 @@
                         "EditActions1",
                         "skils",
                         "yearsofexperience",
-                        "fluency"
+                        "fluency",
+                        "SNO"
                       ],
                       "dynamicPropertyPathList": [
                         {
@@ -1051,8 +1055,8 @@
                           "enableSort": true,
                           "isVisible": true,
                           "isDisabled": false,
-                          "isCellEditable": false,
-                          "isEditable": false,
+                          "isCellEditable": true,
+                          "isEditable": true,
                           "isCellVisible": true,
                           "isDerived": false,
                           "label": "skils",
@@ -1080,8 +1084,8 @@
                           "enableSort": true,
                           "isVisible": true,
                           "isDisabled": false,
-                          "isCellEditable": false,
-                          "isEditable": false,
+                          "isCellEditable": true,
+                          "isEditable": true,
                           "isCellVisible": true,
                           "isDerived": false,
                           "label": "yearsofexperience",
@@ -1109,8 +1113,8 @@
                           "enableSort": true,
                           "isVisible": true,
                           "isDisabled": false,
-                          "isCellEditable": false,
-                          "isEditable": false,
+                          "isCellEditable": true,
+                          "isEditable": true,
                           "isCellVisible": true,
                           "isDerived": false,
                           "label": "fluency",
@@ -1120,12 +1124,41 @@
                           "sticky": "",
                           "validation": {},
                           "cellBackground": ""
+                        },
+                        "SNO": {
+                          "allowCellWrapping": false,
+                          "index": 3,
+                          "width": 150,
+                          "originalId": "SNO",
+                          "id": "SNO",
+                          "alias": "SNO",
+                          "horizontalAlignment": "LEFT",
+                          "verticalAlignment": "CENTER",
+                          "columnType": "text",
+                          "textColor": "",
+                          "textSize": "0.875rem",
+                          "fontStyle": "",
+                          "enableFilter": true,
+                          "enableSort": true,
+                          "isVisible": true,
+                          "isDisabled": false,
+                          "isCellEditable": true,
+                          "isEditable": true,
+                          "isCellVisible": true,
+                          "isDerived": false,
+                          "label": "SNO",
+                          "isSaveVisible": true,
+                          "isDiscardVisible": true,
+                          "computedValue": "{{Table1.processedTableData.map((currentRow, currentIndex) => ( currentIndex + 1))}}",
+                          "sticky": "",
+                          "validation": {},
+                          "cellBackground": ""
                         }
                       },
                       "key": "jss1lfcek9",
                       "canFreezeColumn": true,
                       "isDeprecated": false,
-                      "rightColumn": 63,
+                      "rightColumn": 64,
                       "textSize": "0.875rem",
                       "widgetId": "s4wihsdfhf",
                       "allowAddNewRow": true,
@@ -1140,6 +1173,56 @@
                       "responsiveBehavior": "fill",
                       "isVisiblePagination": true,
                       "verticalAlignment": "CENTER"
+                    },
+                    {
+                      "resetFormOnClick": false,
+                      "boxShadow": "none",
+                      "widgetName": "Button6",
+                      "onClick": "{{closeModal('Add_jobs')}}",
+                      "buttonColor": "#d4d4d8",
+                      "displayName": "Button",
+                      "iconSVG": "/static/media/icon.cca026338f1c8eb6df8ba03d084c2fca.svg",
+                      "searchTags": [
+                        "click",
+                        "submit"
+                      ],
+                      "topRow": 69,
+                      "bottomRow": 73,
+                      "parentRowSpace": 10,
+                      "type": "BUTTON_WIDGET",
+                      "hideCard": false,
+                      "animateLoading": true,
+                      "parentColumnSpace": 12.41484375,
+                      "dynamicTriggerPathList": [
+                        {
+                          "key": "onClick"
+                        }
+                      ],
+                      "leftColumn": 44,
+                      "dynamicBindingPathList": [
+                        {
+                          "key": "borderRadius"
+                        }
+                      ],
+                      "text": "Close",
+                      "isDisabled": false,
+                      "key": "wvejmtzaz8",
+                      "isDeprecated": false,
+                      "rightColumn": 55,
+                      "isDefaultClickDisabled": true,
+                      "widgetId": "59pyrmr4qb",
+                      "minWidth": 120,
+                      "isVisible": true,
+                      "recaptchaType": "V3",
+                      "version": 1,
+                      "parentId": "q2ttq88j8t",
+                      "renderMode": "CANVAS",
+                      "isLoading": false,
+                      "responsiveBehavior": "hug",
+                      "disabledWhenInvalid": false,
+                      "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+                      "buttonVariant": "PRIMARY",
+                      "placement": "CENTER"
                     }
                   ],
                   "isDisabled": false,
@@ -1212,9 +1295,6 @@
                   "key": "primaryColumns.jobtype.computedValue"
                 },
                 {
-                  "key": "primaryColumns.customColumn3.computedValue"
-                },
-                {
                   "key": "primaryColumns.n0ofvacancies.computedValue"
                 },
                 {
@@ -1231,6 +1311,18 @@
                 },
                 {
                   "key": "tableData"
+                },
+                {
+                  "key": "primaryColumns.customColumn4.buttonColor"
+                },
+                {
+                  "key": "primaryColumns.customColumn4.borderRadius"
+                },
+                {
+                  "key": "primaryColumns.customColumn4.boxShadow"
+                },
+                {
+                  "key": "primaryColumns.customColumn3.computedValue"
                 }
               ],
               "needsHeightForContent": true,
@@ -1269,7 +1361,7 @@
                 }
               },
               "borderRadius": "0px",
-              "columnUpdatedAt": 1678863566526,
+              "columnUpdatedAt": 1679039919076,
               "originalBottomRow": 27,
               "defaultSelectedRowIndices": [
                 0
@@ -1286,6 +1378,7 @@
                 "n0ofvacancies",
                 "customColumn1",
                 "customColumn2",
+                "customColumn4",
                 "Description",
                 "enddate",
                 "startdate",
@@ -1307,7 +1400,7 @@
                 "status": 230,
                 "Years_of_Experience": 193,
                 "_id": 64,
-                "customColumn2": 758,
+                "customColumn2": 126,
                 "YearsofExperience": 234,
                 "customColumn1": 274,
                 "n0ofvacancies": 374,
@@ -1325,6 +1418,9 @@
                 },
                 {
                   "key": "primaryColumns.customColumn2.onClick"
+                },
+                {
+                  "key": "primaryColumns.customColumn4.onClick"
                 }
               ],
               "borderWidth": "0",
@@ -1650,7 +1746,7 @@
                   "isEditable": false,
                   "isCellVisible": false,
                   "isDerived": false,
-                  "label": "",
+                  "label": "end date",
                   "isSaveVisible": true,
                   "isDiscardVisible": true,
                   "computedValue": "{{joblist.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"enddate\"]))}}",
@@ -1673,13 +1769,13 @@
                   "fontStyle": "",
                   "enableFilter": true,
                   "enableSort": true,
-                  "isVisible": true,
+                  "isVisible": false,
                   "isDisabled": false,
                   "isCellEditable": false,
                   "isEditable": false,
                   "isCellVisible": false,
                   "isDerived": false,
-                  "label": "",
+                  "label": "start date",
                   "isSaveVisible": true,
                   "isDiscardVisible": true,
                   "computedValue": "{{joblist.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"startdate\"]))}}",
@@ -1702,7 +1798,7 @@
                   "fontStyle": "",
                   "enableFilter": true,
                   "enableSort": true,
-                  "isVisible": true,
+                  "isVisible": false,
                   "isDisabled": false,
                   "isCellEditable": false,
                   "isEditable": false,
@@ -1715,12 +1811,46 @@
                   "sticky": "",
                   "validation": {},
                   "cellBackground": ""
+                },
+                "customColumn4": {
+                  "allowCellWrapping": false,
+                  "index": 10,
+                  "width": 150,
+                  "originalId": "customColumn4",
+                  "id": "customColumn4",
+                  "alias": "Delete",
+                  "horizontalAlignment": "LEFT",
+                  "verticalAlignment": "CENTER",
+                  "columnType": "button",
+                  "textSize": "0.875rem",
+                  "enableFilter": true,
+                  "enableSort": true,
+                  "isVisible": true,
+                  "isDisabled": false,
+                  "isCellEditable": false,
+                  "isEditable": false,
+                  "isCellVisible": true,
+                  "isDerived": true,
+                  "label": "Delete",
+                  "isSaveVisible": true,
+                  "isDiscardVisible": true,
+                  "computedValue": "",
+                  "sticky": "",
+                  "validation": {},
+                  "buttonStyle": "rgb(3, 179, 101)",
+                  "labelColor": "#FFFFFF",
+                  "buttonColor": "{{joblist.processedTableData.map((currentRow, currentIndex) => ( appsmith.theme.colors.primaryColor))}}",
+                  "borderRadius": "{{joblist.processedTableData.map((currentRow, currentIndex) => ( appsmith.theme.borderRadius.appBorderRadius))}}",
+                  "boxShadow": "{{joblist.processedTableData.map((currentRow, currentIndex) => ( 'none'))}}",
+                  "customAlias": "",
+                  "buttonLabel": "Delete",
+                  "onClick": "{{delete_run.run(() => get.run(), () => {})}}"
                 }
               },
               "key": "nl11hy57g3",
               "canFreezeColumn": true,
               "isDeprecated": false,
-              "rightColumn": 64,
+              "rightColumn": 62,
               "textSize": "0.875rem",
               "widgetId": "3i8nieyoaz",
               "tableData": "{{get.data}}",
@@ -1822,6 +1952,9 @@
                         },
                         {
                           "key": "primaryColumns.fluency.computedValue"
+                        },
+                        {
+                          "key": "primaryColumns.SNO.computedValue"
                         }
                       ],
                       "needsHeightForContent": true,
@@ -1860,7 +1993,7 @@
                         }
                       },
                       "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
-                      "columnUpdatedAt": 1679039145323,
+                      "columnUpdatedAt": 1679039832377,
                       "defaultSelectedRowIndices": [
                         0
                       ],
@@ -1871,7 +2004,8 @@
                         "EditActions1",
                         "skils",
                         "yearsofexperience",
-                        "fluency"
+                        "fluency",
+                        "SNO"
                       ],
                       "dynamicPropertyPathList": [
                         {
@@ -2058,6 +2192,35 @@
                           "isSaveVisible": true,
                           "isDiscardVisible": true,
                           "computedValue": "{{edit_skils.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"fluency\"]))}}",
+                          "sticky": "",
+                          "validation": {},
+                          "cellBackground": ""
+                        },
+                        "SNO": {
+                          "allowCellWrapping": false,
+                          "index": 3,
+                          "width": 150,
+                          "originalId": "SNO",
+                          "id": "SNO",
+                          "alias": "SNO",
+                          "horizontalAlignment": "LEFT",
+                          "verticalAlignment": "CENTER",
+                          "columnType": "text",
+                          "textColor": "",
+                          "textSize": "0.875rem",
+                          "fontStyle": "",
+                          "enableFilter": true,
+                          "enableSort": true,
+                          "isVisible": true,
+                          "isDisabled": false,
+                          "isCellEditable": false,
+                          "isEditable": false,
+                          "isCellVisible": true,
+                          "isDerived": false,
+                          "label": "SNO",
+                          "isSaveVisible": true,
+                          "isDiscardVisible": true,
+                          "computedValue": "{{edit_skils.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"SNO\"]))}}",
                           "sticky": "",
                           "validation": {},
                           "cellBackground": ""
@@ -2669,7 +2832,7 @@
                       "resetFormOnClick": false,
                       "boxShadow": "none",
                       "widgetName": "Button5",
-                      "onClick": "{{update_list.run(() => closeModal('Edit_jobs'), () => {})}}",
+                      "onClick": "{{update_list.run(() => get.run(), () => {})}}",
                       "buttonColor": "{{appsmith.theme.colors.primaryColor}}",
                       "displayName": "Button",
                       "iconSVG": "/static/media/icon.cca026338f1c8eb6df8ba03d084c2fca.svg",
@@ -2689,7 +2852,7 @@
                           "key": "onClick"
                         }
                       ],
-                      "leftColumn": 26,
+                      "leftColumn": 20,
                       "dynamicBindingPathList": [
                         {
                           "key": "buttonColor"
@@ -2702,7 +2865,7 @@
                       "isDisabled": false,
                       "key": "hy3tkj7x6l",
                       "isDeprecated": false,
-                      "rightColumn": 36,
+                      "rightColumn": 30,
                       "isDefaultClickDisabled": true,
                       "widgetId": "dqxb5wlml8",
                       "minWidth": 120,
@@ -2783,6 +2946,56 @@
                       "firstDayOfWeek": 0,
                       "maxDate": "2121-12-31T18:29:00.000Z",
                       "minDynamicHeight": 4
+                    },
+                    {
+                      "resetFormOnClick": false,
+                      "boxShadow": "none",
+                      "widgetName": "Button7",
+                      "onClick": "{{closeModal('Edit_jobs')}}",
+                      "buttonColor": "#d4d4d8",
+                      "displayName": "Button",
+                      "iconSVG": "/static/media/icon.cca026338f1c8eb6df8ba03d084c2fca.svg",
+                      "searchTags": [
+                        "click",
+                        "submit"
+                      ],
+                      "topRow": 87,
+                      "bottomRow": 91,
+                      "parentRowSpace": 10,
+                      "type": "BUTTON_WIDGET",
+                      "hideCard": false,
+                      "animateLoading": true,
+                      "parentColumnSpace": 12.41484375,
+                      "dynamicTriggerPathList": [
+                        {
+                          "key": "onClick"
+                        }
+                      ],
+                      "leftColumn": 43,
+                      "dynamicBindingPathList": [
+                        {
+                          "key": "borderRadius"
+                        }
+                      ],
+                      "text": "Close",
+                      "isDisabled": false,
+                      "key": "wvejmtzaz8",
+                      "isDeprecated": false,
+                      "rightColumn": 54,
+                      "isDefaultClickDisabled": true,
+                      "widgetId": "79urj44fr7",
+                      "minWidth": 120,
+                      "isVisible": true,
+                      "recaptchaType": "V3",
+                      "version": 1,
+                      "parentId": "brwy4pk99b",
+                      "renderMode": "CANVAS",
+                      "isLoading": false,
+                      "responsiveBehavior": "hug",
+                      "disabledWhenInvalid": false,
+                      "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+                      "buttonVariant": "PRIMARY",
+                      "placement": "CENTER"
                     }
                   ],
                   "isDisabled": false,

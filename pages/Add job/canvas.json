@@ -565,6 +565,15 @@
                 },
                 {
                   "key": "primaryColumns.date_of_birth.computedValue"
+                },
+                {
+                  "key": "primaryColumns.customColumn2.buttonColor"
+                },
+                {
+                  "key": "primaryColumns.customColumn2.borderRadius"
+                },
+                {
+                  "key": "primaryColumns.customColumn2.boxShadow"
                 }
               ],
               "needsHeightForContent": true,
@@ -602,11 +611,11 @@
                 }
               },
               "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
-              "columnUpdatedAt": 1679034100165,
+              "columnUpdatedAt": 1679041075387,
               "defaultSelectedRowIndices": [
                 0
               ],
-              "widgetName": "Table1",
+              "widgetName": "applicant",
               "defaultPageSize": 0,
               "columnOrder": [
                 "customColumn1",
@@ -629,21 +638,31 @@
                 "Country",
                 "Schoolname",
                 "Pincode",
-                "date_of_birth"
+                "date_of_birth",
+                "customColumn2"
               ],
-              "dynamicPropertyPathList": [],
+              "dynamicPropertyPathList": [
+                {
+                  "key": "primaryColumns.customColumn2.onClick"
+                }
+              ],
               "displayName": "Table",
               "bottomRow": 47,
               "columnWidthMap": {
                 "task": 245,
                 "step": 70,
                 "status": 85,
-                "year_of_experience": 192
+                "year_of_experience": 192,
+                "years_of_experience": 180
               },
               "parentRowSpace": 10,
               "hideCard": false,
               "parentColumnSpace": 16.75,
-              "dynamicTriggerPathList": [],
+              "dynamicTriggerPathList": [
+                {
+                  "key": "primaryColumns.customColumn2.onClick"
+                }
+              ],
               "borderWidth": "1",
               "primaryColumns": {
                 "city": {
@@ -670,7 +689,7 @@
                   "label": "city",
                   "isSaveVisible": true,
                   "isDiscardVisible": true,
-                  "computedValue": "{{Table1.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"city\"]))}}",
+                  "computedValue": "{{applicant.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"city\"]))}}",
                   "sticky": "",
                   "validation": {},
                   "cellBackground": ""
@@ -699,7 +718,7 @@
                   "label": "mobileno",
                   "isSaveVisible": true,
                   "isDiscardVisible": true,
-                  "computedValue": "{{Table1.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"mobileno\"]))}}",
+                  "computedValue": "{{applicant.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"mobileno\"]))}}",
                   "sticky": "",
                   "validation": {},
                   "cellBackground": ""
@@ -728,7 +747,7 @@
                   "label": "Name",
                   "isSaveVisible": true,
                   "isDiscardVisible": true,
-                  "computedValue": "{{Table1.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"Name\"]))}}",
+                  "computedValue": "{{applicant.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"Name\"]))}}",
                   "sticky": "",
                   "validation": {},
                   "cellBackground": ""
@@ -757,7 +776,7 @@
                   "label": "skills",
                   "isSaveVisible": true,
                   "isDiscardVisible": true,
-                  "computedValue": "{{Table1.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"skills\"]))}}",
+                  "computedValue": "{{applicant.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"skills\"]))}}",
                   "sticky": "",
                   "validation": {},
                   "cellBackground": ""
@@ -786,7 +805,7 @@
                   "label": "year of passing",
                   "isSaveVisible": true,
                   "isDiscardVisible": true,
-                  "computedValue": "{{Table1.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"year of passing\"]))}}",
+                  "computedValue": "{{applicant.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"year of passing\"]))}}",
                   "sticky": "",
                   "validation": {},
                   "cellBackground": ""
@@ -815,7 +834,7 @@
                   "label": "12th year of passing",
                   "isSaveVisible": true,
                   "isDiscardVisible": true,
-                  "computedValue": "{{Table1.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"12th year of passing\"]))}}",
+                  "computedValue": "{{applicant.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"12th year of passing\"]))}}",
                   "sticky": "",
                   "validation": {},
                   "cellBackground": ""
@@ -844,7 +863,7 @@
                   "label": "_id",
                   "isSaveVisible": true,
                   "isDiscardVisible": true,
-                  "computedValue": "{{Table1.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"_id\"]))}}",
+                  "computedValue": "{{applicant.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"_id\"]))}}",
                   "sticky": "",
                   "validation": {},
                   "cellBackground": ""
@@ -873,7 +892,7 @@
                   "label": "state",
                   "isSaveVisible": true,
                   "isDiscardVisible": true,
-                  "computedValue": "{{Table1.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"state\"]))}}",
+                  "computedValue": "{{applicant.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"state\"]))}}",
                   "sticky": "",
                   "validation": {},
                   "cellBackground": ""
@@ -902,7 +921,7 @@
                   "label": "mark",
                   "isSaveVisible": true,
                   "isDiscardVisible": true,
-                  "computedValue": "{{Table1.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"mark\"]))}}",
+                  "computedValue": "{{applicant.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"mark\"]))}}",
                   "sticky": "",
                   "validation": {},
                   "cellBackground": ""
@@ -929,7 +948,7 @@
                   "label": "S NO",
                   "isSaveVisible": true,
                   "isDiscardVisible": true,
-                  "computedValue": "{{Table1.processedTableData.map((currentRow, currentIndex) => ( currentIndex + 1))}}",
+                  "computedValue": "{{applicant.processedTableData.map((currentRow, currentIndex) => ( currentIndex + 1))}}",
                   "sticky": "",
                   "validation": {},
                   "buttonStyle": "rgb(3, 179, 101)",
@@ -959,7 +978,7 @@
                   "label": "course name",
                   "isSaveVisible": true,
                   "isDiscardVisible": true,
-                  "computedValue": "{{Table1.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"course name\"]))}}",
+                  "computedValue": "{{applicant.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"course name\"]))}}",
                   "sticky": "",
                   "validation": {},
                   "cellBackground": ""
@@ -988,7 +1007,7 @@
                   "label": "Email",
                   "isSaveVisible": true,
                   "isDiscardVisible": true,
-                  "computedValue": "{{Table1.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"Email\"]))}}",
+                  "computedValue": "{{applicant.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"Email\"]))}}",
                   "sticky": "",
                   "validation": {},
                   "cellBackground": ""
@@ -1017,7 +1036,7 @@
                   "label": "Address",
                   "isSaveVisible": true,
                   "isDiscardVisible": true,
-                  "computedValue": "{{Table1.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"Address\"]))}}",
+                  "computedValue": "{{applicant.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"Address\"]))}}",
                   "sticky": "",
                   "validation": {},
                   "cellBackground": ""
@@ -1046,7 +1065,7 @@
                   "label": "Group name",
                   "isSaveVisible": true,
                   "isDiscardVisible": true,
-                  "computedValue": "{{Table1.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"Group name\"]))}}",
+                  "computedValue": "{{applicant.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"Group name\"]))}}",
                   "sticky": "",
                   "validation": {},
                   "cellBackground": ""
@@ -1075,7 +1094,7 @@
                   "label": "college name",
                   "isSaveVisible": true,
                   "isDiscardVisible": true,
-                  "computedValue": "{{Table1.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"college name\"]))}}",
+                  "computedValue": "{{applicant.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"college name\"]))}}",
                   "sticky": "",
                   "validation": {},
                   "cellBackground": ""
@@ -1104,7 +1123,7 @@
                   "label": "percentage /cgpa",
                   "isSaveVisible": true,
                   "isDiscardVisible": true,
-                  "computedValue": "{{Table1.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"percentage /cgpa\"]))}}",
+                  "computedValue": "{{applicant.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"percentage /cgpa\"]))}}",
                   "sticky": "",
                   "validation": {},
                   "cellBackground": ""
@@ -1133,7 +1152,7 @@
                   "label": "years of experience",
                   "isSaveVisible": true,
                   "isDiscardVisible": true,
-                  "computedValue": "{{Table1.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"years of experience\"]))}}",
+                  "computedValue": "{{applicant.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"years of experience\"]))}}",
                   "sticky": "",
                   "validation": {},
                   "cellBackground": ""
@@ -1153,7 +1172,7 @@
                   "fontStyle": "",
                   "enableFilter": true,
                   "enableSort": true,
-                  "isVisible": true,
+                  "isVisible": false,
                   "isDisabled": false,
                   "isCellEditable": false,
                   "isEditable": false,
@@ -1162,7 +1181,7 @@
                   "label": "Country",
                   "isSaveVisible": true,
                   "isDiscardVisible": true,
-                  "computedValue": "{{Table1.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"Country\"]))}}",
+                  "computedValue": "{{applicant.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"Country\"]))}}",
                   "sticky": "",
                   "validation": {},
                   "cellBackground": ""
@@ -1191,7 +1210,7 @@
                   "label": "Schoolname",
                   "isSaveVisible": true,
                   "isDiscardVisible": true,
-                  "computedValue": "{{Table1.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"Schoolname\"]))}}",
+                  "computedValue": "{{applicant.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"Schoolname\"]))}}",
                   "sticky": "",
                   "validation": {},
                   "cellBackground": ""
@@ -1220,7 +1239,7 @@
                   "label": "Pincode",
                   "isSaveVisible": true,
                   "isDiscardVisible": true,
-                  "computedValue": "{{Table1.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"Pincode\"]))}}",
+                  "computedValue": "{{applicant.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"Pincode\"]))}}",
                   "sticky": "",
                   "validation": {},
                   "cellBackground": ""
@@ -1249,10 +1268,44 @@
                   "label": "date of birth",
                   "isSaveVisible": true,
                   "isDiscardVisible": true,
-                  "computedValue": "{{Table1.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"date of birth\"]))}}",
+                  "computedValue": "{{applicant.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"date of birth\"]))}}",
                   "sticky": "",
                   "validation": {},
                   "cellBackground": ""
+                },
+                "customColumn2": {
+                  "allowCellWrapping": false,
+                  "index": 10,
+                  "width": 150,
+                  "originalId": "customColumn2",
+                  "id": "customColumn2",
+                  "alias": "Actions",
+                  "horizontalAlignment": "LEFT",
+                  "verticalAlignment": "CENTER",
+                  "columnType": "button",
+                  "textSize": "0.875rem",
+                  "enableFilter": true,
+                  "enableSort": true,
+                  "isVisible": true,
+                  "isDisabled": false,
+                  "isCellEditable": false,
+                  "isEditable": false,
+                  "isCellVisible": true,
+                  "isDerived": true,
+                  "label": "Actions",
+                  "isSaveVisible": true,
+                  "isDiscardVisible": true,
+                  "computedValue": "",
+                  "sticky": "",
+                  "validation": {},
+                  "buttonStyle": "rgb(3, 179, 101)",
+                  "labelColor": "#FFFFFF",
+                  "buttonColor": "{{applicant.processedTableData.map((currentRow, currentIndex) => ( appsmith.theme.colors.primaryColor))}}",
+                  "borderRadius": "{{applicant.processedTableData.map((currentRow, currentIndex) => ( appsmith.theme.borderRadius.appBorderRadius))}}",
+                  "boxShadow": "{{applicant.processedTableData.map((currentRow, currentIndex) => ( 'none'))}}",
+                  "customAlias": "",
+                  "buttonLabel": "View",
+                  "onClick": "{{navigateTo('Applicant Information', {}, 'SAME_WINDOW')}}"
                 }
               },
               "key": "cl0adm2psn",

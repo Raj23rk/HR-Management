@@ -13,7 +13,7 @@
           "detachFromLayout": true,
           "widgetId": "0",
           "topRow": 0,
-          "bottomRow": 680,
+          "bottomRow": 630,
           "containerStyle": "none",
           "snapRows": 63,
           "parentRowSpace": 1,
@@ -254,7 +254,7 @@
               "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
               "maxDynamicHeight": 9000,
               "iconAlign": "left",
-              "defaultText": "{{get_register.data[0].course name}}",
+              "defaultText": "{{get_register.data[0].coursename}}",
               "minDynamicHeight": 4
             },
             {
@@ -610,7 +610,7 @@
                 }
               ],
               "displayName": "Table",
-              "bottomRow": 68,
+              "bottomRow": 63,
               "columnWidthMap": {
                 "task": 245,
                 "step": 70,

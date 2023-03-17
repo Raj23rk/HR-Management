@@ -13,7 +13,7 @@
           "detachFromLayout": true,
           "widgetId": "0",
           "topRow": 0,
-          "bottomRow": 400,
+          "bottomRow": 390,
           "containerStyle": "none",
           "snapRows": 51,
           "parentRowSpace": 1,
@@ -1306,14 +1306,17 @@
                   "key": "primaryColumns.customColumn3.computedValue"
                 },
                 {
-                  "key": "tableData"
+                  "key": "primaryColumns.members.computedValue"
                 },
                 {
-                  "key": "primaryColumns.members.computedValue"
+                  "key": "primaryColumns._members.computedValue"
+                },
+                {
+                  "key": "tableData"
                 }
               ],
               "needsHeightForContent": true,
-              "leftColumn": 2,
+              "leftColumn": 0,
               "delimiter": ",",
               "defaultSelectedRowIndex": 0,
               "accentColor": "{{appsmith.theme.colors.primaryColor}}",
@@ -1347,7 +1350,7 @@
                 }
               },
               "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
-              "columnUpdatedAt": 1679039643548,
+              "columnUpdatedAt": 1679039921246,
               "defaultSelectedRowIndices": [
                 0
               ],
@@ -1362,11 +1365,12 @@
                 "remark",
                 "_id",
                 "customColumn1",
-                "customColumn2"
+                "customColumn2",
+                "_members"
               ],
               "dynamicPropertyPathList": [],
               "displayName": "Table",
-              "bottomRow": 40,
+              "bottomRow": 39,
               "columnWidthMap": {
                 "task": 245,
                 "step": 70,
@@ -1641,6 +1645,35 @@
                   "isSaveVisible": true,
                   "isDiscardVisible": true,
                   "computedValue": "{{project_list.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"members\"]))}}",
+                  "sticky": "",
+                  "validation": {},
+                  "cellBackground": ""
+                },
+                "_members": {
+                  "allowCellWrapping": false,
+                  "index": 6,
+                  "width": 150,
+                  "originalId": " members",
+                  "id": "_members",
+                  "alias": " members",
+                  "horizontalAlignment": "LEFT",
+                  "verticalAlignment": "CENTER",
+                  "columnType": "text",
+                  "textColor": "",
+                  "textSize": "0.875rem",
+                  "fontStyle": "",
+                  "enableFilter": true,
+                  "enableSort": true,
+                  "isVisible": true,
+                  "isDisabled": false,
+                  "isCellEditable": false,
+                  "isEditable": false,
+                  "isCellVisible": true,
+                  "isDerived": false,
+                  "label": " members",
+                  "isSaveVisible": true,
+                  "isDiscardVisible": true,
+                  "computedValue": "{{project_list.processedTableData.map((currentRow, currentIndex) => ( currentRow[\" members\"]))}}",
                   "sticky": "",
                   "validation": {},
                   "cellBackground": ""

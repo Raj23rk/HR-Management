@@ -14,6 +14,19 @@ export default {
 			vacant.text = '';
 		}
 		
+			if(appsmith.URL.queryParams?.StartDate){
+	dates.text = appsmith.URL.queryParams?.StartDate;
+		}
+		else{
+			dates.text = '';
+		}
+		if(appsmith.URL.queryParams?.Enddate){
+	endate.text = appsmith.URL.queryParams?.Enddate;
+		}
+		else{
+			endate.text = '';
+		}
+		
 	}
 	
 }

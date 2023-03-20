@@ -162,9 +162,6 @@
                 },
                 {
                   "key": "borderRadius"
-                },
-                {
-                  "key": "defaultText"
                 }
               ],
               "labelPosition": "Left",
@@ -192,7 +189,7 @@
               "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
               "maxDynamicHeight": 9000,
               "iconAlign": "left",
-              "defaultText": "{{get_register.data[0].Name}}",
+              "defaultText": "",
               "minDynamicHeight": 4
             },
             {
@@ -286,9 +283,6 @@
                 },
                 {
                   "key": "borderRadius"
-                },
-                {
-                  "key": "defaultText"
                 }
               ],
               "labelPosition": "Left",
@@ -316,7 +310,7 @@
               "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
               "maxDynamicHeight": 9000,
               "iconAlign": "left",
-              "defaultText": "{{get_job.data[0].jobname}}",
+              "defaultText": "",
               "minDynamicHeight": 4
             },
             {
@@ -348,9 +342,6 @@
                 },
                 {
                   "key": "borderRadius"
-                },
-                {
-                  "key": "defaultText"
                 }
               ],
               "labelPosition": "Left",
@@ -378,7 +369,7 @@
               "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
               "maxDynamicHeight": 9000,
               "iconAlign": "left",
-              "defaultText": "{{get_register.data[0].mobileno}}",
+              "defaultText": "",
               "minDynamicHeight": 4
             },
             {
@@ -517,21 +508,6 @@
                   "key": "tableData"
                 },
                 {
-                  "key": "primaryColumns.Rounds.computedValue"
-                },
-                {
-                  "key": "primaryColumns.Type.computedValue"
-                },
-                {
-                  "key": "primaryColumns.interviewerremark.computedValue"
-                },
-                {
-                  "key": "primaryColumns.Result.computedValue"
-                },
-                {
-                  "key": "primaryColumns.score.computedValue"
-                },
-                {
                   "key": "primaryColumns.EditActions1.saveButtonColor"
                 },
                 {
@@ -545,6 +521,15 @@
                 },
                 {
                   "key": "primaryColumns.customColumn1.menuColor"
+                },
+                {
+                  "key": "primaryColumns.skils.computedValue"
+                },
+                {
+                  "key": "primaryColumns.yearsofexperience.computedValue"
+                },
+                {
+                  "key": "primaryColumns.fluency.computedValue"
                 }
               ],
               "needsHeightForContent": true,
@@ -583,20 +568,18 @@
                 }
               },
               "borderRadius": "0px",
-              "columnUpdatedAt": 1678964275358,
+              "columnUpdatedAt": 1679288079681,
               "defaultSelectedRowIndices": [
                 0
               ],
               "widgetName": "rounds",
               "defaultPageSize": 0,
               "columnOrder": [
-                "Rounds",
-                "Type",
-                "interviewerremark",
                 "customColumn1",
-                "Result",
-                "score",
-                "EditActions1"
+                "EditActions1",
+                "skils",
+                "yearsofexperience",
+                "fluency"
               ],
               "dynamicPropertyPathList": [
                 {
@@ -637,156 +620,6 @@
               ],
               "borderWidth": "0",
               "primaryColumns": {
-                "Rounds": {
-                  "allowCellWrapping": false,
-                  "index": 0,
-                  "width": 150,
-                  "originalId": "Rounds",
-                  "id": "Rounds",
-                  "alias": "Rounds",
-                  "horizontalAlignment": "CENTER",
-                  "verticalAlignment": "CENTER",
-                  "columnType": "text",
-                  "textColor": "",
-                  "textSize": "0.875rem",
-                  "fontStyle": "",
-                  "enableFilter": true,
-                  "enableSort": true,
-                  "isVisible": true,
-                  "isDisabled": false,
-                  "isCellEditable": true,
-                  "isEditable": true,
-                  "isCellVisible": true,
-                  "isDerived": false,
-                  "label": "Rounds",
-                  "isSaveVisible": true,
-                  "isDiscardVisible": true,
-                  "computedValue": "{{rounds.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"Rounds\"]))}}",
-                  "sticky": "",
-                  "validation": {},
-                  "cellBackground": ""
-                },
-                "Type": {
-                  "allowCellWrapping": false,
-                  "index": 1,
-                  "width": 150,
-                  "originalId": "Type",
-                  "id": "Type",
-                  "alias": "Type",
-                  "horizontalAlignment": "LEFT",
-                  "verticalAlignment": "CENTER",
-                  "columnType": "select",
-                  "textColor": "",
-                  "textSize": "0.875rem",
-                  "fontStyle": "",
-                  "enableFilter": true,
-                  "enableSort": true,
-                  "isVisible": true,
-                  "isDisabled": false,
-                  "isCellEditable": true,
-                  "isEditable": true,
-                  "isCellVisible": true,
-                  "isDerived": false,
-                  "label": "Type",
-                  "isSaveVisible": true,
-                  "isDiscardVisible": true,
-                  "computedValue": "{{rounds.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"Type\"]))}}",
-                  "sticky": "",
-                  "validation": {},
-                  "cellBackground": "",
-                  "customAlias": "",
-                  "menuItemsSource": "STATIC",
-                  "placeholderText": "Select Type",
-                  "selectOptions": "[\n  {\n    \"label\": \"INTERVIEW\",\n    \"value\": \"INTERVIEW\",\n    \"children\": [\n      {\n        \"label\": \"Dark Blue\",\n        \"value\": \"DARK BLUE\"\n      },\n      {\n        \"label\": \"Light Blue\",\n        \"value\": \"LIGHT BLUE\"\n      }\n    ]\n  },\n  {\n    \"label\": \"EXAM\",\n    \"value\": \"EXAM\"\n  },\n  {\n    \"label\": \"HR\",\n    \"value\": \"HR\"\n  }\n]"
-                },
-                "interviewerremark": {
-                  "allowCellWrapping": false,
-                  "index": 2,
-                  "width": 150,
-                  "originalId": "interviewerremark",
-                  "id": "interviewerremark",
-                  "alias": "interviewerremark",
-                  "horizontalAlignment": "CENTER",
-                  "verticalAlignment": "CENTER",
-                  "columnType": "text",
-                  "textColor": "",
-                  "textSize": "0.875rem",
-                  "fontStyle": "",
-                  "enableFilter": true,
-                  "enableSort": true,
-                  "isVisible": true,
-                  "isDisabled": false,
-                  "isCellEditable": true,
-                  "isEditable": true,
-                  "isCellVisible": true,
-                  "isDerived": false,
-                  "label": "interviewerRemark",
-                  "isSaveVisible": true,
-                  "isDiscardVisible": true,
-                  "computedValue": "{{rounds.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"interviewerremark\"]))}}",
-                  "sticky": "",
-                  "validation": {},
-                  "cellBackground": ""
-                },
-                "Result": {
-                  "allowCellWrapping": false,
-                  "index": 3,
-                  "width": 150,
-                  "originalId": "Result",
-                  "id": "Result",
-                  "alias": "Result",
-                  "horizontalAlignment": "LEFT",
-                  "verticalAlignment": "CENTER",
-                  "columnType": "select",
-                  "textColor": "",
-                  "textSize": "0.875rem",
-                  "fontStyle": "",
-                  "enableFilter": true,
-                  "enableSort": true,
-                  "isVisible": true,
-                  "isDisabled": false,
-                  "isCellEditable": true,
-                  "isEditable": true,
-                  "isCellVisible": true,
-                  "isDerived": false,
-                  "label": "Result",
-                  "isSaveVisible": true,
-                  "isDiscardVisible": true,
-                  "computedValue": "{{rounds.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"Result\"]))}}",
-                  "sticky": "",
-                  "validation": {},
-                  "cellBackground": "",
-                  "selectOptions": "[\n  {\n    \"label\": \"Selected\",\n    \"value\": \"BLUE\",\n    \"children\": [\n      {\n        \"label\": \"Dark Blue\",\n        \"value\": \"DARK BLUE\"\n      },\n      {\n        \"label\": \"ShortList\",\n        \"value\": \"LIGHT BLUE\"\n      }\n    ]\n  },\n  {\n    \"label\": \"ShortList\",\n    \"value\": \"ShortList\"\n  },\n  {\n    \"label\": \"Rejected\",\n    \"value\": \"Rejected\"\n  }\n]"
-                },
-                "score": {
-                  "allowCellWrapping": false,
-                  "index": 4,
-                  "width": 150,
-                  "originalId": "score",
-                  "id": "score",
-                  "alias": "score",
-                  "horizontalAlignment": "CENTER",
-                  "verticalAlignment": "CENTER",
-                  "columnType": "number",
-                  "textColor": "",
-                  "textSize": "0.875rem",
-                  "fontStyle": "",
-                  "enableFilter": true,
-                  "enableSort": true,
-                  "isVisible": true,
-                  "isDisabled": false,
-                  "isCellEditable": true,
-                  "isEditable": true,
-                  "isCellVisible": true,
-                  "isDerived": false,
-                  "label": "score",
-                  "isSaveVisible": true,
-                  "isDiscardVisible": true,
-                  "computedValue": "{{rounds.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"score\"]))}}",
-                  "sticky": "",
-                  "validation": {},
-                  "cellBackground": ""
-                },
                 "EditActions1": {
                   "allowCellWrapping": false,
                   "index": 5,
@@ -870,6 +703,93 @@
                       "isDisabled": false
                     }
                   }
+                },
+                "skils": {
+                  "allowCellWrapping": false,
+                  "index": 0,
+                  "width": 150,
+                  "originalId": "skils",
+                  "id": "skils",
+                  "alias": "skils",
+                  "horizontalAlignment": "CENTER",
+                  "verticalAlignment": "CENTER",
+                  "columnType": "text",
+                  "textColor": "",
+                  "textSize": "0.875rem",
+                  "fontStyle": "",
+                  "enableFilter": true,
+                  "enableSort": true,
+                  "isVisible": true,
+                  "isDisabled": false,
+                  "isCellEditable": false,
+                  "isEditable": false,
+                  "isCellVisible": true,
+                  "isDerived": false,
+                  "label": "skils",
+                  "isSaveVisible": true,
+                  "isDiscardVisible": true,
+                  "computedValue": "{{rounds.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"skils\"]))}}",
+                  "sticky": "",
+                  "validation": {},
+                  "cellBackground": ""
+                },
+                "yearsofexperience": {
+                  "allowCellWrapping": false,
+                  "index": 1,
+                  "width": 150,
+                  "originalId": "yearsofexperience",
+                  "id": "yearsofexperience",
+                  "alias": "yearsofexperience",
+                  "horizontalAlignment": "CENTER",
+                  "verticalAlignment": "CENTER",
+                  "columnType": "number",
+                  "textColor": "",
+                  "textSize": "0.875rem",
+                  "fontStyle": "",
+                  "enableFilter": true,
+                  "enableSort": true,
+                  "isVisible": true,
+                  "isDisabled": false,
+                  "isCellEditable": false,
+                  "isEditable": false,
+                  "isCellVisible": true,
+                  "isDerived": false,
+                  "label": "yearsofexperience",
+                  "isSaveVisible": true,
+                  "isDiscardVisible": true,
+                  "computedValue": "{{rounds.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"yearsofexperience\"]))}}",
+                  "sticky": "",
+                  "validation": {},
+                  "cellBackground": ""
+                },
+                "fluency": {
+                  "allowCellWrapping": false,
+                  "index": 2,
+                  "width": 150,
+                  "originalId": "fluency",
+                  "id": "fluency",
+                  "alias": "fluency",
+                  "horizontalAlignment": "CENTER",
+                  "verticalAlignment": "CENTER",
+                  "columnType": "number",
+                  "textColor": "",
+                  "textSize": "0.875rem",
+                  "fontStyle": "",
+                  "enableFilter": true,
+                  "enableSort": true,
+                  "isVisible": true,
+                  "isDisabled": false,
+                  "isCellEditable": false,
+                  "isEditable": false,
+                  "isCellVisible": true,
+                  "isDerived": false,
+                  "label": "fluency",
+                  "isSaveVisible": true,
+                  "isDiscardVisible": true,
+                  "computedValue": "{{rounds.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"fluency\"]))}}",
+                  "sticky": "",
+                  "validation": {},
+                  "cellBackground": ""
                 }
               },
               "onRowSelected": "",
@@ -897,19 +817,14 @@
         "layoutOnLoadActions": [
           [
             {
-              "id": "Applicant Information_get_job",
-              "name": "get_job",
+              "id": "Applicant Information_emp_query.getOrderIDFromURL",
+              "name": "emp_query.getOrderIDFromURL",
+              "collectionId": "Applicant Information_emp_query",
               "confirmBeforeExecute": false,
-              "pluginType": "DB",
-              "jsonPathKeys": [],
-              "timeoutInMillisecond": 10000
-            },
-            {
-              "id": "Applicant Information_get_register",
-              "name": "get_register",
-              "confirmBeforeExecute": false,
-              "pluginType": "DB",
-              "jsonPathKeys": [],
+              "pluginType": "JS",
+              "jsonPathKeys": [
+                "async () => {\n  if (appsmith.URL.queryParams?.jobname) {\n    pro_name.text = appsmith.URL.queryParams?.jobname;\n  } else {\n    pro_name.text = '';\n  }\n  if (appsmith.URL.queryParams?.Noofvacancies) {\n    vacant.text = appsmith.URL.queryParams?.Noofvacancies;\n  } else {\n    vacant.text = '';\n  }\n  if (appsmith.URL.queryParams?.StartDate) {\n    dates.text = appsmith.URL.queryParams?.StartDate;\n  } else {\n    dates.text = '';\n  }\n  if (appsmith.URL.queryParams?.Enddate) {\n    endate.text = appsmith.URL.queryParams?.Enddate;\n  } else {\n    endate.text = '';\n  }\n}"
+              ],
               "timeoutInMillisecond": 10000
             },
             {
@@ -921,6 +836,16 @@
               "jsonPathKeys": [
                 "() => {\n  storeValue('dataTable', [{\n    Rounds: 'Round1',\n    Type: \"Interviewer\" && \"Exam\",\n    interviewerremark: 'Good',\n    Result: 'selected',\n    score: 40\n  }]);\n}"
               ],
+              "timeoutInMillisecond": 10000
+            }
+          ],
+          [
+            {
+              "id": "Applicant Information_get_register",
+              "name": "get_register",
+              "confirmBeforeExecute": false,
+              "pluginType": "DB",
+              "jsonPathKeys": [],
               "timeoutInMillisecond": 10000
             }
           ]

@@ -13,7 +13,7 @@
           "detachFromLayout": true,
           "widgetId": "0",
           "topRow": 0,
-          "bottomRow": 470,
+          "bottomRow": 480,
           "containerStyle": "none",
           "snapRows": 63,
           "parentRowSpace": 1,
@@ -579,7 +579,7 @@
                 }
               },
               "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
-              "columnUpdatedAt": 1679041075387,
+              "columnUpdatedAt": 1679288003925,
               "defaultSelectedRowIndices": [
                 0
               ],
@@ -615,7 +615,7 @@
                 }
               ],
               "displayName": "Table",
-              "bottomRow": 47,
+              "bottomRow": 48,
               "columnWidthMap": {
                 "task": 245,
                 "step": 70,
@@ -937,7 +937,7 @@
                   "fontStyle": "",
                   "enableFilter": true,
                   "enableSort": true,
-                  "isVisible": false,
+                  "isVisible": true,
                   "isDisabled": false,
                   "isCellEditable": false,
                   "isEditable": false,
@@ -1273,7 +1273,7 @@
                   "boxShadow": "{{applicant.processedTableData.map((currentRow, currentIndex) => ( 'none'))}}",
                   "customAlias": "",
                   "buttonLabel": "View",
-                  "onClick": "{{navigateTo('Applicant Information', {}, 'SAME_WINDOW')}}"
+                  "onClick": "navigateTo('Applicant Information', {Name: app;icant.triggeredRow.Name};"
                 }
               },
               "key": "cl0adm2psn",

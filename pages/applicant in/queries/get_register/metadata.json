@@ -2,7 +2,7 @@
   "pluginType": "DB",
   "pluginId": "mongo-plugin",
   "unpublishedAction": {
-    "name": "get_job",
+    "name": "get_register",
     "datasource": {
       "name": "HR PROJECT",
       "pluginId": "mongo-plugin",
@@ -13,7 +13,7 @@
       "policies": [],
       "userPermissions": []
     },
-    "pageId": "Applicant Information",
+    "pageId": "applicant in",
     "actionConfiguration": {
       "timeoutInMillisecond": 10000,
       "paginationType": "NONE",
@@ -29,10 +29,10 @@
           }
         },
         "body": {
-          "data": "{\n  \"find\": \"job_list_Add\",\n  \"filter\": {\n    \"Description\": \"This is the initial <b>content</b> of the editor\"\n  },\n  \"sort\": {\n    \"_id\": 1\n  },\n  \"limit\": 10\n}\n"
+          "data": "{\n  \"find\": \"Register\",\n  \"filter\": {\n    \"12th year of passing\": \"2018\"\n  },\n  \"sort\": {\n    \"_id\": 1\n  },\n  \"limit\": 10\n}\n"
         },
         "collection": {
-          "data": "job_list_Add"
+          "data": "Register"
         },
         "command": {
           "data": "FIND"
@@ -107,7 +107,7 @@
     "policies": [],
     "userPermissions": []
   },
-  "id": "Applicant Information_get_job",
+  "id": "applicant in_get_register",
   "deleted": false,
-  "gitSyncId": "64081d9720d355269dd6b6f0_6412ad06ddb1fc13e492d489"
+  "gitSyncId": "64081d9720d355269dd6b6f0_6412abfbc182ff53e439db1c"
 }

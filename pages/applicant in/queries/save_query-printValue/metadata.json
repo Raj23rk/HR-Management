@@ -13,8 +13,8 @@
       "policies": [],
       "userPermissions": []
     },
-    "pageId": "Applicant Information",
-    "collectionId": "Applicant Information_save_query",
+    "pageId": "applicant in",
+    "collectionId": "applicant in_save_query",
     "actionConfiguration": {
       "timeoutInMillisecond": 10000,
       "paginationType": "NONE",
@@ -37,7 +37,7 @@
     "policies": [],
     "userPermissions": []
   },
-  "id": "Applicant Information_save_query.printValue",
+  "id": "applicant in_save_query.printValue",
   "deleted": false,
   "gitSyncId": "64081d9720d355269dd6b6f0_6412bc08806a4f4f793fcb92"
 }

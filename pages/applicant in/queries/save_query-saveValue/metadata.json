@@ -2,8 +2,8 @@
   "pluginType": "JS",
   "pluginId": "js-plugin",
   "unpublishedAction": {
-    "name": "getOrderIDFromURL",
-    "fullyQualifiedName": "emp_query.getOrderIDFromURL",
+    "name": "saveValue",
+    "fullyQualifiedName": "save_query.saveValue",
     "datasource": {
       "name": "UNUSED_DATASOURCE",
       "pluginId": "js-plugin",
@@ -13,17 +13,17 @@
       "policies": [],
       "userPermissions": []
     },
-    "pageId": "Applicant Information",
-    "collectionId": "Applicant Information_emp_query",
+    "pageId": "applicant in",
+    "collectionId": "applicant in_save_query",
     "actionConfiguration": {
-      "timeoutInMillisecond": 0,
+      "timeoutInMillisecond": 10000,
       "paginationType": "NONE",
       "encodeParamsToggle": true,
       "selfReferencingDataPaths": [],
       "jsArguments": [],
       "isAsync": true
     },
-    "executeOnLoad": true,
+    "executeOnLoad": false,
     "dynamicBindingPathList": [
       {
         "key": "body"
@@ -32,12 +32,12 @@
     "isValid": true,
     "invalids": [],
     "messages": [],
-    "userSetOnLoad": true,
+    "userSetOnLoad": false,
     "confirmBeforeExecute": false,
     "policies": [],
     "userPermissions": []
   },
-  "id": "Applicant Information_emp_query.getOrderIDFromURL",
+  "id": "applicant in_save_query.saveValue",
   "deleted": false,
-  "gitSyncId": "64081d9720d355269dd6b6f0_6417e3706812646f262f4c58"
+  "gitSyncId": "64081d9720d355269dd6b6f0_6412bc08806a4f4f793fcb91"
 }

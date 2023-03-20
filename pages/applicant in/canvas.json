@@ -1,7 +1,7 @@
 {
   "unpublishedPage": {
-    "name": "Applicant Information",
-    "slug": "applicant-information",
+    "name": "applicant in",
+    "slug": "applicant-in",
     "layouts": [
       {
         "viewMode": false,
@@ -131,127 +131,6 @@
               "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
               "maxDynamicHeight": 9000,
               "fontSize": "1rem",
-              "minDynamicHeight": 4
-            },
-            {
-              "boxShadow": "none",
-              "widgetName": "Name",
-              "displayName": "Input",
-              "iconSVG": "/static/media/icon.9f505595da61a34f563dba82adeb06ec.svg",
-              "searchTags": [
-                "form",
-                "text input",
-                "number",
-                "textarea"
-              ],
-              "topRow": 7,
-              "bottomRow": 12,
-              "parentRowSpace": 10,
-              "labelWidth": "8",
-              "autoFocus": false,
-              "type": "INPUT_WIDGET_V2",
-              "hideCard": false,
-              "animateLoading": true,
-              "parentColumnSpace": 11.40625,
-              "dynamicTriggerPathList": [],
-              "resetOnSubmit": true,
-              "leftColumn": 1,
-              "dynamicBindingPathList": [
-                {
-                  "key": "accentColor"
-                },
-                {
-                  "key": "borderRadius"
-                }
-              ],
-              "labelPosition": "Left",
-              "labelStyle": "",
-              "inputType": "TEXT",
-              "isDisabled": false,
-              "key": "40re9uoe75",
-              "labelTextSize": "0.875rem",
-              "isRequired": false,
-              "isDeprecated": false,
-              "rightColumn": 30,
-              "dynamicHeight": "FIXED",
-              "widgetId": "gtr1kyose0",
-              "accentColor": "{{appsmith.theme.colors.primaryColor}}",
-              "showStepArrows": false,
-              "minWidth": 450,
-              "isVisible": true,
-              "label": "Name",
-              "version": 2,
-              "parentId": "0",
-              "labelAlignment": "left",
-              "renderMode": "CANVAS",
-              "isLoading": false,
-              "responsiveBehavior": "fill",
-              "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
-              "maxDynamicHeight": 9000,
-              "iconAlign": "left",
-              "defaultText": "",
-              "minDynamicHeight": 4
-            },
-            {
-              "boxShadow": "none",
-              "widgetName": "qualification",
-              "displayName": "Input",
-              "iconSVG": "/static/media/icon.9f505595da61a34f563dba82adeb06ec.svg",
-              "searchTags": [
-                "form",
-                "text input",
-                "number",
-                "textarea"
-              ],
-              "topRow": 17,
-              "bottomRow": 21,
-              "parentRowSpace": 10,
-              "labelWidth": "8",
-              "autoFocus": false,
-              "type": "INPUT_WIDGET_V2",
-              "hideCard": false,
-              "animateLoading": true,
-              "parentColumnSpace": 11.40625,
-              "dynamicTriggerPathList": [],
-              "resetOnSubmit": true,
-              "leftColumn": 1,
-              "dynamicBindingPathList": [
-                {
-                  "key": "accentColor"
-                },
-                {
-                  "key": "borderRadius"
-                },
-                {
-                  "key": "defaultText"
-                }
-              ],
-              "labelPosition": "Left",
-              "labelStyle": "",
-              "inputType": "TEXT",
-              "isDisabled": false,
-              "key": "40re9uoe75",
-              "labelTextSize": "0.875rem",
-              "isRequired": false,
-              "isDeprecated": false,
-              "rightColumn": 30,
-              "dynamicHeight": "FIXED",
-              "widgetId": "pdhxttk4ym",
-              "accentColor": "{{appsmith.theme.colors.primaryColor}}",
-              "showStepArrows": false,
-              "minWidth": 450,
-              "isVisible": true,
-              "label": "Qualification",
-              "version": 2,
-              "parentId": "0",
-              "labelAlignment": "left",
-              "renderMode": "CANVAS",
-              "isLoading": false,
-              "responsiveBehavior": "fill",
-              "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
-              "maxDynamicHeight": 9000,
-              "iconAlign": "left",
-              "defaultText": "{{get_register.data[0].coursename}}",
               "minDynamicHeight": 4
             },
             {
@@ -523,13 +402,19 @@
                   "key": "primaryColumns.customColumn1.menuColor"
                 },
                 {
-                  "key": "primaryColumns.skils.computedValue"
+                  "key": "primaryColumns.Rounds.computedValue"
                 },
                 {
-                  "key": "primaryColumns.yearsofexperience.computedValue"
+                  "key": "primaryColumns.Type.computedValue"
                 },
                 {
-                  "key": "primaryColumns.fluency.computedValue"
+                  "key": "primaryColumns.interviewerremark.computedValue"
+                },
+                {
+                  "key": "primaryColumns.Result.computedValue"
+                },
+                {
+                  "key": "primaryColumns.score.computedValue"
                 }
               ],
               "needsHeightForContent": true,
@@ -568,7 +453,7 @@
                 }
               },
               "borderRadius": "0px",
-              "columnUpdatedAt": 1679288079681,
+              "columnUpdatedAt": 1679288759499,
               "defaultSelectedRowIndices": [
                 0
               ],
@@ -577,9 +462,11 @@
               "columnOrder": [
                 "customColumn1",
                 "EditActions1",
-                "skils",
-                "yearsofexperience",
-                "fluency"
+                "Rounds",
+                "Type",
+                "interviewerremark",
+                "Result",
+                "score"
               ],
               "dynamicPropertyPathList": [
                 {
@@ -704,13 +591,13 @@
                     }
                   }
                 },
-                "skils": {
+                "Rounds": {
                   "allowCellWrapping": false,
                   "index": 0,
                   "width": 150,
-                  "originalId": "skils",
-                  "id": "skils",
-                  "alias": "skils",
+                  "originalId": "Rounds",
+                  "id": "Rounds",
+                  "alias": "Rounds",
                   "horizontalAlignment": "CENTER",
                   "verticalAlignment": "CENTER",
                   "columnType": "text",
@@ -725,24 +612,24 @@
                   "isEditable": false,
                   "isCellVisible": true,
                   "isDerived": false,
-                  "label": "skils",
+                  "label": "Rounds",
                   "isSaveVisible": true,
                   "isDiscardVisible": true,
-                  "computedValue": "{{rounds.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"skils\"]))}}",
+                  "computedValue": "{{rounds.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"Rounds\"]))}}",
                   "sticky": "",
                   "validation": {},
                   "cellBackground": ""
                 },
-                "yearsofexperience": {
+                "Type": {
                   "allowCellWrapping": false,
                   "index": 1,
                   "width": 150,
-                  "originalId": "yearsofexperience",
-                  "id": "yearsofexperience",
-                  "alias": "yearsofexperience",
+                  "originalId": "Type",
+                  "id": "Type",
+                  "alias": "Type",
                   "horizontalAlignment": "CENTER",
                   "verticalAlignment": "CENTER",
-                  "columnType": "number",
+                  "columnType": "text",
                   "textColor": "",
                   "textSize": "0.875rem",
                   "fontStyle": "",
@@ -754,21 +641,79 @@
                   "isEditable": false,
                   "isCellVisible": true,
                   "isDerived": false,
-                  "label": "yearsofexperience",
+                  "label": "Type",
                   "isSaveVisible": true,
                   "isDiscardVisible": true,
-                  "computedValue": "{{rounds.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"yearsofexperience\"]))}}",
+                  "computedValue": "{{rounds.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"Type\"]))}}",
                   "sticky": "",
                   "validation": {},
                   "cellBackground": ""
                 },
-                "fluency": {
+                "interviewerremark": {
                   "allowCellWrapping": false,
                   "index": 2,
                   "width": 150,
-                  "originalId": "fluency",
-                  "id": "fluency",
-                  "alias": "fluency",
+                  "originalId": "interviewerremark",
+                  "id": "interviewerremark",
+                  "alias": "interviewerremark",
+                  "horizontalAlignment": "CENTER",
+                  "verticalAlignment": "CENTER",
+                  "columnType": "text",
+                  "textColor": "",
+                  "textSize": "0.875rem",
+                  "fontStyle": "",
+                  "enableFilter": true,
+                  "enableSort": true,
+                  "isVisible": true,
+                  "isDisabled": false,
+                  "isCellEditable": false,
+                  "isEditable": false,
+                  "isCellVisible": true,
+                  "isDerived": false,
+                  "label": "interviewerremark",
+                  "isSaveVisible": true,
+                  "isDiscardVisible": true,
+                  "computedValue": "{{rounds.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"interviewerremark\"]))}}",
+                  "sticky": "",
+                  "validation": {},
+                  "cellBackground": ""
+                },
+                "Result": {
+                  "allowCellWrapping": false,
+                  "index": 3,
+                  "width": 150,
+                  "originalId": "Result",
+                  "id": "Result",
+                  "alias": "Result",
+                  "horizontalAlignment": "CENTER",
+                  "verticalAlignment": "CENTER",
+                  "columnType": "text",
+                  "textColor": "",
+                  "textSize": "0.875rem",
+                  "fontStyle": "",
+                  "enableFilter": true,
+                  "enableSort": true,
+                  "isVisible": true,
+                  "isDisabled": false,
+                  "isCellEditable": false,
+                  "isEditable": false,
+                  "isCellVisible": true,
+                  "isDerived": false,
+                  "label": "Result",
+                  "isSaveVisible": true,
+                  "isDiscardVisible": true,
+                  "computedValue": "{{rounds.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"Result\"]))}}",
+                  "sticky": "",
+                  "validation": {},
+                  "cellBackground": ""
+                },
+                "score": {
+                  "allowCellWrapping": false,
+                  "index": 4,
+                  "width": 150,
+                  "originalId": "score",
+                  "id": "score",
+                  "alias": "score",
                   "horizontalAlignment": "CENTER",
                   "verticalAlignment": "CENTER",
                   "columnType": "number",
@@ -783,10 +728,10 @@
                   "isEditable": false,
                   "isCellVisible": true,
                   "isDerived": false,
-                  "label": "fluency",
+                  "label": "score",
                   "isSaveVisible": true,
                   "isDiscardVisible": true,
-                  "computedValue": "{{rounds.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"fluency\"]))}}",
+                  "computedValue": "{{rounds.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"score\"]))}}",
                   "sticky": "",
                   "validation": {},
                   "cellBackground": ""
@@ -811,26 +756,144 @@
               "responsiveBehavior": "fill",
               "isVisiblePagination": true,
               "verticalAlignment": "CENTER"
+            },
+            {
+              "boxShadow": "none",
+              "widgetName": "app_name",
+              "displayName": "Input",
+              "iconSVG": "/static/media/icon.9f505595da61a34f563dba82adeb06ec.svg",
+              "searchTags": [
+                "form",
+                "text input",
+                "number",
+                "textarea"
+              ],
+              "topRow": 7,
+              "bottomRow": 11,
+              "parentRowSpace": 10,
+              "labelWidth": "8",
+              "autoFocus": false,
+              "type": "INPUT_WIDGET_V2",
+              "hideCard": false,
+              "animateLoading": true,
+              "parentColumnSpace": 13.765625,
+              "dynamicTriggerPathList": [],
+              "resetOnSubmit": true,
+              "leftColumn": 1,
+              "dynamicBindingPathList": [
+                {
+                  "key": "accentColor"
+                },
+                {
+                  "key": "borderRadius"
+                }
+              ],
+              "labelPosition": "Left",
+              "labelStyle": "",
+              "inputType": "TEXT",
+              "isDisabled": false,
+              "key": "yvg3u107x4",
+              "labelTextSize": "0.875rem",
+              "isRequired": false,
+              "isDeprecated": false,
+              "rightColumn": 28,
+              "dynamicHeight": "FIXED",
+              "widgetId": "2rurujdz24",
+              "accentColor": "{{appsmith.theme.colors.primaryColor}}",
+              "showStepArrows": false,
+              "minWidth": 450,
+              "isVisible": true,
+              "label": "Name",
+              "version": 2,
+              "parentId": "0",
+              "labelAlignment": "left",
+              "renderMode": "CANVAS",
+              "isLoading": false,
+              "responsiveBehavior": "fill",
+              "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+              "maxDynamicHeight": 9000,
+              "iconAlign": "left",
+              "defaultText": "",
+              "minDynamicHeight": 4
+            },
+            {
+              "boxShadow": "none",
+              "widgetName": "skil",
+              "displayName": "Input",
+              "iconSVG": "/static/media/icon.9f505595da61a34f563dba82adeb06ec.svg",
+              "searchTags": [
+                "form",
+                "text input",
+                "number",
+                "textarea"
+              ],
+              "topRow": 17,
+              "bottomRow": 21,
+              "parentRowSpace": 10,
+              "labelWidth": "8",
+              "autoFocus": false,
+              "type": "INPUT_WIDGET_V2",
+              "hideCard": false,
+              "animateLoading": true,
+              "parentColumnSpace": 11.40625,
+              "dynamicTriggerPathList": [],
+              "resetOnSubmit": true,
+              "leftColumn": 1,
+              "dynamicBindingPathList": [
+                {
+                  "key": "accentColor"
+                },
+                {
+                  "key": "borderRadius"
+                }
+              ],
+              "labelPosition": "Left",
+              "labelStyle": "",
+              "inputType": "TEXT",
+              "isDisabled": false,
+              "key": "9qxmclc8zv",
+              "labelTextSize": "0.875rem",
+              "isRequired": false,
+              "isDeprecated": false,
+              "rightColumn": 28,
+              "dynamicHeight": "FIXED",
+              "widgetId": "vxwjwgi7pp",
+              "accentColor": "{{appsmith.theme.colors.primaryColor}}",
+              "showStepArrows": false,
+              "minWidth": 450,
+              "isVisible": true,
+              "label": "Skills",
+              "version": 2,
+              "parentId": "0",
+              "labelAlignment": "left",
+              "renderMode": "CANVAS",
+              "isLoading": false,
+              "responsiveBehavior": "fill",
+              "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+              "maxDynamicHeight": 9000,
+              "iconAlign": "left",
+              "defaultText": "",
+              "minDynamicHeight": 4
             }
           ]
         },
         "layoutOnLoadActions": [
           [
             {
-              "id": "Applicant Information_emp_query.getOrderIDFromURL",
+              "id": "applicant in_emp_query.getOrderIDFromURL",
               "name": "emp_query.getOrderIDFromURL",
-              "collectionId": "Applicant Information_emp_query",
+              "collectionId": "applicant in_emp_query",
               "confirmBeforeExecute": false,
               "pluginType": "JS",
               "jsonPathKeys": [
-                "async () => {\n  if (appsmith.URL.queryParams?.jobname) {\n    pro_name.text = appsmith.URL.queryParams?.jobname;\n  } else {\n    pro_name.text = '';\n  }\n  if (appsmith.URL.queryParams?.Noofvacancies) {\n    vacant.text = appsmith.URL.queryParams?.Noofvacancies;\n  } else {\n    vacant.text = '';\n  }\n  if (appsmith.URL.queryParams?.StartDate) {\n    dates.text = appsmith.URL.queryParams?.StartDate;\n  } else {\n    dates.text = '';\n  }\n  if (appsmith.URL.queryParams?.Enddate) {\n    endate.text = appsmith.URL.queryParams?.Enddate;\n  } else {\n    endate.text = '';\n  }\n}"
+                "async () => {\n  if (appsmith.URL.queryParams?.Name) {\n    app_name.inputText = appsmith.URL.queryParams?.Name;\n  } else {\n    app_name.inputText = '';\n  }\n  if (appsmith.URL.queryParams?.skills) {\n    skil.inputText = appsmith.URL.queryParams?.skills;\n  } else {\n    skil.inputText = '';\n  }\n}"
               ],
               "timeoutInMillisecond": 10000
             },
             {
-              "id": "Applicant Information_save_query.loadTableData",
+              "id": "applicant in_save_query.loadTableData",
               "name": "save_query.loadTableData",
-              "collectionId": "Applicant Information_save_query",
+              "collectionId": "applicant in_save_query",
               "confirmBeforeExecute": false,
               "pluginType": "JS",
               "jsonPathKeys": [
@@ -838,21 +901,11 @@
               ],
               "timeoutInMillisecond": 10000
             }
-          ],
-          [
-            {
-              "id": "Applicant Information_get_register",
-              "name": "get_register",
-              "confirmBeforeExecute": false,
-              "pluginType": "DB",
-              "jsonPathKeys": [],
-              "timeoutInMillisecond": 10000
-            }
           ]
         ],
         "layoutOnLoadActionErrors": [],
         "validOnPageLoadActions": true,
-        "id": "Applicant Information",
+        "id": "applicant in",
         "deleted": false,
         "policies": [],
         "userPermissions": []

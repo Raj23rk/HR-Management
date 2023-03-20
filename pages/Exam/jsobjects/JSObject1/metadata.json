@@ -1,7 +1,7 @@
 {
   "unpublishedCollection": {
-    "name": "save_query",
-    "pageId": "Applicant Information",
+    "name": "JSObject1",
+    "pageId": "Exam",
     "pluginId": "js-plugin",
     "pluginType": "JS",
     "actions": [],
@@ -9,7 +9,7 @@
     "variables": [],
     "userPermissions": []
   },
-  "id": "Applicant Information_save_query",
+  "id": "Exam_JSObject1",
   "deleted": false,
-  "gitSyncId": "64081d9720d355269dd6b6f0_6412bbcf806a4f4f793fcb8b"
+  "gitSyncId": "64081d9720d355269dd6b6f0_6417f5a071d5213f118d46c9"
 }

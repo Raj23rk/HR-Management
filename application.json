@@ -9,7 +9,7 @@
       "isDefault": false
     },
     {
-      "id": "Applicant Information",
+      "id": "applicant in",
       "isDefault": false
     },
     {
@@ -18,6 +18,10 @@
     },
     {
       "id": "Project",
+      "isDefault": false
+    },
+    {
+      "id": "Exam",
       "isDefault": false
     }
   ],

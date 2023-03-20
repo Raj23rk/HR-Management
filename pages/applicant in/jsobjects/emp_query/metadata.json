@@ -1,7 +1,7 @@
 {
   "unpublishedCollection": {
     "name": "emp_query",
-    "pageId": "Applicant Information",
+    "pageId": "applicant in",
     "pluginId": "js-plugin",
     "pluginType": "JS",
     "actions": [],
@@ -9,7 +9,7 @@
     "variables": [],
     "userPermissions": []
   },
-  "id": "Applicant Information_emp_query",
+  "id": "applicant in_emp_query",
   "deleted": false,
   "gitSyncId": "64081d9720d355269dd6b6f0_6417e35a6812646f262f4c56"
 }

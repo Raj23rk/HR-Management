@@ -193,7 +193,7 @@
                       "isLoading": false,
                       "originalTopRow": 1,
                       "maxDynamicHeight": 9000,
-                      "originalBottomRow": 11,
+                      "originalBottomRow": 5,
                       "minDynamicHeight": 4
                     },
                     {
@@ -943,7 +943,7 @@
                   "isEditable": false,
                   "isCellVisible": true,
                   "isDerived": false,
-                  "label": "course name",
+                  "label": "coursename",
                   "isSaveVisible": true,
                   "isDiscardVisible": true,
                   "computedValue": "{{applicant.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"course name\"]))}}",
@@ -1273,7 +1273,7 @@
                   "boxShadow": "{{applicant.processedTableData.map((currentRow, currentIndex) => ( 'none'))}}",
                   "customAlias": "",
                   "buttonLabel": "View",
-                  "onClick": "navigateTo('Applicant Information', {Name: app;icant.triggeredRow.Name};"
+                  "onClick": "{{\t\tnavigateTo('applicant in', {Name: applicant.triggeredRow.Name,\n\t\t\t\t\t\tskills:applicant.triggeredRow.skills\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t });\n}}"
                 }
               },
               "key": "cl0adm2psn",

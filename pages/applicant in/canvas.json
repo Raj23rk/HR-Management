@@ -73,22 +73,7 @@
                   "key": "primaryColumns.customColumn1.boxShadow"
                 },
                 {
-                  "key": "primaryColumns.EditActions1.saveButtonColor"
-                },
-                {
-                  "key": "primaryColumns.EditActions1.saveBorderRadius"
-                },
-                {
-                  "key": "primaryColumns.EditActions1.discardBorderRadius"
-                },
-                {
-                  "key": "primaryColumns.EditActions1.isDiscardDisabled"
-                },
-                {
                   "key": "primaryColumns.customColumn2.computedValue"
-                },
-                {
-                  "key": "primaryColumns.SNO.computedValue"
                 }
               ],
               "needsHeightForContent": true,
@@ -127,7 +112,7 @@
                 }
               },
               "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
-              "columnUpdatedAt": 1679312335624,
+              "columnUpdatedAt": 1679312566946,
               "originalBottomRow": 30,
               "defaultSelectedRowIndices": [
                 0
@@ -141,21 +126,9 @@
                 "customColumn1",
                 "interviewerremark",
                 "Result",
-                "score",
-                "EditActions1",
-                "SNO"
+                "score"
               ],
-              "dynamicPropertyPathList": [
-                {
-                  "key": "primaryColumns.EditActions1.isDiscardDisabled"
-                },
-                {
-                  "key": "primaryColumns.EditActions1.isSaveDisabled"
-                },
-                {
-                  "key": "primaryColumns.EditActions1.onSave"
-                }
-              ],
+              "dynamicPropertyPathList": [],
               "displayName": "Table",
               "bottomRow": 56,
               "columnWidthMap": {
@@ -173,9 +146,6 @@
               "dynamicTriggerPathList": [
                 {
                   "key": "onAddNewRowSave"
-                },
-                {
-                  "key": "primaryColumns.EditActions1.onSave"
                 }
               ],
               "borderWidth": "1",
@@ -197,8 +167,8 @@
                   "enableSort": true,
                   "isVisible": true,
                   "isDisabled": false,
-                  "isCellEditable": true,
-                  "isEditable": true,
+                  "isCellEditable": false,
+                  "isEditable": false,
                   "isCellVisible": true,
                   "isDerived": false,
                   "label": "Round",
@@ -226,8 +196,8 @@
                   "enableSort": true,
                   "isVisible": true,
                   "isDisabled": false,
-                  "isCellEditable": true,
-                  "isEditable": true,
+                  "isCellEditable": false,
+                  "isEditable": false,
                   "isCellVisible": true,
                   "isDerived": false,
                   "label": "Type",
@@ -256,8 +226,8 @@
                   "enableSort": true,
                   "isVisible": true,
                   "isDisabled": false,
-                  "isCellEditable": true,
-                  "isEditable": true,
+                  "isCellEditable": false,
+                  "isEditable": false,
                   "isCellVisible": true,
                   "isDerived": false,
                   "label": "interviewerremark",
@@ -285,8 +255,8 @@
                   "enableSort": true,
                   "isVisible": true,
                   "isDisabled": false,
-                  "isCellEditable": true,
-                  "isEditable": true,
+                  "isCellEditable": false,
+                  "isEditable": false,
                   "isCellVisible": true,
                   "isDerived": false,
                   "label": "Result",
@@ -315,8 +285,8 @@
                   "enableSort": true,
                   "isVisible": true,
                   "isDisabled": false,
-                  "isCellEditable": true,
-                  "isEditable": true,
+                  "isCellEditable": false,
+                  "isEditable": false,
                   "isCellVisible": true,
                   "isDerived": false,
                   "label": "score",
@@ -360,45 +330,6 @@
                   "customAlias": "",
                   "buttonLabel": "Select"
                 },
-                "EditActions1": {
-                  "allowCellWrapping": false,
-                  "index": 6,
-                  "width": 150,
-                  "originalId": "EditActions1",
-                  "id": "EditActions1",
-                  "alias": "EditActions1",
-                  "horizontalAlignment": "LEFT",
-                  "verticalAlignment": "CENTER",
-                  "columnType": "editActions",
-                  "textSize": "0.875rem",
-                  "enableFilter": true,
-                  "enableSort": true,
-                  "isVisible": true,
-                  "isDisabled": false,
-                  "isCellEditable": false,
-                  "isEditable": false,
-                  "isCellVisible": true,
-                  "isDerived": true,
-                  "label": "Save / Discard",
-                  "isSaveVisible": true,
-                  "isDiscardVisible": true,
-                  "computedValue": "",
-                  "sticky": "right",
-                  "validation": {},
-                  "buttonStyle": "rgb(3, 179, 101)",
-                  "saveIconAlign": "left",
-                  "discardIconAlign": "left",
-                  "saveActionLabel": "Save",
-                  "discardActionLabel": "Discard",
-                  "saveButtonColor": "{{ins.processedTableData.map((currentRow, currentIndex) => ( appsmith.theme.colors.primaryColor))}}",
-                  "discardButtonColor": "#F22B2B",
-                  "saveBorderRadius": "{{ins.processedTableData.map((currentRow, currentIndex) => ( appsmith.theme.borderRadius.appBorderRadius))}}",
-                  "discardBorderRadius": "{{ins.processedTableData.map((currentRow, currentIndex) => ( appsmith.theme.borderRadius.appBorderRadius))}}",
-                  "discardButtonVariant": "TERTIARY",
-                  "isSaveDisabled": "false",
-                  "isDiscardDisabled": "{{ins.processedTableData.map((currentRow, currentIndex) => ( !ins.updatedRowIndices.includes(currentIndex)))}}",
-                  "onSave": "{{tab.editValue(ins.triggeredRowIndex, ins.triggeredRow)}}"
-                },
                 "customColumn2": {
                   "allowCellWrapping": false,
                   "index": 7,
@@ -426,35 +357,6 @@
                   "validation": {},
                   "buttonStyle": "rgb(3, 179, 101)",
                   "labelColor": "#FFFFFF"
-                },
-                "SNO": {
-                  "allowCellWrapping": false,
-                  "index": 5,
-                  "width": 150,
-                  "originalId": "SNO",
-                  "id": "SNO",
-                  "alias": "SNO",
-                  "horizontalAlignment": "LEFT",
-                  "verticalAlignment": "CENTER",
-                  "columnType": "number",
-                  "textColor": "",
-                  "textSize": "0.875rem",
-                  "fontStyle": "",
-                  "enableFilter": true,
-                  "enableSort": true,
-                  "isVisible": true,
-                  "isDisabled": false,
-                  "isCellEditable": false,
-                  "isEditable": false,
-                  "isCellVisible": true,
-                  "isDerived": false,
-                  "label": "SNO",
-                  "isSaveVisible": true,
-                  "isDiscardVisible": true,
-                  "computedValue": "{{ins.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"SNO\"]))}}",
-                  "sticky": "",
-                  "validation": {},
-                  "cellBackground": ""
                 }
               },
               "key": "mvg42dd8g8",

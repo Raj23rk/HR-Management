@@ -179,7 +179,7 @@
               "showStepArrows": false,
               "minWidth": 450,
               "isVisible": true,
-              "label": "Job Title",
+              "label": "Email",
               "version": 2,
               "parentId": "0",
               "labelAlignment": "left",

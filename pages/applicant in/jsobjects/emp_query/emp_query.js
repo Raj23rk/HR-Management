@@ -21,6 +21,9 @@ export default {
 		else{
 			job_email.inputText = '';
 		}
+		
+		
+		
 	}
 	
 }

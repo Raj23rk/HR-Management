@@ -1273,7 +1273,7 @@
                   "boxShadow": "{{applicant.processedTableData.map((currentRow, currentIndex) => ( 'none'))}}",
                   "customAlias": "",
                   "buttonLabel": "View",
-                  "onClick": "{{\t\tnavigateTo('applicant in', {Name: applicant.triggeredRow.Name,\n\t\t\t\t\t\tskills:applicant.triggeredRow.skills,\nEmail:applicant.triggeredRow.Email\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t });\n}}"
+                  "onClick": "{{\t\tnavigateTo('applicant in', {Name: applicant.triggeredRow.Name,\n\t\t\t\t\t\tskills:applicant.triggeredRow.skills,\nEmail:applicant.triggeredRow.Email,\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\tmobileno:applicant.triggeredRow.mobileno\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t });\n}}"
                 }
               },
               "key": "cl0adm2psn",

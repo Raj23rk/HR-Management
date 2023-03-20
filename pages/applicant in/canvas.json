@@ -26,7 +26,7 @@
           "leftColumn": 0,
           "children": [
             {
-              "boxShadow": "{{appsmith.theme.boxShadow.appBoxShadow}}",
+              "boxShadow": "none",
               "borderColor": "#E0DEDE",
               "isVisibleDownload": true,
               "iconSVG": "/static/media/icon.db8a9cbd2acd22a31ea91cc37ea2a46c.svg",
@@ -38,12 +38,6 @@
               "dynamicBindingPathList": [
                 {
                   "key": "accentColor"
-                },
-                {
-                  "key": "borderRadius"
-                },
-                {
-                  "key": "boxShadow"
                 },
                 {
                   "key": "tableData"
@@ -64,19 +58,13 @@
                   "key": "primaryColumns.customColumn1.computedValue"
                 },
                 {
-                  "key": "primaryColumns.Rounds.computedValue"
+                  "key": "primaryColumns.skils.computedValue"
                 },
                 {
-                  "key": "primaryColumns.Type.computedValue"
+                  "key": "primaryColumns.yearsofexperience.computedValue"
                 },
                 {
-                  "key": "primaryColumns.interviewerremark.computedValue"
-                },
-                {
-                  "key": "primaryColumns.Result.computedValue"
-                },
-                {
-                  "key": "primaryColumns.score.computedValue"
+                  "key": "primaryColumns.fluency.computedValue"
                 }
               ],
               "needsHeightForContent": true,
@@ -114,21 +102,20 @@
                   "discardBorderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}"
                 }
               },
-              "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
-              "columnUpdatedAt": 1679296889287,
+              "borderRadius": "0px",
+              "columnUpdatedAt": 1679297758425,
+              "originalBottomRow": 61,
               "defaultSelectedRowIndices": [
                 0
               ],
-              "widgetName": "Table1",
+              "widgetName": "rounds",
               "defaultPageSize": 0,
               "columnOrder": [
                 "customColumn1",
-                "Rounds",
-                "Type",
-                "interviewerremark",
                 "EditActions1",
-                "Result",
-                "score"
+                "skils",
+                "yearsofexperience",
+                "fluency"
               ],
               "dynamicPropertyPathList": [
                 {
@@ -163,7 +150,7 @@
                   "key": "primaryColumns.EditActions1.onSave"
                 }
               ],
-              "borderWidth": "1",
+              "borderWidth": "0",
               "primaryColumns": {
                 "EditActions1": {
                   "allowCellWrapping": false,
@@ -172,7 +159,7 @@
                   "originalId": "EditActions1",
                   "id": "EditActions1",
                   "alias": "EditActions1",
-                  "horizontalAlignment": "LEFT",
+                  "horizontalAlignment": "CENTER",
                   "verticalAlignment": "CENTER",
                   "columnType": "editActions",
                   "textSize": "0.875rem",
@@ -195,14 +182,14 @@
                   "discardIconAlign": "left",
                   "saveActionLabel": "Save",
                   "discardActionLabel": "Discard",
-                  "saveButtonColor": "{{Table1.processedTableData.map((currentRow, currentIndex) => ( appsmith.theme.colors.primaryColor))}}",
+                  "saveButtonColor": "{{rounds.processedTableData.map((currentRow, currentIndex) => ( appsmith.theme.colors.primaryColor))}}",
                   "discardButtonColor": "#F22B2B",
-                  "saveBorderRadius": "{{Table1.processedTableData.map((currentRow, currentIndex) => ( appsmith.theme.borderRadius.appBorderRadius))}}",
-                  "discardBorderRadius": "{{Table1.processedTableData.map((currentRow, currentIndex) => ( appsmith.theme.borderRadius.appBorderRadius))}}",
+                  "saveBorderRadius": "{{rounds.processedTableData.map((currentRow, currentIndex) => ( appsmith.theme.borderRadius.appBorderRadius))}}",
+                  "discardBorderRadius": "{{rounds.processedTableData.map((currentRow, currentIndex) => ( appsmith.theme.borderRadius.appBorderRadius))}}",
                   "discardButtonVariant": "TERTIARY",
                   "isSaveDisabled": "false",
-                  "isDiscardDisabled": "{{Table1.processedTableData.map((currentRow, currentIndex) => ( !Table1.updatedRowIndices.includes(currentIndex)))}}",
-                  "onSave": "{{save_queries.editValue(Table1.triggeredRowIndex, Table1.triggeredRow)}}"
+                  "isDiscardDisabled": "{{rounds.processedTableData.map((currentRow, currentIndex) => ( !rounds.updatedRowIndices.includes(currentIndex)))}}",
+                  "onSave": "{{save_queries.editValue(rounds.triggeredRowIndex, rounds.triggeredRow)}}"
                 },
                 "customColumn1": {
                   "allowCellWrapping": false,
@@ -211,7 +198,7 @@
                   "originalId": "customColumn1",
                   "id": "customColumn1",
                   "alias": "SNO",
-                  "horizontalAlignment": "RIGHT",
+                  "horizontalAlignment": "CENTER",
                   "verticalAlignment": "CENTER",
                   "columnType": "number",
                   "textSize": "0.875rem",
@@ -226,20 +213,20 @@
                   "label": "SNO",
                   "isSaveVisible": true,
                   "isDiscardVisible": true,
-                  "computedValue": "{{Table1.processedTableData.map((currentRow, currentIndex) => ( currentIndex + 1))}}",
+                  "computedValue": "{{rounds.processedTableData.map((currentRow, currentIndex) => ( currentIndex + 1))}}",
                   "sticky": "",
                   "validation": {},
                   "buttonStyle": "rgb(3, 179, 101)",
                   "labelColor": "#FFFFFF"
                 },
-                "Rounds": {
+                "skils": {
                   "allowCellWrapping": false,
                   "index": 0,
                   "width": 150,
-                  "originalId": "Rounds",
-                  "id": "Rounds",
-                  "alias": "Rounds",
-                  "horizontalAlignment": "LEFT",
+                  "originalId": "skils",
+                  "id": "skils",
+                  "alias": "skils",
+                  "horizontalAlignment": "CENTER",
                   "verticalAlignment": "CENTER",
                   "columnType": "text",
                   "textColor": "",
@@ -253,109 +240,22 @@
                   "isEditable": false,
                   "isCellVisible": true,
                   "isDerived": false,
-                  "label": "Rounds",
+                  "label": "skils",
                   "isSaveVisible": true,
                   "isDiscardVisible": true,
-                  "computedValue": "{{Table1.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"Rounds\"]))}}",
+                  "computedValue": "{{rounds.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"skils\"]))}}",
                   "sticky": "",
                   "validation": {},
                   "cellBackground": ""
                 },
-                "Type": {
+                "yearsofexperience": {
                   "allowCellWrapping": false,
                   "index": 1,
                   "width": 150,
-                  "originalId": "Type",
-                  "id": "Type",
-                  "alias": "Type",
-                  "horizontalAlignment": "LEFT",
-                  "verticalAlignment": "CENTER",
-                  "columnType": "text",
-                  "textColor": "",
-                  "textSize": "0.875rem",
-                  "fontStyle": "",
-                  "enableFilter": true,
-                  "enableSort": true,
-                  "isVisible": true,
-                  "isDisabled": false,
-                  "isCellEditable": false,
-                  "isEditable": false,
-                  "isCellVisible": true,
-                  "isDerived": false,
-                  "label": "Type",
-                  "isSaveVisible": true,
-                  "isDiscardVisible": true,
-                  "computedValue": "{{Table1.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"Type\"]))}}",
-                  "sticky": "",
-                  "validation": {},
-                  "cellBackground": ""
-                },
-                "interviewerremark": {
-                  "allowCellWrapping": false,
-                  "index": 2,
-                  "width": 150,
-                  "originalId": "interviewerremark",
-                  "id": "interviewerremark",
-                  "alias": "interviewerremark",
-                  "horizontalAlignment": "LEFT",
-                  "verticalAlignment": "CENTER",
-                  "columnType": "text",
-                  "textColor": "",
-                  "textSize": "0.875rem",
-                  "fontStyle": "",
-                  "enableFilter": true,
-                  "enableSort": true,
-                  "isVisible": true,
-                  "isDisabled": false,
-                  "isCellEditable": false,
-                  "isEditable": false,
-                  "isCellVisible": true,
-                  "isDerived": false,
-                  "label": "interviewerremark",
-                  "isSaveVisible": true,
-                  "isDiscardVisible": true,
-                  "computedValue": "{{Table1.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"interviewerremark\"]))}}",
-                  "sticky": "",
-                  "validation": {},
-                  "cellBackground": ""
-                },
-                "Result": {
-                  "allowCellWrapping": false,
-                  "index": 3,
-                  "width": 150,
-                  "originalId": "Result",
-                  "id": "Result",
-                  "alias": "Result",
-                  "horizontalAlignment": "LEFT",
-                  "verticalAlignment": "CENTER",
-                  "columnType": "text",
-                  "textColor": "",
-                  "textSize": "0.875rem",
-                  "fontStyle": "",
-                  "enableFilter": true,
-                  "enableSort": true,
-                  "isVisible": true,
-                  "isDisabled": false,
-                  "isCellEditable": false,
-                  "isEditable": false,
-                  "isCellVisible": true,
-                  "isDerived": false,
-                  "label": "Result",
-                  "isSaveVisible": true,
-                  "isDiscardVisible": true,
-                  "computedValue": "{{Table1.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"Result\"]))}}",
-                  "sticky": "",
-                  "validation": {},
-                  "cellBackground": ""
-                },
-                "score": {
-                  "allowCellWrapping": false,
-                  "index": 4,
-                  "width": 150,
-                  "originalId": "score",
-                  "id": "score",
-                  "alias": "score",
-                  "horizontalAlignment": "LEFT",
+                  "originalId": "yearsofexperience",
+                  "id": "yearsofexperience",
+                  "alias": "yearsofexperience",
+                  "horizontalAlignment": "CENTER",
                   "verticalAlignment": "CENTER",
                   "columnType": "number",
                   "textColor": "",
@@ -369,10 +269,39 @@
                   "isEditable": false,
                   "isCellVisible": true,
                   "isDerived": false,
-                  "label": "score",
+                  "label": "yearsofexperience",
                   "isSaveVisible": true,
                   "isDiscardVisible": true,
-                  "computedValue": "{{Table1.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"score\"]))}}",
+                  "computedValue": "{{rounds.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"yearsofexperience\"]))}}",
+                  "sticky": "",
+                  "validation": {},
+                  "cellBackground": ""
+                },
+                "fluency": {
+                  "allowCellWrapping": false,
+                  "index": 2,
+                  "width": 150,
+                  "originalId": "fluency",
+                  "id": "fluency",
+                  "alias": "fluency",
+                  "horizontalAlignment": "CENTER",
+                  "verticalAlignment": "CENTER",
+                  "columnType": "number",
+                  "textColor": "",
+                  "textSize": "0.875rem",
+                  "fontStyle": "",
+                  "enableFilter": true,
+                  "enableSort": true,
+                  "isVisible": true,
+                  "isDisabled": false,
+                  "isCellEditable": false,
+                  "isEditable": false,
+                  "isCellVisible": true,
+                  "isDerived": false,
+                  "label": "fluency",
+                  "isSaveVisible": true,
+                  "isDiscardVisible": true,
+                  "computedValue": "{{rounds.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"fluency\"]))}}",
                   "sticky": "",
                   "validation": {},
                   "cellBackground": ""
@@ -381,7 +310,7 @@
               "key": "jss1lfcek9",
               "canFreezeColumn": true,
               "isDeprecated": false,
-              "rightColumn": 61,
+              "rightColumn": 64,
               "textSize": "0.875rem",
               "widgetId": "690q30o319",
               "allowAddNewRow": true,
@@ -391,9 +320,10 @@
               "searchKey": "",
               "parentId": "0",
               "renderMode": "CANVAS",
-              "horizontalAlignment": "LEFT",
+              "horizontalAlignment": "CENTER",
               "isVisibleSearch": false,
               "responsiveBehavior": "fill",
+              "originalTopRow": 44,
               "isVisiblePagination": false,
               "verticalAlignment": "CENTER"
             },
@@ -433,7 +363,7 @@
               "text": "Applicant Information",
               "key": "wie08rlv3i",
               "isDeprecated": false,
-              "rightColumn": 16,
+              "rightColumn": 19,
               "textAlign": "LEFT",
               "dynamicHeight": "AUTO_HEIGHT",
               "widgetId": "rvo2azwask",
@@ -446,8 +376,10 @@
               "renderMode": "CANVAS",
               "isLoading": false,
               "responsiveBehavior": "fill",
+              "originalTopRow": 1,
               "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
               "maxDynamicHeight": 9000,
+              "originalBottomRow": 6,
               "fontSize": "1rem",
               "minDynamicHeight": 4
             },
@@ -500,8 +432,10 @@
               "renderMode": "CANVAS",
               "isLoading": false,
               "responsiveBehavior": "fill",
+              "originalTopRow": 39,
               "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
               "maxDynamicHeight": 9000,
+              "originalBottomRow": 43,
               "fontSize": "1rem",
               "minDynamicHeight": 4
             },
@@ -735,8 +669,10 @@
               "renderMode": "CANVAS",
               "isLoading": false,
               "responsiveBehavior": "fill",
+              "originalTopRow": 27,
               "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
               "maxDynamicHeight": 9000,
+              "originalBottomRow": 31,
               "iconAlign": "left",
               "defaultText": "",
               "minDynamicHeight": 4
@@ -794,8 +730,10 @@
               "renderMode": "CANVAS",
               "isLoading": false,
               "responsiveBehavior": "fill",
+              "originalTopRow": 8,
               "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
               "maxDynamicHeight": 9000,
+              "originalBottomRow": 12,
               "iconAlign": "left",
               "defaultText": "",
               "minDynamicHeight": 4
@@ -853,8 +791,10 @@
               "renderMode": "CANVAS",
               "isLoading": false,
               "responsiveBehavior": "fill",
+              "originalTopRow": 18,
               "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
               "maxDynamicHeight": 9000,
+              "originalBottomRow": 22,
               "iconAlign": "left",
               "defaultText": "",
               "minDynamicHeight": 4

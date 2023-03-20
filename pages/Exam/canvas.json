@@ -480,7 +480,7 @@
                       "resetFormOnClick": false,
                       "boxShadow": "none",
                       "widgetName": "Button2",
-                      "onClick": "{{closeModal('Modal1')}}",
+                      "onClick": "{{closeModal('create_exam')}}",
                       "buttonColor": "{{appsmith.theme.colors.primaryColor}}",
                       "displayName": "Button",
                       "iconSVG": "/static/media/icon.cca026338f1c8eb6df8ba03d084c2fca.svg",
@@ -493,6 +493,11 @@
                       "type": "BUTTON_WIDGET",
                       "hideCard": false,
                       "animateLoading": true,
+                      "dynamicTriggerPathList": [
+                        {
+                          "key": "onClick"
+                        }
+                      ],
                       "leftColumn": 49,
                       "dynamicBindingPathList": [
                         {
@@ -539,6 +544,7 @@
                       "type": "BUTTON_WIDGET",
                       "hideCard": false,
                       "animateLoading": true,
+                      "dynamicTriggerPathList": [],
                       "leftColumn": 35,
                       "dynamicBindingPathList": [
                         {
@@ -548,7 +554,7 @@
                           "key": "borderRadius"
                         }
                       ],
-                      "text": "Confirm",
+                      "text": "Create",
                       "isDisabled": false,
                       "key": "kupfsdcx98",
                       "isDeprecated": false,
@@ -802,14 +808,14 @@
                       "isVisible": true,
                       "version": 1,
                       "parentId": "hhlken332n",
-                      "onDropdownOpen": "{{JSObject1.isVisible()}}",
+                      "onDropdownOpen": "",
                       "labelAlignment": "left",
                       "renderMode": "CANVAS",
                       "isLoading": false,
                       "responsiveBehavior": "fill",
                       "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
                       "maxDynamicHeight": 9000,
-                      "onOptionChange": "",
+                      "onOptionChange": "{{JSObject1.isVisible()}}",
                       "minDynamicHeight": 4
                     },
                     {

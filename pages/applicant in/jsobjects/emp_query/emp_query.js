@@ -13,6 +13,14 @@ export default {
 		else{
 			skil.inputText = '';
 		}
+		
+		
+		if(appsmith.URL.queryParams?.Email){
+		skil.inputText= appsmith.URL.queryParams?.Email;
+		}
+		else{
+			skil.inputText = '';
+		}
 	}
 	
 }

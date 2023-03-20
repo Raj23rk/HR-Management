@@ -823,7 +823,7 @@
                         "tags"
                       ],
                       "topRow": 24,
-                      "bottomRow": 32,
+                      "bottomRow": 29,
                       "parentRowSpace": 10,
                       "labelWidth": "12",
                       "type": "MULTI_SELECT_WIDGET_V2",
@@ -832,7 +832,11 @@
                       "defaultOptionValue": "{{ ((options, serverSideFiltering) => ( ``))(questions_in.options, questions_in.serverSideFiltering) }}",
                       "animateLoading": true,
                       "parentColumnSpace": 8.5625,
-                      "dynamicTriggerPathList": [],
+                      "dynamicTriggerPathList": [
+                        {
+                          "key": "onOptionChange"
+                        }
+                      ],
                       "leftColumn": 1,
                       "dynamicBindingPathList": [
                         {
@@ -870,11 +874,17 @@
                       "responsiveBehavior": "fill",
                       "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
                       "maxDynamicHeight": 9000,
+                      "onOptionChange": "{{JSObject2.isVisible()}}",
                       "minDynamicHeight": 4
                     },
                     {
                       "boxShadow": "none",
-                      "widgetName": "Input4",
+                      "widgetName": "high_qs",
+                      "dynamicPropertyPathList": [
+                        {
+                          "key": "isVisible"
+                        }
+                      ],
                       "displayName": "Input",
                       "iconSVG": "/static/media/icon.9f505595da61a34f563dba82adeb06ec.svg",
                       "searchTags": [
@@ -901,6 +911,9 @@
                         },
                         {
                           "key": "borderRadius"
+                        },
+                        {
+                          "key": "isVisible"
                         }
                       ],
                       "labelPosition": "Left",
@@ -917,7 +930,7 @@
                       "accentColor": "{{appsmith.theme.colors.primaryColor}}",
                       "showStepArrows": false,
                       "minWidth": 450,
-                      "isVisible": true,
+                      "isVisible": "{{appsmith.store.isFilterOpen1}}",
                       "label": "High",
                       "version": 2,
                       "parentId": "hhlken332n",

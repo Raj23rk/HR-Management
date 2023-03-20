@@ -2,8 +2,8 @@
   "pluginType": "JS",
   "pluginId": "js-plugin",
   "unpublishedAction": {
-    "name": "loadTableData",
-    "fullyQualifiedName": "save_query.loadTableData",
+    "name": "printValue",
+    "fullyQualifiedName": "tab.printValue",
     "datasource": {
       "name": "UNUSED_DATASOURCE",
       "pluginId": "js-plugin",
@@ -14,16 +14,16 @@
       "userPermissions": []
     },
     "pageId": "applicant in",
-    "collectionId": "applicant in_save_query",
+    "collectionId": "applicant in_tab",
     "actionConfiguration": {
       "timeoutInMillisecond": 10000,
       "paginationType": "NONE",
       "encodeParamsToggle": true,
       "selfReferencingDataPaths": [],
       "jsArguments": [],
-      "isAsync": true
+      "isAsync": false
     },
-    "executeOnLoad": true,
+    "executeOnLoad": false,
     "dynamicBindingPathList": [
       {
         "key": "body"
@@ -32,12 +32,12 @@
     "isValid": true,
     "invalids": [],
     "messages": [],
-    "userSetOnLoad": true,
+    "userSetOnLoad": false,
     "confirmBeforeExecute": false,
     "policies": [],
     "userPermissions": []
   },
-  "id": "applicant in_save_query.loadTableData",
+  "id": "applicant in_tab.printValue",
   "deleted": false,
-  "gitSyncId": "64081d9720d355269dd6b6f0_6412bc08806a4f4f793fcb93"
+  "gitSyncId": "64081d9720d355269dd6b6f0_64183c4871d5213f118d4c19"
 }

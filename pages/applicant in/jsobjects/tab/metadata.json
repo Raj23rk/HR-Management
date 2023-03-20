@@ -1,6 +1,6 @@
 {
   "unpublishedCollection": {
-    "name": "save_query",
+    "name": "tab",
     "pageId": "applicant in",
     "pluginId": "js-plugin",
     "pluginType": "JS",
@@ -9,7 +9,7 @@
     "variables": [],
     "userPermissions": []
   },
-  "id": "applicant in_save_query",
+  "id": "applicant in_tab",
   "deleted": false,
-  "gitSyncId": "64081d9720d355269dd6b6f0_6412bbcf806a4f4f793fcb8b"
+  "gitSyncId": "64081d9720d355269dd6b6f0_64183b5e4de1a93b5b006e51"
 }

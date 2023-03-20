@@ -3,7 +3,7 @@
   "pluginId": "js-plugin",
   "unpublishedAction": {
     "name": "saveValue",
-    "fullyQualifiedName": "save_query.saveValue",
+    "fullyQualifiedName": "tab.saveValue",
     "datasource": {
       "name": "UNUSED_DATASOURCE",
       "pluginId": "js-plugin",
@@ -14,7 +14,7 @@
       "userPermissions": []
     },
     "pageId": "applicant in",
-    "collectionId": "applicant in_save_query",
+    "collectionId": "applicant in_tab",
     "actionConfiguration": {
       "timeoutInMillisecond": 10000,
       "paginationType": "NONE",
@@ -32,12 +32,12 @@
     "isValid": true,
     "invalids": [],
     "messages": [],
-    "userSetOnLoad": false,
+    "userSetOnLoad": true,
     "confirmBeforeExecute": false,
     "policies": [],
     "userPermissions": []
   },
-  "id": "applicant in_save_query.saveValue",
+  "id": "applicant in_tab.saveValue",
   "deleted": false,
-  "gitSyncId": "64081d9720d355269dd6b6f0_6412bc08806a4f4f793fcb91"
+  "gitSyncId": "64081d9720d355269dd6b6f0_64183c4871d5213f118d4c18"
 }

@@ -1,7 +1,7 @@
 export default {
 	loadTableData: () =>{
 		storeValue('dataTable',[{
-			Rounds: 'Round1', Type:"Interviewer" && "Exam",  interviewerremark:'Good',Result:'selected',score:40
+			Round: 'Round1', Type:'interview',interviewerremark:'good',Result:'good',score:70
 		}])
 	},
 	

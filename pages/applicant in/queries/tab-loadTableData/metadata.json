@@ -2,8 +2,8 @@
   "pluginType": "JS",
   "pluginId": "js-plugin",
   "unpublishedAction": {
-    "name": "editValue",
-    "fullyQualifiedName": "save_query.editValue",
+    "name": "loadTableData",
+    "fullyQualifiedName": "tab.loadTableData",
     "datasource": {
       "name": "UNUSED_DATASOURCE",
       "pluginId": "js-plugin",
@@ -14,7 +14,7 @@
       "userPermissions": []
     },
     "pageId": "applicant in",
-    "collectionId": "applicant in_save_query",
+    "collectionId": "applicant in_tab",
     "actionConfiguration": {
       "timeoutInMillisecond": 10000,
       "paginationType": "NONE",
@@ -23,7 +23,7 @@
       "jsArguments": [],
       "isAsync": true
     },
-    "executeOnLoad": false,
+    "executeOnLoad": true,
     "dynamicBindingPathList": [
       {
         "key": "body"
@@ -32,12 +32,12 @@
     "isValid": true,
     "invalids": [],
     "messages": [],
-    "userSetOnLoad": false,
+    "userSetOnLoad": true,
     "confirmBeforeExecute": false,
     "policies": [],
     "userPermissions": []
   },
-  "id": "applicant in_save_query.editValue",
+  "id": "applicant in_tab.loadTableData",
   "deleted": false,
-  "gitSyncId": "64081d9720d355269dd6b6f0_6412bc08806a4f4f793fcb90"
+  "gitSyncId": "64081d9720d355269dd6b6f0_64183c4871d5213f118d4c17"
 }

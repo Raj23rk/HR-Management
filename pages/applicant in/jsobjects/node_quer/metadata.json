@@ -1,6 +1,6 @@
 {
   "unpublishedCollection": {
-    "name": "emp_query",
+    "name": "node_quer",
     "pageId": "applicant in",
     "pluginId": "js-plugin",
     "pluginType": "JS",
@@ -9,7 +9,7 @@
     "variables": [],
     "userPermissions": []
   },
-  "id": "applicant in_emp_query",
+  "id": "applicant in_node_quer",
   "deleted": false,
-  "gitSyncId": "64081d9720d355269dd6b6f0_6417e35a6812646f262f4c56"
+  "gitSyncId": "64081d9720d355269dd6b6f0_64183af44de1a93b5b006e44"
 }

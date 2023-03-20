@@ -9,10 +9,6 @@
       "isDefault": false
     },
     {
-      "id": "applicant in",
-      "isDefault": false
-    },
-    {
       "id": "employee ",
       "isDefault": false
     },
@@ -22,6 +18,10 @@
     },
     {
       "id": "Exam",
+      "isDefault": false
+    },
+    {
+      "id": "applicant in",
       "isDefault": false
     }
   ],

@@ -224,7 +224,7 @@
                 }
               },
               "borderRadius": "0px",
-              "columnUpdatedAt": 1679300442576,
+              "columnUpdatedAt": 1679300984017,
               "defaultSelectedRowIndices": [
                 0
               ],
@@ -232,12 +232,12 @@
               "defaultPageSize": 0,
               "columnOrder": [
                 "customColumn1",
+                "examname",
                 "duration",
                 "customColumn2",
                 "customColumn3",
                 "customColumn4",
-                "_id",
-                "examname"
+                "_id"
               ],
               "dynamicPropertyPathList": [],
               "displayName": "Table",

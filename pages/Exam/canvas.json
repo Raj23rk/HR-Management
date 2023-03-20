@@ -930,7 +930,7 @@
                       "accentColor": "{{appsmith.theme.colors.primaryColor}}",
                       "showStepArrows": false,
                       "minWidth": 450,
-                      "isVisible": "{{appsmith.store.isFilterOpen1}}",
+                      "isVisible": "{{!appsmith.store.isFilterOpen1}}",
                       "label": "High",
                       "version": 2,
                       "parentId": "hhlken332n",

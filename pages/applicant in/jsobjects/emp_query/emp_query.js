@@ -15,8 +15,8 @@ export default {
 		}
 		
 		
-		if(appsmith.URL.queryParams?.Email){
-		job_email.inputText= appsmith.URL.queryParams?.Email;
+		if(appsmith.URL.queryParams?.mobileno){
+		mobile.inputText= appsmith.URL.queryParams?.mobileno;
 		}
 		else{
 			job_email.inputText = '';

@@ -770,6 +770,9 @@
                       "dynamicTriggerPathList": [
                         {
                           "key": "onOptionChange"
+                        },
+                        {
+                          "key": "onDropdownOpen"
                         }
                       ],
                       "leftColumn": 1,
@@ -797,13 +800,14 @@
                       "isVisible": true,
                       "version": 1,
                       "parentId": "hhlken332n",
+                      "onDropdownOpen": "{{JSObject1.isVisible()}}",
                       "labelAlignment": "left",
                       "renderMode": "CANVAS",
                       "isLoading": false,
                       "responsiveBehavior": "fill",
                       "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
                       "maxDynamicHeight": 9000,
-                      "onOptionChange": "{{JSObject1.isVisible()}}",
+                      "onOptionChange": "",
                       "minDynamicHeight": 4
                     },
                     {

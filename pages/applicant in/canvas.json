@@ -67,13 +67,19 @@
                   "key": "primaryColumns.EditActions1.isDiscardDisabled"
                 },
                 {
-                  "key": "primaryColumns.skils.computedValue"
+                  "key": "primaryColumns.Rounds.computedValue"
                 },
                 {
-                  "key": "primaryColumns.yearsofexperience.computedValue"
+                  "key": "primaryColumns.Type.computedValue"
                 },
                 {
-                  "key": "primaryColumns.fluency.computedValue"
+                  "key": "primaryColumns.interviewerremark.computedValue"
+                },
+                {
+                  "key": "primaryColumns.Result.computedValue"
+                },
+                {
+                  "key": "primaryColumns.score.computedValue"
                 }
               ],
               "needsHeightForContent": true,
@@ -112,7 +118,7 @@
                 }
               },
               "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
-              "columnUpdatedAt": 1679308173786,
+              "columnUpdatedAt": 1679308503158,
               "defaultSelectedRowIndices": [
                 0
               ],
@@ -121,9 +127,11 @@
               "columnOrder": [
                 "customColumn1",
                 "EditActions1",
-                "skils",
-                "yearsofexperience",
-                "fluency"
+                "Rounds",
+                "Type",
+                "interviewerremark",
+                "Result",
+                "score"
               ],
               "dynamicPropertyPathList": [
                 {
@@ -218,13 +226,13 @@
                   "isSaveDisabled": "{{ins.processedTableData.map((currentRow, currentIndex) => ( !ins.updatedRowIndices.includes(currentIndex)))}}",
                   "isDiscardDisabled": "{{ins.processedTableData.map((currentRow, currentIndex) => ( !ins.updatedRowIndices.includes(currentIndex)))}}"
                 },
-                "skils": {
+                "Rounds": {
                   "allowCellWrapping": false,
                   "index": 0,
                   "width": 150,
-                  "originalId": "skils",
-                  "id": "skils",
-                  "alias": "skils",
+                  "originalId": "Rounds",
+                  "id": "Rounds",
+                  "alias": "Rounds",
                   "horizontalAlignment": "LEFT",
                   "verticalAlignment": "CENTER",
                   "columnType": "text",
@@ -239,24 +247,24 @@
                   "isEditable": true,
                   "isCellVisible": true,
                   "isDerived": false,
-                  "label": "skils",
+                  "label": "Rounds",
                   "isSaveVisible": true,
                   "isDiscardVisible": true,
-                  "computedValue": "{{ins.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"skils\"]))}}",
+                  "computedValue": "{{ins.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"Rounds\"]))}}",
                   "sticky": "",
                   "validation": {},
                   "cellBackground": ""
                 },
-                "yearsofexperience": {
+                "Type": {
                   "allowCellWrapping": false,
                   "index": 1,
                   "width": 150,
-                  "originalId": "yearsofexperience",
-                  "id": "yearsofexperience",
-                  "alias": "yearsofexperience",
+                  "originalId": "Type",
+                  "id": "Type",
+                  "alias": "Type",
                   "horizontalAlignment": "LEFT",
                   "verticalAlignment": "CENTER",
-                  "columnType": "number",
+                  "columnType": "text",
                   "textColor": "",
                   "textSize": "0.875rem",
                   "fontStyle": "",
@@ -268,21 +276,79 @@
                   "isEditable": true,
                   "isCellVisible": true,
                   "isDerived": false,
-                  "label": "yearsofexperience",
+                  "label": "Type",
                   "isSaveVisible": true,
                   "isDiscardVisible": true,
-                  "computedValue": "{{ins.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"yearsofexperience\"]))}}",
+                  "computedValue": "{{ins.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"Type\"]))}}",
                   "sticky": "",
                   "validation": {},
                   "cellBackground": ""
                 },
-                "fluency": {
+                "interviewerremark": {
                   "allowCellWrapping": false,
                   "index": 2,
                   "width": 150,
-                  "originalId": "fluency",
-                  "id": "fluency",
-                  "alias": "fluency",
+                  "originalId": "interviewerremark",
+                  "id": "interviewerremark",
+                  "alias": "interviewerremark",
+                  "horizontalAlignment": "LEFT",
+                  "verticalAlignment": "CENTER",
+                  "columnType": "text",
+                  "textColor": "",
+                  "textSize": "0.875rem",
+                  "fontStyle": "",
+                  "enableFilter": true,
+                  "enableSort": true,
+                  "isVisible": true,
+                  "isDisabled": false,
+                  "isCellEditable": true,
+                  "isEditable": true,
+                  "isCellVisible": true,
+                  "isDerived": false,
+                  "label": "interviewerremark",
+                  "isSaveVisible": true,
+                  "isDiscardVisible": true,
+                  "computedValue": "{{ins.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"interviewerremark\"]))}}",
+                  "sticky": "",
+                  "validation": {},
+                  "cellBackground": ""
+                },
+                "Result": {
+                  "allowCellWrapping": false,
+                  "index": 3,
+                  "width": 150,
+                  "originalId": "Result",
+                  "id": "Result",
+                  "alias": "Result",
+                  "horizontalAlignment": "LEFT",
+                  "verticalAlignment": "CENTER",
+                  "columnType": "text",
+                  "textColor": "",
+                  "textSize": "0.875rem",
+                  "fontStyle": "",
+                  "enableFilter": true,
+                  "enableSort": true,
+                  "isVisible": true,
+                  "isDisabled": false,
+                  "isCellEditable": true,
+                  "isEditable": true,
+                  "isCellVisible": true,
+                  "isDerived": false,
+                  "label": "Result",
+                  "isSaveVisible": true,
+                  "isDiscardVisible": true,
+                  "computedValue": "{{ins.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"Result\"]))}}",
+                  "sticky": "",
+                  "validation": {},
+                  "cellBackground": ""
+                },
+                "score": {
+                  "allowCellWrapping": false,
+                  "index": 4,
+                  "width": 150,
+                  "originalId": "score",
+                  "id": "score",
+                  "alias": "score",
                   "horizontalAlignment": "LEFT",
                   "verticalAlignment": "CENTER",
                   "columnType": "number",
@@ -297,10 +363,10 @@
                   "isEditable": true,
                   "isCellVisible": true,
                   "isDerived": false,
-                  "label": "fluency",
+                  "label": "score",
                   "isSaveVisible": true,
                   "isDiscardVisible": true,
-                  "computedValue": "{{ins.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"fluency\"]))}}",
+                  "computedValue": "{{ins.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"score\"]))}}",
                   "sticky": "",
                   "validation": {},
                   "cellBackground": ""

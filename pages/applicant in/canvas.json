@@ -518,6 +518,21 @@
                 },
                 {
                   "key": "primaryColumns.customColumn1.boxShadow"
+                },
+                {
+                  "key": "primaryColumns.EditActions1.saveButtonColor"
+                },
+                {
+                  "key": "primaryColumns.EditActions1.saveBorderRadius"
+                },
+                {
+                  "key": "primaryColumns.EditActions1.discardBorderRadius"
+                },
+                {
+                  "key": "primaryColumns.EditActions1.isSaveDisabled"
+                },
+                {
+                  "key": "primaryColumns.EditActions1.isDiscardDisabled"
                 }
               ],
               "needsHeightForContent": true,
@@ -556,7 +571,7 @@
                 }
               },
               "borderRadius": "0px",
-              "columnUpdatedAt": 1679310401485,
+              "columnUpdatedAt": 1679310551201,
               "defaultSelectedRowIndices": [
                 0
               ],
@@ -568,15 +583,24 @@
                 "status",
                 "action",
                 "customColumn1",
-                "customColumn2"
+                "customColumn2",
+                "EditActions1"
               ],
-              "dynamicPropertyPathList": [],
+              "dynamicPropertyPathList": [
+                {
+                  "key": "primaryColumns.EditActions1.isSaveDisabled"
+                },
+                {
+                  "key": "primaryColumns.EditActions1.isDiscardDisabled"
+                }
+              ],
               "displayName": "Table",
               "bottomRow": 53,
               "columnWidthMap": {
                 "task": 245,
                 "step": 81,
-                "status": 85
+                "status": 85,
+                "action": 122
               },
               "parentRowSpace": 10,
               "hideCard": false,
@@ -603,14 +627,14 @@
                   "enableSort": true,
                   "isVisible": true,
                   "isCellVisible": true,
-                  "isCellEditable": false,
+                  "isCellEditable": true,
                   "isDerived": false,
                   "label": "S NO",
                   "computedValue": "{{ins.processedTableData.map((currentRow, currentIndex) => ( currentIndex + 1))}}",
                   "validation": {},
                   "sticky": "",
                   "labelColor": "#FFFFFF",
-                  "isEditable": false
+                  "isEditable": true
                 },
                 "task": {
                   "index": 1,
@@ -626,14 +650,14 @@
                   "enableSort": true,
                   "isVisible": true,
                   "isCellVisible": true,
-                  "isCellEditable": false,
+                  "isCellEditable": true,
                   "isDerived": false,
                   "label": "ROUND",
                   "computedValue": "{{ins.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"task\"]))}}",
                   "validation": {},
                   "sticky": "",
                   "labelColor": "#FFFFFF",
-                  "isEditable": false
+                  "isEditable": true
                 },
                 "status": {
                   "index": 2,
@@ -649,14 +673,14 @@
                   "enableSort": true,
                   "isVisible": true,
                   "isCellVisible": true,
-                  "isCellEditable": false,
+                  "isCellEditable": true,
                   "isDerived": false,
                   "label": "TYPE",
                   "computedValue": "{{ins.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"status\"]))}}",
                   "validation": {},
                   "sticky": "",
                   "labelColor": "#FFFFFF",
-                  "isEditable": false
+                  "isEditable": true
                 },
                 "action": {
                   "index": 3,
@@ -672,7 +696,7 @@
                   "enableSort": true,
                   "isVisible": true,
                   "isCellVisible": true,
-                  "isCellEditable": false,
+                  "isCellEditable": true,
                   "isDisabled": false,
                   "isDerived": false,
                   "label": "INTERVIEWERREMARK",
@@ -682,7 +706,7 @@
                   "sticky": "",
                   "labelColor": "#FFFFFF",
                   "customAlias": "",
-                  "isEditable": false
+                  "isEditable": true
                 },
                 "customColumn1": {
                   "allowCellWrapping": false,
@@ -745,6 +769,44 @@
                   "buttonStyle": "rgb(3, 179, 101)",
                   "labelColor": "#FFFFFF",
                   "selectOptions": "[\n  {\n    \"label\": \"Blue\",\n    \"value\": \"BLUE\"\n  },\n  {\n    \"label\": \"Green\",\n    \"value\": \"GREEN\"\n  },\n  {\n    \"label\": \"Red\",\n    \"value\": \"RED\"\n  }\n]"
+                },
+                "EditActions1": {
+                  "allowCellWrapping": false,
+                  "index": 6,
+                  "width": 150,
+                  "originalId": "EditActions1",
+                  "id": "EditActions1",
+                  "alias": "EditActions1",
+                  "horizontalAlignment": "CENTER",
+                  "verticalAlignment": "CENTER",
+                  "columnType": "editActions",
+                  "textSize": "0.875rem",
+                  "enableFilter": true,
+                  "enableSort": true,
+                  "isVisible": true,
+                  "isDisabled": false,
+                  "isCellEditable": false,
+                  "isEditable": false,
+                  "isCellVisible": true,
+                  "isDerived": true,
+                  "label": "Save / Discard",
+                  "isSaveVisible": true,
+                  "isDiscardVisible": true,
+                  "computedValue": "",
+                  "sticky": "right",
+                  "validation": {},
+                  "buttonStyle": "rgb(3, 179, 101)",
+                  "saveIconAlign": "left",
+                  "discardIconAlign": "left",
+                  "saveActionLabel": "Save",
+                  "discardActionLabel": "Discard",
+                  "saveButtonColor": "{{ins.processedTableData.map((currentRow, currentIndex) => ( appsmith.theme.colors.primaryColor))}}",
+                  "discardButtonColor": "#F22B2B",
+                  "saveBorderRadius": "{{ins.processedTableData.map((currentRow, currentIndex) => ( appsmith.theme.borderRadius.appBorderRadius))}}",
+                  "discardBorderRadius": "{{ins.processedTableData.map((currentRow, currentIndex) => ( appsmith.theme.borderRadius.appBorderRadius))}}",
+                  "discardButtonVariant": "TERTIARY",
+                  "isSaveDisabled": "{{ins.processedTableData.map((currentRow, currentIndex) => ( !ins.updatedRowIndices.includes(currentIndex)))}}",
+                  "isDiscardDisabled": "{{ins.processedTableData.map((currentRow, currentIndex) => ( !ins.updatedRowIndices.includes(currentIndex)))}}"
                 }
               },
               "key": "ysn5h1xiq0",

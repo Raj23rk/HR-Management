@@ -13,7 +13,7 @@
           "detachFromLayout": true,
           "widgetId": "0",
           "topRow": 0,
-          "bottomRow": 630,
+          "bottomRow": 600,
           "containerStyle": "none",
           "snapRows": 63,
           "parentRowSpace": 1,
@@ -25,6 +25,378 @@
           "dynamicBindingPathList": [],
           "leftColumn": 0,
           "children": [
+            {
+              "boxShadow": "{{appsmith.theme.boxShadow.appBoxShadow}}",
+              "borderColor": "#E0DEDE",
+              "isVisibleDownload": true,
+              "iconSVG": "/static/media/icon.db8a9cbd2acd22a31ea91cc37ea2a46c.svg",
+              "topRow": 43,
+              "isSortable": true,
+              "type": "TABLE_WIDGET_V2",
+              "inlineEditingSaveOption": "ROW_LEVEL",
+              "animateLoading": true,
+              "dynamicBindingPathList": [
+                {
+                  "key": "accentColor"
+                },
+                {
+                  "key": "borderRadius"
+                },
+                {
+                  "key": "boxShadow"
+                },
+                {
+                  "key": "tableData"
+                },
+                {
+                  "key": "primaryColumns.EditActions1.saveButtonColor"
+                },
+                {
+                  "key": "primaryColumns.EditActions1.saveBorderRadius"
+                },
+                {
+                  "key": "primaryColumns.EditActions1.discardBorderRadius"
+                },
+                {
+                  "key": "primaryColumns.EditActions1.isDiscardDisabled"
+                },
+                {
+                  "key": "primaryColumns.customColumn1.computedValue"
+                },
+                {
+                  "key": "primaryColumns.Rounds.computedValue"
+                },
+                {
+                  "key": "primaryColumns.Type.computedValue"
+                },
+                {
+                  "key": "primaryColumns.interviewerremark.computedValue"
+                },
+                {
+                  "key": "primaryColumns.Result.computedValue"
+                },
+                {
+                  "key": "primaryColumns.score.computedValue"
+                }
+              ],
+              "needsHeightForContent": true,
+              "leftColumn": 0,
+              "delimiter": ",",
+              "defaultSelectedRowIndex": 0,
+              "showInlineEditingOptionDropdown": true,
+              "accentColor": "{{appsmith.theme.colors.primaryColor}}",
+              "isVisibleFilters": false,
+              "isVisible": true,
+              "enableClientSideSearch": false,
+              "version": 1,
+              "totalRecordsCount": 0,
+              "isLoading": false,
+              "childStylesheet": {
+                "button": {
+                  "buttonColor": "{{appsmith.theme.colors.primaryColor}}",
+                  "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+                  "boxShadow": "none"
+                },
+                "menuButton": {
+                  "menuColor": "{{appsmith.theme.colors.primaryColor}}",
+                  "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+                  "boxShadow": "none"
+                },
+                "iconButton": {
+                  "buttonColor": "{{appsmith.theme.colors.primaryColor}}",
+                  "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+                  "boxShadow": "none"
+                },
+                "editActions": {
+                  "saveButtonColor": "{{appsmith.theme.colors.primaryColor}}",
+                  "saveBorderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+                  "discardButtonColor": "{{appsmith.theme.colors.primaryColor}}",
+                  "discardBorderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}"
+                }
+              },
+              "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+              "columnUpdatedAt": 1679296889287,
+              "defaultSelectedRowIndices": [
+                0
+              ],
+              "widgetName": "Table1",
+              "defaultPageSize": 0,
+              "columnOrder": [
+                "customColumn1",
+                "Rounds",
+                "Type",
+                "interviewerremark",
+                "EditActions1",
+                "Result",
+                "score"
+              ],
+              "dynamicPropertyPathList": [
+                {
+                  "key": "primaryColumns.EditActions1.isDiscardDisabled"
+                },
+                {
+                  "key": "primaryColumns.EditActions1.onSave"
+                },
+                {
+                  "key": "primaryColumns.EditActions1.isSaveDisabled"
+                }
+              ],
+              "displayName": "Table",
+              "bottomRow": 60,
+              "columnWidthMap": {
+                "task": 245,
+                "step": 70,
+                "status": 85,
+                "fluency": 226,
+                "Type": 102,
+                "interviewerremark": 169
+              },
+              "parentRowSpace": 10,
+              "hideCard": false,
+              "onAddNewRowSave": "{{save_queries.saveValue()}}",
+              "parentColumnSpace": 15.903125,
+              "dynamicTriggerPathList": [
+                {
+                  "key": "onAddNewRowSave"
+                },
+                {
+                  "key": "primaryColumns.EditActions1.onSave"
+                }
+              ],
+              "borderWidth": "1",
+              "primaryColumns": {
+                "EditActions1": {
+                  "allowCellWrapping": false,
+                  "index": 4,
+                  "width": 150,
+                  "originalId": "EditActions1",
+                  "id": "EditActions1",
+                  "alias": "EditActions1",
+                  "horizontalAlignment": "LEFT",
+                  "verticalAlignment": "CENTER",
+                  "columnType": "editActions",
+                  "textSize": "0.875rem",
+                  "enableFilter": true,
+                  "enableSort": true,
+                  "isVisible": true,
+                  "isDisabled": false,
+                  "isCellEditable": false,
+                  "isEditable": false,
+                  "isCellVisible": true,
+                  "isDerived": true,
+                  "label": "Save / Discard",
+                  "isSaveVisible": true,
+                  "isDiscardVisible": true,
+                  "computedValue": "",
+                  "sticky": "",
+                  "validation": {},
+                  "buttonStyle": "rgb(3, 179, 101)",
+                  "saveIconAlign": "left",
+                  "discardIconAlign": "left",
+                  "saveActionLabel": "Save",
+                  "discardActionLabel": "Discard",
+                  "saveButtonColor": "{{Table1.processedTableData.map((currentRow, currentIndex) => ( appsmith.theme.colors.primaryColor))}}",
+                  "discardButtonColor": "#F22B2B",
+                  "saveBorderRadius": "{{Table1.processedTableData.map((currentRow, currentIndex) => ( appsmith.theme.borderRadius.appBorderRadius))}}",
+                  "discardBorderRadius": "{{Table1.processedTableData.map((currentRow, currentIndex) => ( appsmith.theme.borderRadius.appBorderRadius))}}",
+                  "discardButtonVariant": "TERTIARY",
+                  "isSaveDisabled": "false",
+                  "isDiscardDisabled": "{{Table1.processedTableData.map((currentRow, currentIndex) => ( !Table1.updatedRowIndices.includes(currentIndex)))}}",
+                  "onSave": "{{save_queries.editValue(Table1.triggeredRowIndex, Table1.triggeredRow)}}"
+                },
+                "customColumn1": {
+                  "allowCellWrapping": false,
+                  "index": 5,
+                  "width": 150,
+                  "originalId": "customColumn1",
+                  "id": "customColumn1",
+                  "alias": "SNO",
+                  "horizontalAlignment": "RIGHT",
+                  "verticalAlignment": "CENTER",
+                  "columnType": "number",
+                  "textSize": "0.875rem",
+                  "enableFilter": true,
+                  "enableSort": true,
+                  "isVisible": true,
+                  "isDisabled": false,
+                  "isCellEditable": false,
+                  "isEditable": false,
+                  "isCellVisible": true,
+                  "isDerived": true,
+                  "label": "SNO",
+                  "isSaveVisible": true,
+                  "isDiscardVisible": true,
+                  "computedValue": "{{Table1.processedTableData.map((currentRow, currentIndex) => ( currentIndex + 1))}}",
+                  "sticky": "",
+                  "validation": {},
+                  "buttonStyle": "rgb(3, 179, 101)",
+                  "labelColor": "#FFFFFF"
+                },
+                "Rounds": {
+                  "allowCellWrapping": false,
+                  "index": 0,
+                  "width": 150,
+                  "originalId": "Rounds",
+                  "id": "Rounds",
+                  "alias": "Rounds",
+                  "horizontalAlignment": "LEFT",
+                  "verticalAlignment": "CENTER",
+                  "columnType": "text",
+                  "textColor": "",
+                  "textSize": "0.875rem",
+                  "fontStyle": "",
+                  "enableFilter": true,
+                  "enableSort": true,
+                  "isVisible": true,
+                  "isDisabled": false,
+                  "isCellEditable": false,
+                  "isEditable": false,
+                  "isCellVisible": true,
+                  "isDerived": false,
+                  "label": "Rounds",
+                  "isSaveVisible": true,
+                  "isDiscardVisible": true,
+                  "computedValue": "{{Table1.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"Rounds\"]))}}",
+                  "sticky": "",
+                  "validation": {},
+                  "cellBackground": ""
+                },
+                "Type": {
+                  "allowCellWrapping": false,
+                  "index": 1,
+                  "width": 150,
+                  "originalId": "Type",
+                  "id": "Type",
+                  "alias": "Type",
+                  "horizontalAlignment": "LEFT",
+                  "verticalAlignment": "CENTER",
+                  "columnType": "text",
+                  "textColor": "",
+                  "textSize": "0.875rem",
+                  "fontStyle": "",
+                  "enableFilter": true,
+                  "enableSort": true,
+                  "isVisible": true,
+                  "isDisabled": false,
+                  "isCellEditable": false,
+                  "isEditable": false,
+                  "isCellVisible": true,
+                  "isDerived": false,
+                  "label": "Type",
+                  "isSaveVisible": true,
+                  "isDiscardVisible": true,
+                  "computedValue": "{{Table1.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"Type\"]))}}",
+                  "sticky": "",
+                  "validation": {},
+                  "cellBackground": ""
+                },
+                "interviewerremark": {
+                  "allowCellWrapping": false,
+                  "index": 2,
+                  "width": 150,
+                  "originalId": "interviewerremark",
+                  "id": "interviewerremark",
+                  "alias": "interviewerremark",
+                  "horizontalAlignment": "LEFT",
+                  "verticalAlignment": "CENTER",
+                  "columnType": "text",
+                  "textColor": "",
+                  "textSize": "0.875rem",
+                  "fontStyle": "",
+                  "enableFilter": true,
+                  "enableSort": true,
+                  "isVisible": true,
+                  "isDisabled": false,
+                  "isCellEditable": false,
+                  "isEditable": false,
+                  "isCellVisible": true,
+                  "isDerived": false,
+                  "label": "interviewerremark",
+                  "isSaveVisible": true,
+                  "isDiscardVisible": true,
+                  "computedValue": "{{Table1.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"interviewerremark\"]))}}",
+                  "sticky": "",
+                  "validation": {},
+                  "cellBackground": ""
+                },
+                "Result": {
+                  "allowCellWrapping": false,
+                  "index": 3,
+                  "width": 150,
+                  "originalId": "Result",
+                  "id": "Result",
+                  "alias": "Result",
+                  "horizontalAlignment": "LEFT",
+                  "verticalAlignment": "CENTER",
+                  "columnType": "text",
+                  "textColor": "",
+                  "textSize": "0.875rem",
+                  "fontStyle": "",
+                  "enableFilter": true,
+                  "enableSort": true,
+                  "isVisible": true,
+                  "isDisabled": false,
+                  "isCellEditable": false,
+                  "isEditable": false,
+                  "isCellVisible": true,
+                  "isDerived": false,
+                  "label": "Result",
+                  "isSaveVisible": true,
+                  "isDiscardVisible": true,
+                  "computedValue": "{{Table1.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"Result\"]))}}",
+                  "sticky": "",
+                  "validation": {},
+                  "cellBackground": ""
+                },
+                "score": {
+                  "allowCellWrapping": false,
+                  "index": 4,
+                  "width": 150,
+                  "originalId": "score",
+                  "id": "score",
+                  "alias": "score",
+                  "horizontalAlignment": "LEFT",
+                  "verticalAlignment": "CENTER",
+                  "columnType": "number",
+                  "textColor": "",
+                  "textSize": "0.875rem",
+                  "fontStyle": "",
+                  "enableFilter": true,
+                  "enableSort": true,
+                  "isVisible": true,
+                  "isDisabled": false,
+                  "isCellEditable": false,
+                  "isEditable": false,
+                  "isCellVisible": true,
+                  "isDerived": false,
+                  "label": "score",
+                  "isSaveVisible": true,
+                  "isDiscardVisible": true,
+                  "computedValue": "{{Table1.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"score\"]))}}",
+                  "sticky": "",
+                  "validation": {},
+                  "cellBackground": ""
+                }
+              },
+              "key": "jss1lfcek9",
+              "canFreezeColumn": true,
+              "isDeprecated": false,
+              "rightColumn": 61,
+              "textSize": "0.875rem",
+              "widgetId": "690q30o319",
+              "allowAddNewRow": true,
+              "minWidth": 450,
+              "tableData": "{{appsmith.store.dataTable}}",
+              "label": "Data",
+              "searchKey": "",
+              "parentId": "0",
+              "renderMode": "CANVAS",
+              "horizontalAlignment": "LEFT",
+              "isVisibleSearch": false,
+              "responsiveBehavior": "fill",
+              "isVisiblePagination": false,
+              "verticalAlignment": "CENTER"
+            },
             {
               "widgetName": "Text1",
               "displayName": "Text",
@@ -368,328 +740,6 @@
               "iconAlign": "left",
               "defaultText": "",
               "minDynamicHeight": 4
-            },
-            {
-              "boxShadow": "none",
-              "borderColor": "#E0DEDE",
-              "isVisibleDownload": true,
-              "iconSVG": "/static/media/icon.db8a9cbd2acd22a31ea91cc37ea2a46c.svg",
-              "topRow": 45,
-              "isSortable": true,
-              "type": "TABLE_WIDGET_V2",
-              "inlineEditingSaveOption": "ROW_LEVEL",
-              "animateLoading": true,
-              "dynamicBindingPathList": [
-                {
-                  "key": "accentColor"
-                },
-                {
-                  "key": "tableData"
-                },
-                {
-                  "key": "primaryColumns.EditActions1.saveButtonColor"
-                },
-                {
-                  "key": "primaryColumns.EditActions1.saveBorderRadius"
-                },
-                {
-                  "key": "primaryColumns.EditActions1.discardBorderRadius"
-                },
-                {
-                  "key": "primaryColumns.EditActions1.isDiscardDisabled"
-                },
-                {
-                  "key": "primaryColumns.customColumn1.menuColor"
-                },
-                {
-                  "key": "primaryColumns.skils.computedValue"
-                },
-                {
-                  "key": "primaryColumns.yearsofexperience.computedValue"
-                },
-                {
-                  "key": "primaryColumns.fluency.computedValue"
-                }
-              ],
-              "needsHeightForContent": true,
-              "leftColumn": 0,
-              "delimiter": ",",
-              "defaultSelectedRowIndex": 0,
-              "showInlineEditingOptionDropdown": true,
-              "accentColor": "{{appsmith.theme.colors.primaryColor}}",
-              "isVisibleFilters": true,
-              "isVisible": true,
-              "enableClientSideSearch": true,
-              "version": 1,
-              "totalRecordsCount": 0,
-              "isLoading": false,
-              "childStylesheet": {
-                "button": {
-                  "buttonColor": "{{appsmith.theme.colors.primaryColor}}",
-                  "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
-                  "boxShadow": "none"
-                },
-                "menuButton": {
-                  "menuColor": "{{appsmith.theme.colors.primaryColor}}",
-                  "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
-                  "boxShadow": "none"
-                },
-                "iconButton": {
-                  "buttonColor": "{{appsmith.theme.colors.primaryColor}}",
-                  "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
-                  "boxShadow": "none"
-                },
-                "editActions": {
-                  "saveButtonColor": "{{appsmith.theme.colors.primaryColor}}",
-                  "saveBorderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
-                  "discardButtonColor": "{{appsmith.theme.colors.primaryColor}}",
-                  "discardBorderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}"
-                }
-              },
-              "borderRadius": "0px",
-              "columnUpdatedAt": 1679296468502,
-              "defaultSelectedRowIndices": [
-                0
-              ],
-              "widgetName": "rounds",
-              "defaultPageSize": 0,
-              "columnOrder": [
-                "skils",
-                "yearsofexperience",
-                "fluency",
-                "customColumn1",
-                "EditActions1"
-              ],
-              "dynamicPropertyPathList": [
-                {
-                  "key": "primaryColumns.EditActions1.isSaveDisabled"
-                },
-                {
-                  "key": "primaryColumns.EditActions1.isDiscardDisabled"
-                },
-                {
-                  "key": "primaryColumns.EditActions1.onSave"
-                }
-              ],
-              "displayName": "Table",
-              "bottomRow": 63,
-              "columnWidthMap": {
-                "task": 245,
-                "step": 70,
-                "status": 85,
-                "interviewerremark": 208,
-                "customColumn1": 191,
-                "Result": 108,
-                "score": 103
-              },
-              "parentRowSpace": 10,
-              "hideCard": false,
-              "onAddNewRowSave": "{{save_query.saveValue()}}",
-              "parentColumnSpace": 16.75,
-              "dynamicTriggerPathList": [
-                {
-                  "key": "onRowSelected"
-                },
-                {
-                  "key": "primaryColumns.EditActions1.onSave"
-                },
-                {
-                  "key": "onAddNewRowSave"
-                }
-              ],
-              "borderWidth": "0",
-              "primaryColumns": {
-                "EditActions1": {
-                  "allowCellWrapping": false,
-                  "index": 5,
-                  "width": 150,
-                  "originalId": "EditActions1",
-                  "id": "EditActions1",
-                  "alias": "EditActions1",
-                  "horizontalAlignment": "CENTER",
-                  "verticalAlignment": "CENTER",
-                  "columnType": "editActions",
-                  "textSize": "0.875rem",
-                  "enableFilter": true,
-                  "enableSort": true,
-                  "isVisible": true,
-                  "isDisabled": false,
-                  "isCellEditable": false,
-                  "isEditable": false,
-                  "isCellVisible": true,
-                  "isDerived": true,
-                  "label": "Save / Discard",
-                  "isSaveVisible": true,
-                  "isDiscardVisible": true,
-                  "computedValue": "",
-                  "sticky": "right",
-                  "validation": {},
-                  "buttonStyle": "rgb(3, 179, 101)",
-                  "saveIconAlign": "left",
-                  "discardIconAlign": "left",
-                  "saveActionLabel": "Save",
-                  "discardActionLabel": "Discard",
-                  "saveButtonColor": "{{rounds.processedTableData.map((currentRow, currentIndex) => ( appsmith.theme.colors.primaryColor))}}",
-                  "discardButtonColor": "#F22B2B",
-                  "saveBorderRadius": "{{rounds.processedTableData.map((currentRow, currentIndex) => ( appsmith.theme.borderRadius.appBorderRadius))}}",
-                  "discardBorderRadius": "{{rounds.processedTableData.map((currentRow, currentIndex) => ( appsmith.theme.borderRadius.appBorderRadius))}}",
-                  "discardButtonVariant": "TERTIARY",
-                  "isSaveDisabled": "",
-                  "isDiscardDisabled": "{{rounds.processedTableData.map((currentRow, currentIndex) => ( !rounds.updatedRowIndices.includes(currentIndex)))}}",
-                  "onSave": "{{save_query.editValue(rounds.triggeredRowIndex, rounds.triggeredRow)}}"
-                },
-                "customColumn1": {
-                  "allowCellWrapping": false,
-                  "index": 6,
-                  "width": 150,
-                  "originalId": "customColumn1",
-                  "id": "customColumn1",
-                  "alias": "Interviewer Name",
-                  "horizontalAlignment": "LEFT",
-                  "verticalAlignment": "CENTER",
-                  "columnType": "menuButton",
-                  "textSize": "0.875rem",
-                  "enableFilter": true,
-                  "enableSort": true,
-                  "isVisible": true,
-                  "isDisabled": false,
-                  "isCellEditable": false,
-                  "isEditable": false,
-                  "isCellVisible": true,
-                  "isDerived": true,
-                  "label": "Interviewer Name",
-                  "isSaveVisible": true,
-                  "isDiscardVisible": true,
-                  "computedValue": "",
-                  "sticky": "",
-                  "validation": {},
-                  "buttonStyle": "rgb(3, 179, 101)",
-                  "labelColor": "#FFFFFF",
-                  "menuColor": "{{rounds.processedTableData.map((currentRow, currentIndex) => ( appsmith.theme.colors.primaryColor))}}",
-                  "borderRadius": "0px",
-                  "boxShadow": "none",
-                  "customAlias": "",
-                  "menuItemsSource": "DYNAMIC",
-                  "menuButtonLabel": "Select Interviewer",
-                  "sourceData": [],
-                  "configureMenuItems": {
-                    "label": "Configure Menu Items",
-                    "id": "config",
-                    "config": {
-                      "id": "config",
-                      "label": "Menu Item",
-                      "isVisible": true,
-                      "isDisabled": false
-                    }
-                  }
-                },
-                "skils": {
-                  "allowCellWrapping": false,
-                  "index": 0,
-                  "width": 150,
-                  "originalId": "skils",
-                  "id": "skils",
-                  "alias": "skils",
-                  "horizontalAlignment": "CENTER",
-                  "verticalAlignment": "CENTER",
-                  "columnType": "text",
-                  "textColor": "",
-                  "textSize": "0.875rem",
-                  "fontStyle": "",
-                  "enableFilter": true,
-                  "enableSort": true,
-                  "isVisible": true,
-                  "isDisabled": false,
-                  "isCellEditable": true,
-                  "isEditable": true,
-                  "isCellVisible": true,
-                  "isDerived": false,
-                  "label": "skils",
-                  "isSaveVisible": true,
-                  "isDiscardVisible": true,
-                  "computedValue": "{{rounds.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"skils\"]))}}",
-                  "sticky": "",
-                  "validation": {},
-                  "cellBackground": ""
-                },
-                "yearsofexperience": {
-                  "allowCellWrapping": false,
-                  "index": 1,
-                  "width": 150,
-                  "originalId": "yearsofexperience",
-                  "id": "yearsofexperience",
-                  "alias": "yearsofexperience",
-                  "horizontalAlignment": "CENTER",
-                  "verticalAlignment": "CENTER",
-                  "columnType": "number",
-                  "textColor": "",
-                  "textSize": "0.875rem",
-                  "fontStyle": "",
-                  "enableFilter": true,
-                  "enableSort": true,
-                  "isVisible": true,
-                  "isDisabled": false,
-                  "isCellEditable": true,
-                  "isEditable": true,
-                  "isCellVisible": true,
-                  "isDerived": false,
-                  "label": "yearsofexperience",
-                  "isSaveVisible": true,
-                  "isDiscardVisible": true,
-                  "computedValue": "{{rounds.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"yearsofexperience\"]))}}",
-                  "sticky": "",
-                  "validation": {},
-                  "cellBackground": ""
-                },
-                "fluency": {
-                  "allowCellWrapping": false,
-                  "index": 2,
-                  "width": 150,
-                  "originalId": "fluency",
-                  "id": "fluency",
-                  "alias": "fluency",
-                  "horizontalAlignment": "CENTER",
-                  "verticalAlignment": "CENTER",
-                  "columnType": "number",
-                  "textColor": "",
-                  "textSize": "0.875rem",
-                  "fontStyle": "",
-                  "enableFilter": true,
-                  "enableSort": true,
-                  "isVisible": true,
-                  "isDisabled": false,
-                  "isCellEditable": true,
-                  "isEditable": true,
-                  "isCellVisible": true,
-                  "isDerived": false,
-                  "label": "fluency",
-                  "isSaveVisible": true,
-                  "isDiscardVisible": true,
-                  "computedValue": "{{rounds.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"fluency\"]))}}",
-                  "sticky": "",
-                  "validation": {},
-                  "cellBackground": ""
-                }
-              },
-              "onRowSelected": "",
-              "key": "fuwqigw1th",
-              "canFreezeColumn": true,
-              "isDeprecated": false,
-              "rightColumn": 64,
-              "textSize": "0.875rem",
-              "widgetId": "roag4sg2w0",
-              "allowAddNewRow": true,
-              "minWidth": 450,
-              "tableData": "{{appsmith.store.dataTable}}",
-              "label": "Data",
-              "searchKey": "",
-              "parentId": "0",
-              "renderMode": "CANVAS",
-              "horizontalAlignment": "CENTER",
-              "isVisibleSearch": true,
-              "responsiveBehavior": "fill",
-              "isVisiblePagination": true,
-              "verticalAlignment": "CENTER"
             },
             {
               "boxShadow": "none",

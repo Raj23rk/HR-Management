@@ -329,59 +329,6 @@
                       "minDynamicHeight": 4
                     },
                     {
-                      "boxShadow": "none",
-                      "widgetName": "jobtype",
-                      "displayName": "TreeSelect",
-                      "iconSVG": "/static/media/icon.bd99caba5853ad71e4b3d8daffacb3a2.svg",
-                      "labelText": "JobType",
-                      "searchTags": [
-                        "dropdown"
-                      ],
-                      "topRow": 4,
-                      "bottomRow": 8,
-                      "parentRowSpace": 10,
-                      "labelWidth": "8",
-                      "type": "SINGLE_SELECT_TREE_WIDGET",
-                      "hideCard": false,
-                      "defaultOptionValue": "",
-                      "animateLoading": true,
-                      "parentColumnSpace": 9.125,
-                      "dynamicTriggerPathList": [],
-                      "leftColumn": 33,
-                      "dynamicBindingPathList": [
-                        {
-                          "key": "accentColor"
-                        },
-                        {
-                          "key": "borderRadius"
-                        }
-                      ],
-                      "labelPosition": "Left",
-                      "options": "[\n  {\n    \"label\": \"FullTime\",\n    \"value\": \"BLUE\",\n    \"children\": [\n      {\n        \"label\": \"Dark Blue\",\n        \"value\": \"DARK BLUE\"\n      },\n      {\n        \"label\": \"Light Blue\",\n        \"value\": \"LIGHT BLUE\"\n      }\n    ]\n  },\n  {\n    \"label\": \"Online\",\n    \"value\": \"GREEN\"\n  },\n  {\n    \"label\": \"Hybrid\",\n    \"value\": \"RED\"\n  }\n]",
-                      "labelStyle": "BOLD",
-                      "placeholderText": "Select  JobType",
-                      "isDisabled": false,
-                      "key": "ajb1vf97na",
-                      "labelTextSize": "0.875rem",
-                      "isRequired": true,
-                      "isDeprecated": false,
-                      "rightColumn": 63,
-                      "dynamicHeight": "FIXED",
-                      "widgetId": "cp03x2jve0",
-                      "accentColor": "{{appsmith.theme.colors.primaryColor}}",
-                      "isVisible": true,
-                      "version": 1,
-                      "expandAll": false,
-                      "parentId": "q2ttq88j8t",
-                      "labelAlignment": "left",
-                      "renderMode": "CANVAS",
-                      "isLoading": false,
-                      "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
-                      "maxDynamicHeight": 9000,
-                      "allowClear": false,
-                      "minDynamicHeight": 4
-                    },
-                    {
                       "boxShadow": "{{appsmith.theme.boxShadow.appBoxShadow}}",
                       "widgetName": "description",
                       "displayName": "Rich Text Editor",
@@ -721,7 +668,7 @@
                       "boxShadow": "none",
                       "dateFormat": "DD-MM-YYYY",
                       "iconSVG": "/static/media/icon.300e5ab8e2e1c26c7a0bad06116842b7.svg",
-                      "topRow": 10,
+                      "topRow": 11,
                       "labelWidth": "8",
                       "type": "DATE_PICKER_WIDGET2",
                       "animateLoading": true,
@@ -756,7 +703,7 @@
                       "searchTags": [
                         "calendar"
                       ],
-                      "bottomRow": 14,
+                      "bottomRow": 15,
                       "shortcuts": false,
                       "parentRowSpace": 10,
                       "hideCard": false,
@@ -921,7 +868,7 @@
                         }
                       },
                       "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
-                      "columnUpdatedAt": 1679049433908,
+                      "columnUpdatedAt": 1679299799677,
                       "defaultSelectedRowIndices": [
                         0
                       ],
@@ -929,10 +876,10 @@
                       "defaultPageSize": 0,
                       "columnOrder": [
                         "customColumn1",
+                        "EditActions1",
                         "skils",
                         "yearsofexperience",
-                        "fluency",
-                        "EditActions1"
+                        "fluency"
                       ],
                       "dynamicPropertyPathList": [
                         {
@@ -1051,8 +998,8 @@
                           "enableSort": true,
                           "isVisible": true,
                           "isDisabled": false,
-                          "isCellEditable": true,
-                          "isEditable": true,
+                          "isCellEditable": false,
+                          "isEditable": false,
                           "isCellVisible": true,
                           "isDerived": false,
                           "label": "skils",
@@ -1080,8 +1027,8 @@
                           "enableSort": true,
                           "isVisible": true,
                           "isDisabled": false,
-                          "isCellEditable": true,
-                          "isEditable": true,
+                          "isCellEditable": false,
+                          "isEditable": false,
                           "isCellVisible": true,
                           "isDerived": false,
                           "label": "yearsofexperience",
@@ -1109,8 +1056,8 @@
                           "enableSort": true,
                           "isVisible": true,
                           "isDisabled": false,
-                          "isCellEditable": true,
-                          "isEditable": true,
+                          "isCellEditable": false,
+                          "isEditable": false,
                           "isCellVisible": true,
                           "isDerived": false,
                           "label": "fluency",
@@ -1190,6 +1137,60 @@
                       "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
                       "buttonVariant": "PRIMARY",
                       "placement": "CENTER"
+                    },
+                    {
+                      "boxShadow": "none",
+                      "widgetName": "jobtype",
+                      "isFilterable": true,
+                      "displayName": "Select",
+                      "iconSVG": "/static/media/icon.bd99caba5853ad71e4b3d8daffacb3a2.svg",
+                      "labelText": "Label",
+                      "searchTags": [
+                        "dropdown"
+                      ],
+                      "topRow": 5,
+                      "bottomRow": 9,
+                      "parentRowSpace": 10,
+                      "labelWidth": "8",
+                      "type": "SELECT_WIDGET",
+                      "serverSideFiltering": false,
+                      "hideCard": false,
+                      "defaultOptionValue": "GREEN",
+                      "animateLoading": true,
+                      "parentColumnSpace": 10.8265625,
+                      "dynamicTriggerPathList": [],
+                      "leftColumn": 33,
+                      "dynamicBindingPathList": [
+                        {
+                          "key": "accentColor"
+                        },
+                        {
+                          "key": "borderRadius"
+                        }
+                      ],
+                      "labelPosition": "Left",
+                      "options": "[\n  {\n    \"label\": \"ONLINE\",\n    \"value\": \"BLUE\"\n  },\n  {\n    \"label\": \"OFFLINE\",\n    \"value\": \"GREEN\"\n  },\n  {\n    \"label\": \"HYBIRD\",\n    \"value\": \"RED\"\n  }\n]",
+                      "placeholderText": "Select option",
+                      "isDisabled": false,
+                      "key": "t4jo5ec1g0",
+                      "labelTextSize": "0.875rem",
+                      "isRequired": false,
+                      "isDeprecated": false,
+                      "rightColumn": 60,
+                      "dynamicHeight": "FIXED",
+                      "widgetId": "f4ogalmp57",
+                      "accentColor": "{{appsmith.theme.colors.primaryColor}}",
+                      "minWidth": 450,
+                      "isVisible": true,
+                      "version": 1,
+                      "parentId": "q2ttq88j8t",
+                      "labelAlignment": "left",
+                      "renderMode": "CANVAS",
+                      "isLoading": false,
+                      "responsiveBehavior": "fill",
+                      "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+                      "maxDynamicHeight": 9000,
+                      "minDynamicHeight": 4
                     }
                   ],
                   "isDisabled": false,

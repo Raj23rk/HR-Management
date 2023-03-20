@@ -19,7 +19,7 @@ export default {
 		mobile.inputText= appsmith.URL.queryParams?.mobileno;
 		}
 		else{
-			job_email.inputText = '';
+			mobile.inputText = '';
 		}
 		
 		

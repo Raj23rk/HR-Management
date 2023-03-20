@@ -750,6 +750,8 @@
                       "boxShadow": "none",
                       "widgetName": "categories",
                       "isFilterable": true,
+                      "allowSelectAll": false,
+                      "dynamicPropertyPathList": [],
                       "displayName": "MultiSelect",
                       "iconSVG": "/static/media/icon.a3495809ae48291a64404f3bb04b0e69.svg",
                       "labelText": "Categories",

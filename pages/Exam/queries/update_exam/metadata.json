@@ -2,7 +2,7 @@
   "pluginType": "DB",
   "pluginId": "mongo-plugin",
   "unpublishedAction": {
-    "name": "up_exam",
+    "name": "update_exam",
     "datasource": {
       "name": "HR PROJECT",
       "pluginId": "mongo-plugin",
@@ -88,10 +88,10 @@
             "data": "ALL"
           },
           "query": {
-            "data": "{ \"_id\": ObjectId({{create_examtable.selectedRow.}}) }"
+            "data": "{ \"_id\": ObjectId({{create_examtable.selectedRow._id}}) }"
           },
           "update": {
-            "data": "{ \"$set\": { \"duration\": \"new value\" } }"
+            "data": "{ \"$set\": { \"duration\": \"{{edit_duration.text}}\",\n \"examname\": \"{{\nedit_exname.text}}\" }}"
           }
         }
       }
@@ -100,20 +100,25 @@
     "dynamicBindingPathList": [
       {
         "key": "formData.updateMany.query.data"
+      },
+      {
+        "key": "formData.updateMany.update.data"
       }
     ],
     "isValid": true,
     "invalids": [],
     "messages": [],
     "jsonPathKeys": [
-      "create_examtable.selectedRow."
+      "\nedit_exname.text",
+      "create_examtable.selectedRow._id",
+      "edit_duration.text"
     ],
     "userSetOnLoad": false,
     "confirmBeforeExecute": false,
     "policies": [],
     "userPermissions": []
   },
-  "id": "Exam_up_exam",
+  "id": "Exam_update_exam",
   "deleted": false,
-  "gitSyncId": "64081d9720d355269dd6b6f0_641817b0c4834a21e2b5ad2c"
+  "gitSyncId": "64081d9720d355269dd6b6f0_641819530173ff1970ba998f"
 }

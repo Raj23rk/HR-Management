@@ -13,7 +13,7 @@
           "detachFromLayout": true,
           "widgetId": "0",
           "topRow": 0,
-          "bottomRow": 480,
+          "bottomRow": 490,
           "containerStyle": "none",
           "snapRows": 63,
           "parentRowSpace": 1,
@@ -615,7 +615,7 @@
                 }
               ],
               "displayName": "Table",
-              "bottomRow": 48,
+              "bottomRow": 49,
               "columnWidthMap": {
                 "task": 245,
                 "step": 70,

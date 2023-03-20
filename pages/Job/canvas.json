@@ -868,7 +868,7 @@
                         }
                       },
                       "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
-                      "columnUpdatedAt": 1679299799677,
+                      "columnUpdatedAt": 1679301447822,
                       "defaultSelectedRowIndices": [
                         0
                       ],
@@ -2978,9 +2978,7 @@
               "pluginType": "DB",
               "jsonPathKeys": [],
               "timeoutInMillisecond": 10000
-            }
-          ],
-          [
+            },
             {
               "id": "Job_save_queries.loadTableData",
               "name": "save_queries.loadTableData",

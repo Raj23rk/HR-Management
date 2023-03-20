@@ -8,7 +8,7 @@ export default {
 	
 	saveValue: ()=>{
 		let existing_obj = appsmith.store.dataTable;
-		existing_obj.push(round.newRow);
+		existing_obj.push(ins.newRow);
 		storeValue('dataTable',existing_obj);
 		console.log(appsmith.store.dataTable);
 	},

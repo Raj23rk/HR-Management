@@ -77,7 +77,7 @@
         },
         "insert": {
           "documents": {
-            "data": "[{      \"Address\": \"{{emp_Add.text}}\",\n      \"Designation\": \"{{emp_des.text\n\t]}\",\n      \"Gender\": \"{{emp_gen.text}}\",\n      \"email\": \"{{emp_email.text}}\",\n      \"employeename\": \"{{emp_name.text}}\",\n      \"joiningdate\": \"{{emp_join.formattedDate}}\",\n}]"
+            "data": "[{      \"Address\": \"{{emp_Add.text}}\",\n      \"Designation\": \"{{emp_des.text}}\",\n      \"Gender\": \"{{emp_gen.text}}\",\n      \"email\": \"{{emp_email.text}}\",\n      \"employeename\": \"{{emp_name.text}}\",\n      \"joiningdate\": \"{{emp_join.formattedDate}}\",\n}]"
           }
         },
         "smartSubstitution": {
@@ -106,7 +106,12 @@
     "invalids": [],
     "messages": [],
     "jsonPathKeys": [
-      "emp_Add.text"
+      "emp_Add.text",
+      "emp_des.text",
+      "emp_email.text",
+      "emp_gen.text",
+      "emp_join.formattedDate",
+      "emp_name.text"
     ],
     "userSetOnLoad": false,
     "confirmBeforeExecute": false,

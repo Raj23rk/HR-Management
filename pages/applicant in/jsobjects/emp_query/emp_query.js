@@ -16,10 +16,10 @@ export default {
 		
 		
 		if(appsmith.URL.queryParams?.Email){
-		skil.inputText= appsmith.URL.queryParams?.Email;
+		job_email.inputText= appsmith.URL.queryParams?.Email;
 		}
 		else{
-			skil.inputText = '';
+			job_email.inputText = '';
 		}
 	}
 	

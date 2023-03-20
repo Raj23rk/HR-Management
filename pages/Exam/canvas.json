@@ -865,7 +865,7 @@
                       "widgetId": "2kq0e6eh20",
                       "accentColor": "{{appsmith.theme.colors.primaryColor}}",
                       "minWidth": 450,
-                      "isVisible": "{{appsmith.store.isFilterOpen}}",
+                      "isVisible": "{{!appsmith.store.isFilterOpen}}",
                       "version": 1,
                       "parentId": "hhlken332n",
                       "labelAlignment": "left",

@@ -13,7 +13,7 @@
           "detachFromLayout": true,
           "widgetId": "0",
           "topRow": 0,
-          "bottomRow": 600,
+          "bottomRow": 510,
           "containerStyle": "none",
           "snapRows": 124,
           "parentRowSpace": 1,
@@ -1229,7 +1229,7 @@
               "borderColor": "#f4f4f5",
               "isVisibleDownload": false,
               "iconSVG": "/static/media/icon.db8a9cbd2acd22a31ea91cc37ea2a46c.svg",
-              "topRow": 5,
+              "topRow": 6,
               "isSortable": true,
               "type": "TABLE_WIDGET_V2",
               "inlineEditingSaveOption": "ROW_LEVEL",
@@ -1361,7 +1361,7 @@
                 }
               ],
               "displayName": "Table",
-              "bottomRow": 60,
+              "bottomRow": 51,
               "columnWidthMap": {
                 "task": 245,
                 "step": 70,
@@ -2978,9 +2978,7 @@
               "pluginType": "DB",
               "jsonPathKeys": [],
               "timeoutInMillisecond": 10000
-            }
-          ],
-          [
+            },
             {
               "id": "Job_save_queries.loadTableData",
               "name": "save_queries.loadTableData",

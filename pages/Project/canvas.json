@@ -1306,7 +1306,7 @@
                   "key": "primaryColumns.customColumn2.computedValue"
                 },
                 {
-                  "key": "primaryColumns.customColumn2.cellBackground"
+                  "key": "primaryColumns.customColumn2.textColor"
                 }
               ],
               "needsHeightForContent": true,
@@ -1385,7 +1385,7 @@
                   "key": "primaryColumns.customColumn2.onClick"
                 }
               ],
-              "borderWidth": "1",
+              "borderWidth": "0",
               "primaryColumns": {
                 "status": {
                   "index": 2,
@@ -1393,7 +1393,7 @@
                   "id": "status",
                   "originalId": "status",
                   "alias": "status",
-                  "horizontalAlignment": "LEFT",
+                  "horizontalAlignment": "CENTER",
                   "verticalAlignment": "CENTER",
                   "columnType": "text",
                   "textSize": "0.875rem",
@@ -1416,7 +1416,7 @@
                   "originalId": "projectname",
                   "id": "projectname",
                   "alias": "projectname",
-                  "horizontalAlignment": "LEFT",
+                  "horizontalAlignment": "CENTER",
                   "verticalAlignment": "CENTER",
                   "columnType": "text",
                   "textColor": "",
@@ -1445,7 +1445,7 @@
                   "originalId": "description",
                   "id": "description",
                   "alias": "description",
-                  "horizontalAlignment": "LEFT",
+                  "horizontalAlignment": "CENTER",
                   "verticalAlignment": "CENTER",
                   "columnType": "text",
                   "textColor": "",
@@ -1474,7 +1474,7 @@
                   "originalId": "remark",
                   "id": "remark",
                   "alias": "remark",
-                  "horizontalAlignment": "LEFT",
+                  "horizontalAlignment": "CENTER",
                   "verticalAlignment": "CENTER",
                   "columnType": "text",
                   "textColor": "",
@@ -1503,7 +1503,7 @@
                   "originalId": "_id",
                   "id": "_id",
                   "alias": "_id",
-                  "horizontalAlignment": "LEFT",
+                  "horizontalAlignment": "CENTER",
                   "verticalAlignment": "CENTER",
                   "columnType": "text",
                   "textColor": "",
@@ -1532,7 +1532,7 @@
                   "originalId": "customColumn1",
                   "id": "customColumn1",
                   "alias": "Edit",
-                  "horizontalAlignment": "LEFT",
+                  "horizontalAlignment": "CENTER",
                   "verticalAlignment": "CENTER",
                   "columnType": "button",
                   "textSize": "0.875rem",
@@ -1566,10 +1566,10 @@
                   "originalId": "customColumn2",
                   "id": "customColumn2",
                   "alias": "Ticket",
-                  "horizontalAlignment": "LEFT",
+                  "horizontalAlignment": "CENTER",
                   "verticalAlignment": "CENTER",
                   "columnType": "url",
-                  "textSize": "1rem",
+                  "textSize": "0.875rem",
                   "enableFilter": true,
                   "enableSort": true,
                   "isVisible": true,
@@ -1592,8 +1592,8 @@
                   "menuItemsSource": "STATIC",
                   "onClick": "",
                   "displayText": "Ticket",
-                  "cellBackground": "{{project_list.processedTableData.map((currentRow, currentIndex) => ( appsmith.theme.colors.primaryColor))}}",
-                  "textColor": "#e4e4e7",
+                  "cellBackground": "#a16207",
+                  "textColor": "{{project_list.processedTableData.map((currentRow, currentIndex) => ( appsmith.theme.colors.primaryColor))}}",
                   "fontStyle": "BOLD"
                 },
                 "customColumn3": {
@@ -1603,7 +1603,7 @@
                   "originalId": "customColumn3",
                   "id": "customColumn3",
                   "alias": "S.no",
-                  "horizontalAlignment": "LEFT",
+                  "horizontalAlignment": "CENTER",
                   "verticalAlignment": "CENTER",
                   "columnType": "text",
                   "textSize": "0.875rem",
@@ -1631,7 +1631,7 @@
                   "originalId": "members",
                   "id": "members",
                   "alias": "members",
-                  "horizontalAlignment": "LEFT",
+                  "horizontalAlignment": "CENTER",
                   "verticalAlignment": "CENTER",
                   "columnType": "text",
                   "textColor": "",
@@ -1666,7 +1666,7 @@
               "searchKey": "",
               "parentId": "0",
               "renderMode": "CANVAS",
-              "horizontalAlignment": "LEFT",
+              "horizontalAlignment": "CENTER",
               "isVisibleSearch": false,
               "responsiveBehavior": "fill",
               "isVisiblePagination": false,

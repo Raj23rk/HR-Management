@@ -1592,7 +1592,7 @@
                   "menuItemsSource": "STATIC",
                   "onClick": "",
                   "displayText": "Ticket",
-                  "cellBackground": "#a16207",
+                  "cellBackground": "",
                   "textColor": "{{project_list.processedTableData.map((currentRow, currentIndex) => ( appsmith.theme.colors.primaryColor))}}",
                   "fontStyle": "BOLD"
                 },

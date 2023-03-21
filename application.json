@@ -34,6 +34,10 @@
   "publishedCustomJSLibs": [],
   "evaluationVersion": 2,
   "applicationVersion": 2,
+  "embedSetting": {
+    "height": "720px",
+    "width": "1224px"
+  },
   "collapseInvisibleWidgets": true,
   "isManualUpdate": false,
   "deleted": false

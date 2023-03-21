@@ -1294,9 +1294,6 @@
                   "key": "primaryColumns.customColumn1.boxShadow"
                 },
                 {
-                  "key": "primaryColumns.customColumn2.buttonColor"
-                },
-                {
                   "key": "primaryColumns.customColumn3.computedValue"
                 },
                 {
@@ -1304,6 +1301,12 @@
                 },
                 {
                   "key": "tableData"
+                },
+                {
+                  "key": "primaryColumns.customColumn2.computedValue"
+                },
+                {
+                  "key": "primaryColumns.customColumn2.cellBackground"
                 }
               ],
               "needsHeightForContent": true,
@@ -1358,13 +1361,18 @@
                 "remark",
                 "description"
               ],
-              "dynamicPropertyPathList": [],
+              "dynamicPropertyPathList": [
+                {
+                  "key": "primaryColumns.customColumn2.onClick"
+                }
+              ],
               "displayName": "Table",
               "bottomRow": 49,
               "columnWidthMap": {
                 "task": 245,
                 "step": 70,
-                "status": 85
+                "status": 85,
+                "customColumn2": 107
               },
               "parentRowSpace": 10,
               "hideCard": false,
@@ -1372,6 +1380,9 @@
               "dynamicTriggerPathList": [
                 {
                   "key": "primaryColumns.customColumn1.onClick"
+                },
+                {
+                  "key": "primaryColumns.customColumn2.onClick"
                 }
               ],
               "borderWidth": "1",
@@ -1557,8 +1568,8 @@
                   "alias": "Ticket",
                   "horizontalAlignment": "LEFT",
                   "verticalAlignment": "CENTER",
-                  "columnType": "button",
-                  "textSize": "0.875rem",
+                  "columnType": "url",
+                  "textSize": "1rem",
                   "enableFilter": true,
                   "enableSort": true,
                   "isVisible": true,
@@ -1570,7 +1581,7 @@
                   "label": "Ticket",
                   "isSaveVisible": true,
                   "isDiscardVisible": true,
-                  "computedValue": "",
+                  "computedValue": "{{project_list.processedTableData.map((currentRow, currentIndex) => ( 'http://localhost:4200/'))}}",
                   "sticky": "",
                   "validation": {},
                   "buttonStyle": "rgb(3, 179, 101)",
@@ -1579,8 +1590,11 @@
                   "buttonLabel": "Ticket",
                   "buttonVariant": "PRIMARY",
                   "menuItemsSource": "STATIC",
-                  "buttonColor": "{{project_list.processedTableData.map((currentRow, currentIndex) => ( appsmith.theme.colors.primaryColor))}}",
-                  "borderRadius": "0.375rem"
+                  "onClick": "",
+                  "displayText": "Ticket",
+                  "cellBackground": "{{project_list.processedTableData.map((currentRow, currentIndex) => ( appsmith.theme.colors.primaryColor))}}",
+                  "textColor": "#e4e4e7",
+                  "fontStyle": "BOLD"
                 },
                 "customColumn3": {
                   "allowCellWrapping": false,

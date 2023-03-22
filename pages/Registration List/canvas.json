@@ -157,6 +157,9 @@
                 },
                 {
                   "key": "primaryColumns.mark.computedValue"
+                },
+                {
+                  "key": "primaryColumns.resume.computedValue"
                 }
               ],
               "needsHeightForContent": true,
@@ -194,7 +197,7 @@
                 }
               },
               "borderRadius": "0px",
-              "columnUpdatedAt": 1679470625386,
+              "columnUpdatedAt": 1679485677501,
               "defaultSelectedRowIndices": [
                 0
               ],
@@ -220,7 +223,8 @@
                 "Schoolname",
                 "Pincode",
                 "date_of_birth",
-                "mark"
+                "mark",
+                "resume"
               ],
               "dynamicPropertyPathList": [],
               "displayName": "Table",
@@ -812,6 +816,35 @@
                   "isSaveVisible": true,
                   "isDiscardVisible": true,
                   "computedValue": "{{Table1.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"mark\"]))}}",
+                  "sticky": "",
+                  "validation": {},
+                  "cellBackground": ""
+                },
+                "resume": {
+                  "allowCellWrapping": false,
+                  "index": 0,
+                  "width": 150,
+                  "originalId": "resume",
+                  "id": "resume",
+                  "alias": "resume",
+                  "horizontalAlignment": "CENTER",
+                  "verticalAlignment": "CENTER",
+                  "columnType": "text",
+                  "textColor": "",
+                  "textSize": "0.875rem",
+                  "fontStyle": "",
+                  "enableFilter": true,
+                  "enableSort": true,
+                  "isVisible": true,
+                  "isDisabled": false,
+                  "isCellEditable": false,
+                  "isEditable": false,
+                  "isCellVisible": true,
+                  "isDerived": false,
+                  "label": "resume",
+                  "isSaveVisible": true,
+                  "isDiscardVisible": true,
+                  "computedValue": "{{Table1.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"resume\"]))}}",
                   "sticky": "",
                   "validation": {},
                   "cellBackground": ""

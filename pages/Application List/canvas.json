@@ -150,7 +150,11 @@
                     {
                       "boxShadow": "none",
                       "widgetName": "Switch1",
-                      "dynamicPropertyPathList": [],
+                      "dynamicPropertyPathList": [
+                        {
+                          "key": "isVisible"
+                        }
+                      ],
                       "displayName": "Switch",
                       "iconSVG": "/static/media/icon.a3115bc1c224776de2846985c8819f99.svg",
                       "searchTags": [
@@ -184,7 +188,7 @@
                       "dynamicHeight": "AUTO_HEIGHT",
                       "widgetId": "43uh5wodwj",
                       "accentColor": "{{appsmith.theme.colors.primaryColor}}",
-                      "isVisible": true,
+                      "isVisible": "false",
                       "label": "LIVE",
                       "defaultSwitchState": true,
                       "version": 1,
@@ -542,6 +546,9 @@
                 },
                 {
                   "key": "primaryColumns.customColumn2.boxShadow"
+                },
+                {
+                  "key": "primaryColumns.resume.computedValue"
                 }
               ],
               "needsHeightForContent": true,
@@ -579,7 +586,7 @@
                 }
               },
               "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
-              "columnUpdatedAt": 1679288003925,
+              "columnUpdatedAt": 1679479666817,
               "defaultSelectedRowIndices": [
                 0
               ],
@@ -607,7 +614,8 @@
                 "Schoolname",
                 "Pincode",
                 "date_of_birth",
-                "customColumn2"
+                "customColumn2",
+                "resume"
               ],
               "dynamicPropertyPathList": [
                 {
@@ -1274,6 +1282,35 @@
                   "customAlias": "",
                   "buttonLabel": "View",
                   "onClick": "{{\t\tnavigateTo('applicant in', {Name: applicant.triggeredRow.Name,\n\t\t\t\t\t\tskills:applicant.triggeredRow.skills,\nEmail:applicant.triggeredRow.Email,\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\tmobileno:applicant.triggeredRow.mobileno\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t });\n}}"
+                },
+                "resume": {
+                  "allowCellWrapping": false,
+                  "index": 0,
+                  "width": 150,
+                  "originalId": "resume",
+                  "id": "resume",
+                  "alias": "resume",
+                  "horizontalAlignment": "LEFT",
+                  "verticalAlignment": "CENTER",
+                  "columnType": "text",
+                  "textColor": "",
+                  "textSize": "0.875rem",
+                  "fontStyle": "",
+                  "enableFilter": true,
+                  "enableSort": true,
+                  "isVisible": true,
+                  "isDisabled": false,
+                  "isCellEditable": false,
+                  "isEditable": false,
+                  "isCellVisible": true,
+                  "isDerived": false,
+                  "label": "resume",
+                  "isSaveVisible": true,
+                  "isDiscardVisible": true,
+                  "computedValue": "{{applicant.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"resume\"]))}}",
+                  "sticky": "",
+                  "validation": {},
+                  "cellBackground": ""
                 }
               },
               "key": "cl0adm2psn",

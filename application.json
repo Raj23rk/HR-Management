@@ -27,6 +27,10 @@
     {
       "id": "register page",
       "isDefault": false
+    },
+    {
+      "id": "Registration List",
+      "isDefault": false
     }
   ],
   "viewMode": false,

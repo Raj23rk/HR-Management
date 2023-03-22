@@ -13,7 +13,7 @@
           "detachFromLayout": true,
           "widgetId": "0",
           "topRow": 0,
-          "bottomRow": 790,
+          "bottomRow": 760,
           "containerStyle": "none",
           "snapRows": 45,
           "parentRowSpace": 1,
@@ -38,7 +38,7 @@
                 "group"
               ],
               "topRow": 0,
-              "bottomRow": 79,
+              "bottomRow": 76,
               "parentRowSpace": 10,
               "type": "CONTAINER_WIDGET",
               "hideCard": false,
@@ -60,7 +60,7 @@
                   "widgetName": "Canvas2",
                   "displayName": "Canvas",
                   "topRow": 0,
-                  "bottomRow": 790,
+                  "bottomRow": 760,
                   "parentRowSpace": 1,
                   "type": "CANVAS_WIDGET",
                   "canExtend": false,
@@ -1183,8 +1183,8 @@
                       "searchTags": [
                         "dropdown"
                       ],
-                      "topRow": 47,
-                      "bottomRow": 54,
+                      "topRow": 50,
+                      "bottomRow": 57,
                       "parentRowSpace": 10,
                       "labelWidth": 5,
                       "type": "SINGLE_SELECT_TREE_WIDGET",
@@ -1193,7 +1193,7 @@
                       "animateLoading": true,
                       "parentColumnSpace": 16.75,
                       "dynamicTriggerPathList": [],
-                      "leftColumn": 33,
+                      "leftColumn": 32,
                       "dynamicBindingPathList": [
                         {
                           "key": "accentColor"
@@ -1210,7 +1210,7 @@
                       "labelTextSize": "0.875rem",
                       "isRequired": false,
                       "isDeprecated": false,
-                      "rightColumn": 48,
+                      "rightColumn": 47,
                       "dynamicHeight": "FIXED",
                       "widgetId": "b45am80wgj",
                       "accentColor": "{{appsmith.theme.colors.primaryColor}}",
@@ -1342,8 +1342,8 @@
                         "click",
                         "submit"
                       ],
-                      "topRow": 59,
-                      "bottomRow": 64,
+                      "topRow": 63,
+                      "bottomRow": 68,
                       "parentRowSpace": 10,
                       "type": "BUTTON_WIDGET",
                       "hideCard": false,
@@ -1354,7 +1354,7 @@
                           "key": "onClick"
                         }
                       ],
-                      "leftColumn": 27,
+                      "leftColumn": 26,
                       "dynamicBindingPathList": [
                         {
                           "key": "buttonColor"
@@ -1367,7 +1367,7 @@
                       "isDisabled": false,
                       "key": "ny9kszu1cm",
                       "isDeprecated": false,
-                      "rightColumn": 35,
+                      "rightColumn": 34,
                       "isDefaultClickDisabled": true,
                       "widgetId": "nxs1vwtyvw",
                       "isVisible": true,

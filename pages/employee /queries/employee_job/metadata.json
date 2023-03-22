@@ -29,7 +29,7 @@
           }
         },
         "body": {
-          "data": "{\n  \"insert\": \"emp\",\n  \"documents\": [\n    {\n      \"Address\": \"new value\",\n      \"Designation\": \"new value\",\n      \"Gender\": \"new value\",\n      \"_id\": ObjectId(\"a_valid_object_id_hex\"),\n      \"email\": \"new value\",\n      \"employeename\": \"new value\",\n      \"joiningdate\": \"new value\",\n    }\n  ]\n}\n"
+          "data": "{\n  \"insert\": \"emp\",\n  \"documents\": [\n    {\n      \"Address\": \"new value\",\n      \"Designation\": \"new value\",\n      \"Gender\": \"new value\",\n      \"Score\": \"new value\",\n      \"Skills\": \"new value\",\n      \"_id\": ObjectId(\"a_valid_object_id_hex\"),\n      \"email\": \"new value\",\n      \"employeename\": \"new value\",\n      \"joiningdate\": \"new value\",\n    }\n  ]\n}\n"
         },
         "collection": {
           "data": "emp"
@@ -77,7 +77,7 @@
         },
         "insert": {
           "documents": {
-            "data": "[{      \"Address\": \"{{emp_Add.text}}\",\n      \"Designation\": \"{{emp_des.text}}\",\n      \"Gender\": \"{{emp_gen.text}}\",\n      \"email\": \"{{emp_email.text}}\",\n      \"employeename\": \"{{emp_name.text}}\",\n      \"joiningdate\": \"{{emp_join.formattedDate}}\",\n}]"
+            "data": "[{      \"Address\": \"{{emp_Add.text}}\",\n      \"Designation\": \"{{emp_des.text}}\",\n      \"Gender\": \"{{emp_gen.text}}\",\n      \"Score\": \"{{emp_score.text}}\",\n      \"Skills\": \"{{emp_skils.selectedOptionLabels}}\",\n     \n      \"email\": \"{{emp_email.text}}\",\n      \"employeename\": \"{{emp_name.text}}\",\n      \"joiningdate\": \"{{emp_join.formattedDate}}\",\n}]"
           }
         },
         "smartSubstitution": {
@@ -111,7 +111,9 @@
       "emp_email.text",
       "emp_gen.text",
       "emp_join.formattedDate",
-      "emp_name.text"
+      "emp_name.text",
+      "emp_score.text",
+      "emp_skils.selectedOptionLabels"
     ],
     "userSetOnLoad": false,
     "confirmBeforeExecute": false,
@@ -120,5 +122,5 @@
   },
   "id": "employee _employee_job",
   "deleted": false,
-  "gitSyncId": "64081d9720d355269dd6b6f0_64130581806a4f4f793fcf50"
+  "gitSyncId": "64081d9720d355269dd6b6f0_6419904c33970d1990c876aa"
 }

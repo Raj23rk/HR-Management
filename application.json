@@ -23,6 +23,10 @@
     {
       "id": "applicant in",
       "isDefault": false
+    },
+    {
+      "id": "register page",
+      "isDefault": false
     }
   ],
   "viewMode": false,

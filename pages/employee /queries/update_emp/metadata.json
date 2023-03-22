@@ -88,10 +88,10 @@
             "data": "ALL"
           },
           "query": {
-            "data": "{ \"_id\": ObjectId({{Table1.selectedRow._id}}) }"
+            "data": "{ \"_id\": ObjectId({{emp_tab.selectedRow._id}}) }"
           },
           "update": {
-            "data": "{ \"$set\": { \"Address\": \"{{edit_add.text}}\",\n      \"Designation\": \"{{edit_des.text}}\",\n      \"Gender\": \"{{edit_gen.text}}\",\n \n      \"email\": \"{{edit_email.text}}\",\n      \"employeename\": \"{{edit_emp.text}}\",\n      \"joiningdate\": \"{{edit_join.formattedDate}}\", } }"
+            "data": "{ \"$set\": {  \"Address\": \"{{edit_add.text}}\",\n      \"Designation\": \"{{edit_des.text}}\",\n      \"Gender\": \"{{edit_gen.text}}\",\n      \n      \"email\": \"{{edit_email.text}}\",\n      \"employeename\": \"{{edit_emp.text}}\",\n      \"joiningdate\": \"{{edit_join.formattedDate}}\", } }"
           }
         }
       }
@@ -109,13 +109,13 @@
     "invalids": [],
     "messages": [],
     "jsonPathKeys": [
-      "Table1.selectedRow._id",
       "edit_add.text",
       "edit_des.text",
       "edit_email.text",
       "edit_emp.text",
       "edit_gen.text",
-      "edit_join.formattedDate"
+      "edit_join.formattedDate",
+      "emp_tab.selectedRow._id"
     ],
     "userSetOnLoad": false,
     "confirmBeforeExecute": false,
@@ -124,5 +124,5 @@
   },
   "id": "employee _update_emp",
   "deleted": false,
-  "gitSyncId": "64081d9720d355269dd6b6f0_64130e85fc5c91191c54c022"
+  "gitSyncId": "64081d9720d355269dd6b6f0_6419698e33970d1990c8705a"
 }

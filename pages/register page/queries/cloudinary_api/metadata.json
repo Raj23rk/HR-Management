@@ -33,15 +33,17 @@
       "body": "",
       "bodyFormData": [
         {
-          "key": "files",
+          "key": "file",
           "value": "{{resume.files[0]}}",
           "type": "FILE"
         },
         {
-          "key": "upload-preset"
+          "key": "upload_preset",
+          "value": "hr",
+          "type": "TEXT"
         }
       ],
-      "httpMethod": "PUT",
+      "httpMethod": "POST",
       "selfReferencingDataPaths": [],
       "pluginSpecifiedTemplates": [
         {
@@ -71,5 +73,5 @@
   },
   "id": "register page_cloudinary_api",
   "deleted": false,
-  "gitSyncId": "64081d9720d355269dd6b6f0_641be2ff4b58b56f8e376368"
+  "gitSyncId": "64081d9720d355269dd6b6f0_641c0245e9d7800556f54cf5"
 }

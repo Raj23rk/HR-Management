@@ -1232,6 +1232,11 @@
                       "boxShadow": "none",
                       "widgetName": "resume",
                       "buttonColor": "{{appsmith.theme.colors.primaryColor}}",
+                      "dynamicPropertyPathList": [
+                        {
+                          "key": "isVisible"
+                        }
+                      ],
                       "displayName": "FilePicker",
                       "iconSVG": "/static/media/icon.7c5ad9c357928c6ff5701bf51a56c2e5.svg",
                       "searchTags": [
@@ -1247,7 +1252,11 @@
                       "hideCard": false,
                       "animateLoading": true,
                       "parentColumnSpace": 16.75,
-                      "dynamicTriggerPathList": [],
+                      "dynamicTriggerPathList": [
+                        {
+                          "key": "onFilesSelected"
+                        }
+                      ],
                       "leftColumn": 48,
                       "dynamicBindingPathList": [
                         {
@@ -1259,12 +1268,13 @@
                       ],
                       "isDisabled": false,
                       "key": "sbb2v1jbje",
+                      "onFilesSelected": "",
                       "isRequired": false,
                       "isDeprecated": false,
                       "rightColumn": 61,
                       "isDefaultClickDisabled": true,
                       "widgetId": "fihylpo59j",
-                      "isVisible": true,
+                      "isVisible": "true",
                       "label": "Upload Resume",
                       "maxFileSize": 5,
                       "dynamicTyping": true,

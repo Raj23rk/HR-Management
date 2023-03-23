@@ -1581,7 +1581,7 @@
                   "label": "Ticket",
                   "isSaveVisible": true,
                   "isDiscardVisible": true,
-                  "computedValue": "{{project_list.processedTableData.map((currentRow, currentIndex) => ( 'http://localhost:4200/'))}}",
+                  "computedValue": "{{project_list.processedTableData.map((currentRow, currentIndex) => ( 'http://localhost:4200'))}}",
                   "sticky": "",
                   "validation": {},
                   "buttonStyle": "rgb(3, 179, 101)",

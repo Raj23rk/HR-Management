@@ -60,7 +60,7 @@
                   "widgetName": "Canvas2",
                   "displayName": "Canvas",
                   "topRow": 0,
-                  "bottomRow": 700,
+                  "bottomRow": 710,
                   "parentRowSpace": 1,
                   "type": "CANVAS_WIDGET",
                   "canExtend": false,
@@ -1278,7 +1278,7 @@
                       "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
                       "originalBottomRow": 68,
                       "files": [],
-                      "maxNumFiles": 1
+                      "maxNumFiles": "10"
                     },
                     {
                       "resetFormOnClick": false,

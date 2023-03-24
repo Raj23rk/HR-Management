@@ -13,7 +13,7 @@
           "detachFromLayout": true,
           "widgetId": "0",
           "topRow": 0,
-          "bottomRow": 850,
+          "bottomRow": 940,
           "containerStyle": "none",
           "snapRows": 124,
           "parentRowSpace": 1,
@@ -1361,7 +1361,7 @@
                 }
               ],
               "displayName": "Table",
-              "bottomRow": 85,
+              "bottomRow": 94,
               "columnWidthMap": {
                 "task": 245,
                 "step": 70,
@@ -2978,9 +2978,7 @@
               "pluginType": "DB",
               "jsonPathKeys": [],
               "timeoutInMillisecond": 10000
-            }
-          ],
-          [
+            },
             {
               "id": "Job_save_queries.loadTableData",
               "name": "save_queries.loadTableData",

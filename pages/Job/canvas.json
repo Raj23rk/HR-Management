@@ -830,6 +830,9 @@
                         },
                         {
                           "key": "primaryColumns.fluency.computedValue"
+                        },
+                        {
+                          "key": "primaryColumns.SNO.computedValue"
                         }
                       ],
                       "needsHeightForContent": true,
@@ -868,7 +871,7 @@
                         }
                       },
                       "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
-                      "columnUpdatedAt": 1679301447822,
+                      "columnUpdatedAt": 1679720061741,
                       "defaultSelectedRowIndices": [
                         0
                       ],
@@ -879,7 +882,8 @@
                         "EditActions1",
                         "skils",
                         "yearsofexperience",
-                        "fluency"
+                        "fluency",
+                        "SNO"
                       ],
                       "dynamicPropertyPathList": [
                         {
@@ -893,7 +897,7 @@
                         }
                       ],
                       "displayName": "Table",
-                      "bottomRow": 68,
+                      "bottomRow": 65,
                       "columnWidthMap": {
                         "task": 245,
                         "step": 70,
@@ -1064,6 +1068,35 @@
                           "isSaveVisible": true,
                           "isDiscardVisible": true,
                           "computedValue": "{{Table1.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"fluency\"]))}}",
+                          "sticky": "",
+                          "validation": {},
+                          "cellBackground": ""
+                        },
+                        "SNO": {
+                          "allowCellWrapping": false,
+                          "index": 3,
+                          "width": 150,
+                          "originalId": "SNO",
+                          "id": "SNO",
+                          "alias": "SNO",
+                          "horizontalAlignment": "LEFT",
+                          "verticalAlignment": "CENTER",
+                          "columnType": "number",
+                          "textColor": "",
+                          "textSize": "0.875rem",
+                          "fontStyle": "",
+                          "enableFilter": true,
+                          "enableSort": true,
+                          "isVisible": true,
+                          "isDisabled": false,
+                          "isCellEditable": false,
+                          "isEditable": false,
+                          "isCellVisible": true,
+                          "isDerived": false,
+                          "label": "SNO",
+                          "isSaveVisible": true,
+                          "isDiscardVisible": true,
+                          "computedValue": "{{Table1.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"SNO\"]))}}",
                           "sticky": "",
                           "validation": {},
                           "cellBackground": ""
@@ -1920,6 +1953,9 @@
                         },
                         {
                           "key": "primaryColumns.fluency.computedValue"
+                        },
+                        {
+                          "key": "primaryColumns.SNO.computedValue"
                         }
                       ],
                       "needsHeightForContent": true,
@@ -1958,7 +1994,7 @@
                         }
                       },
                       "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
-                      "columnUpdatedAt": 1679048947618,
+                      "columnUpdatedAt": 1679720139798,
                       "defaultSelectedRowIndices": [
                         0
                       ],
@@ -1969,7 +2005,8 @@
                         "EditActions1",
                         "skils",
                         "yearsofexperience",
-                        "fluency"
+                        "fluency",
+                        "SNO"
                       ],
                       "dynamicPropertyPathList": [
                         {
@@ -2156,6 +2193,35 @@
                           "isSaveVisible": true,
                           "isDiscardVisible": true,
                           "computedValue": "{{edit_skils.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"fluency\"]))}}",
+                          "sticky": "",
+                          "validation": {},
+                          "cellBackground": ""
+                        },
+                        "SNO": {
+                          "allowCellWrapping": false,
+                          "index": 3,
+                          "width": 150,
+                          "originalId": "SNO",
+                          "id": "SNO",
+                          "alias": "SNO",
+                          "horizontalAlignment": "LEFT",
+                          "verticalAlignment": "CENTER",
+                          "columnType": "number",
+                          "textColor": "",
+                          "textSize": "0.875rem",
+                          "fontStyle": "",
+                          "enableFilter": true,
+                          "enableSort": true,
+                          "isVisible": true,
+                          "isDisabled": false,
+                          "isCellEditable": false,
+                          "isEditable": false,
+                          "isCellVisible": true,
+                          "isDerived": false,
+                          "label": "SNO",
+                          "isSaveVisible": true,
+                          "isDiscardVisible": true,
+                          "computedValue": "{{edit_skils.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"SNO\"]))}}",
                           "sticky": "",
                           "validation": {},
                           "cellBackground": ""

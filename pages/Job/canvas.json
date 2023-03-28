@@ -830,9 +830,6 @@
                         },
                         {
                           "key": "primaryColumns.fluency.computedValue"
-                        },
-                        {
-                          "key": "primaryColumns.SNO.computedValue"
                         }
                       ],
                       "needsHeightForContent": true,
@@ -871,7 +868,7 @@
                         }
                       },
                       "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
-                      "columnUpdatedAt": 1679720061741,
+                      "columnUpdatedAt": 1679756605910,
                       "defaultSelectedRowIndices": [
                         0
                       ],
@@ -882,8 +879,7 @@
                         "EditActions1",
                         "skils",
                         "yearsofexperience",
-                        "fluency",
-                        "SNO"
+                        "fluency"
                       ],
                       "dynamicPropertyPathList": [
                         {
@@ -1068,35 +1064,6 @@
                           "isSaveVisible": true,
                           "isDiscardVisible": true,
                           "computedValue": "{{Table1.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"fluency\"]))}}",
-                          "sticky": "",
-                          "validation": {},
-                          "cellBackground": ""
-                        },
-                        "SNO": {
-                          "allowCellWrapping": false,
-                          "index": 3,
-                          "width": 150,
-                          "originalId": "SNO",
-                          "id": "SNO",
-                          "alias": "SNO",
-                          "horizontalAlignment": "LEFT",
-                          "verticalAlignment": "CENTER",
-                          "columnType": "number",
-                          "textColor": "",
-                          "textSize": "0.875rem",
-                          "fontStyle": "",
-                          "enableFilter": true,
-                          "enableSort": true,
-                          "isVisible": true,
-                          "isDisabled": false,
-                          "isCellEditable": false,
-                          "isEditable": false,
-                          "isCellVisible": true,
-                          "isDerived": false,
-                          "label": "SNO",
-                          "isSaveVisible": true,
-                          "isDiscardVisible": true,
-                          "computedValue": "{{Table1.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"SNO\"]))}}",
                           "sticky": "",
                           "validation": {},
                           "cellBackground": ""
@@ -1953,9 +1920,6 @@
                         },
                         {
                           "key": "primaryColumns.fluency.computedValue"
-                        },
-                        {
-                          "key": "primaryColumns.SNO.computedValue"
                         }
                       ],
                       "needsHeightForContent": true,
@@ -1994,7 +1958,7 @@
                         }
                       },
                       "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
-                      "columnUpdatedAt": 1679720139798,
+                      "columnUpdatedAt": 1679756843604,
                       "defaultSelectedRowIndices": [
                         0
                       ],
@@ -2005,8 +1969,7 @@
                         "EditActions1",
                         "skils",
                         "yearsofexperience",
-                        "fluency",
-                        "SNO"
+                        "fluency"
                       ],
                       "dynamicPropertyPathList": [
                         {
@@ -2193,35 +2156,6 @@
                           "isSaveVisible": true,
                           "isDiscardVisible": true,
                           "computedValue": "{{edit_skils.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"fluency\"]))}}",
-                          "sticky": "",
-                          "validation": {},
-                          "cellBackground": ""
-                        },
-                        "SNO": {
-                          "allowCellWrapping": false,
-                          "index": 3,
-                          "width": 150,
-                          "originalId": "SNO",
-                          "id": "SNO",
-                          "alias": "SNO",
-                          "horizontalAlignment": "LEFT",
-                          "verticalAlignment": "CENTER",
-                          "columnType": "number",
-                          "textColor": "",
-                          "textSize": "0.875rem",
-                          "fontStyle": "",
-                          "enableFilter": true,
-                          "enableSort": true,
-                          "isVisible": true,
-                          "isDisabled": false,
-                          "isCellEditable": false,
-                          "isEditable": false,
-                          "isCellVisible": true,
-                          "isDerived": false,
-                          "label": "SNO",
-                          "isSaveVisible": true,
-                          "isDiscardVisible": true,
-                          "computedValue": "{{edit_skils.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"SNO\"]))}}",
                           "sticky": "",
                           "validation": {},
                           "cellBackground": ""
@@ -3044,7 +2978,9 @@
               "pluginType": "DB",
               "jsonPathKeys": [],
               "timeoutInMillisecond": 10000
-            },
+            }
+          ],
+          [
             {
               "id": "Job_save_queries.loadTableData",
               "name": "save_queries.loadTableData",

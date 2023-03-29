@@ -2,7 +2,7 @@
   "pluginType": "DB",
   "pluginId": "mongo-plugin",
   "unpublishedAction": {
-    "name": "employee_job",
+    "name": "get",
     "datasource": {
       "name": "HR PROJECT",
       "pluginId": "mongo-plugin",
@@ -13,7 +13,7 @@
       "policies": [],
       "userPermissions": []
     },
-    "pageId": "employee ",
+    "pageId": "employee view",
     "actionConfiguration": {
       "timeoutInMillisecond": 10000,
       "paginationType": "NONE",
@@ -29,13 +29,13 @@
           }
         },
         "body": {
-          "data": "{\n  \"insert\": \"emp\",\n  \"documents\": [\n    {\n      \"Address\": \"new value\",\n      \"Designation\": \"new value\",\n      \"Gender\": \"new value\",\n      \"Score\": \"new value\",\n      \"Skills\": \"new value\",\n      \"_id\": ObjectId(\"a_valid_object_id_hex\"),\n      \"email\": \"new value\",\n      \"employeename\": \"new value\",\n      \"joiningdate\": \"new value\",\n    }\n  ]\n}\n"
+          "data": "{\n  \"find\": \"emp\",\n  \"filter\": {\n    \"Address\": \"6/612samypuram colony\"\n  },\n  \"sort\": {\n    \"_id\": 1\n  },\n  \"limit\": 10\n}\n"
         },
         "collection": {
           "data": "emp"
         },
         "command": {
-          "data": "INSERT"
+          "data": "FIND"
         },
         "count": {
           "query": {
@@ -59,16 +59,16 @@
           }
         },
         "find": {
-          "skip": {
-            "data": ""
-          },
           "query": {
             "data": ""
           },
-          "sort": {
-            "data": ""
-          },
           "limit": {
+            "data": "10"
+          },
+          "sort": {
+            "data": "{\"_id\": 1}"
+          },
+          "skip": {
             "data": ""
           },
           "projection": {
@@ -77,7 +77,7 @@
         },
         "insert": {
           "documents": {
-            "data": "[{      \"Address\": \"{{emp_Add.text}}\",\n      \"Designation\": \"{{emp_des.selectedOptionValue}}\",\n      \"Gender\": \"{{emp_gen.text}}\",\n      \"Score\": \"{{emp_score.text}}\",\n      \"Skills\": \"{{emp_skils.selectedOptionLabels}}\",\n     \n      \"email\": \"{{emp_email.text}}\",\n      \"employeename\": \"{{emp_name.text}}\",\n      \"joiningdate\": \"{{emp_join.formattedDate}}\",\n}]"
+            "data": ""
           }
         },
         "smartSubstitution": {
@@ -97,30 +97,17 @@
       }
     },
     "executeOnLoad": false,
-    "dynamicBindingPathList": [
-      {
-        "key": "formData.insert.documents.data"
-      }
-    ],
+    "dynamicBindingPathList": [],
     "isValid": true,
     "invalids": [],
     "messages": [],
-    "jsonPathKeys": [
-      "emp_Add.text",
-      "emp_des.selectedOptionValue",
-      "emp_email.text",
-      "emp_gen.text",
-      "emp_join.formattedDate",
-      "emp_name.text",
-      "emp_score.text",
-      "emp_skils.selectedOptionLabels"
-    ],
+    "jsonPathKeys": [],
     "userSetOnLoad": false,
     "confirmBeforeExecute": false,
     "policies": [],
     "userPermissions": []
   },
-  "id": "employee _employee_job",
+  "id": "employee view_get",
   "deleted": false,
-  "gitSyncId": "64081d9720d355269dd6b6f0_6419904c33970d1990c876aa"
+  "gitSyncId": "64081d9720d355269dd6b6f0_64228ff03052f51c375e2441"
 }

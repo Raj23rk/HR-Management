@@ -2,8 +2,8 @@
   "pluginType": "JS",
   "pluginId": "js-plugin",
   "unpublishedAction": {
-    "name": "saveValue",
-    "fullyQualifiedName": "tab.saveValue",
+    "name": "getOrderIDFromURL",
+    "fullyQualifiedName": "node_query.getOrderIDFromURL",
     "datasource": {
       "name": "UNUSED_DATASOURCE",
       "pluginId": "js-plugin",
@@ -13,8 +13,8 @@
       "policies": [],
       "userPermissions": []
     },
-    "pageId": "applicant in",
-    "collectionId": "applicant in_tab",
+    "pageId": "employee view",
+    "collectionId": "employee view_node_query",
     "actionConfiguration": {
       "timeoutInMillisecond": 10000,
       "paginationType": "NONE",
@@ -23,7 +23,7 @@
       "jsArguments": [],
       "isAsync": true
     },
-    "executeOnLoad": false,
+    "executeOnLoad": true,
     "dynamicBindingPathList": [
       {
         "key": "body"
@@ -32,12 +32,12 @@
     "isValid": true,
     "invalids": [],
     "messages": [],
-    "userSetOnLoad": false,
+    "userSetOnLoad": true,
     "confirmBeforeExecute": false,
     "policies": [],
     "userPermissions": []
   },
-  "id": "applicant in_tab.saveValue",
+  "id": "employee view_node_query.getOrderIDFromURL",
   "deleted": false,
-  "gitSyncId": "64081d9720d355269dd6b6f0_64183c4871d5213f118d4c18"
+  "gitSyncId": "64081d9720d355269dd6b6f0_64227626db8ba73dc11c1a19"
 }

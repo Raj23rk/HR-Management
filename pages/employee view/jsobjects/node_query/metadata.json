@@ -1,0 +1,15 @@
+{
+  "unpublishedCollection": {
+    "name": "node_query",
+    "pageId": "employee view",
+    "pluginId": "js-plugin",
+    "pluginType": "JS",
+    "actions": [],
+    "archivedActions": [],
+    "variables": [],
+    "userPermissions": []
+  },
+  "id": "employee view_node_query",
+  "deleted": false,
+  "gitSyncId": "64081d9720d355269dd6b6f0_642276155d1f06139cb35871"
+}

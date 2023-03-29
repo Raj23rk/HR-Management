@@ -167,7 +167,7 @@
                   "widgetName": "Canvas1",
                   "displayName": "Canvas",
                   "topRow": 0,
-                  "bottomRow": 730,
+                  "bottomRow": 760,
                   "parentRowSpace": 1,
                   "type": "CANVAS_WIDGET",
                   "canExtend": true,
@@ -443,8 +443,8 @@
                         "click",
                         "submit"
                       ],
-                      "topRow": 68,
-                      "bottomRow": 73,
+                      "topRow": 71,
+                      "bottomRow": 76,
                       "parentRowSpace": 10,
                       "type": "BUTTON_WIDGET",
                       "hideCard": false,
@@ -868,7 +868,7 @@
                         }
                       },
                       "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
-                      "columnUpdatedAt": 1679756605910,
+                      "columnUpdatedAt": 1679994677788,
                       "defaultSelectedRowIndices": [
                         0
                       ],
@@ -893,7 +893,7 @@
                         }
                       ],
                       "displayName": "Table",
-                      "bottomRow": 65,
+                      "bottomRow": 71,
                       "columnWidthMap": {
                         "task": 245,
                         "step": 70,
@@ -998,8 +998,8 @@
                           "enableSort": true,
                           "isVisible": true,
                           "isDisabled": false,
-                          "isCellEditable": true,
-                          "isEditable": true,
+                          "isCellEditable": false,
+                          "isEditable": false,
                           "isCellVisible": true,
                           "isDerived": false,
                           "label": "skils",
@@ -1027,8 +1027,8 @@
                           "enableSort": true,
                           "isVisible": true,
                           "isDisabled": false,
-                          "isCellEditable": true,
-                          "isEditable": true,
+                          "isCellEditable": false,
+                          "isEditable": false,
                           "isCellVisible": true,
                           "isDerived": false,
                           "label": "yearsofexperience",
@@ -1056,8 +1056,8 @@
                           "enableSort": true,
                           "isVisible": true,
                           "isDisabled": false,
-                          "isCellEditable": true,
-                          "isEditable": true,
+                          "isCellEditable": false,
+                          "isEditable": false,
                           "isCellVisible": true,
                           "isDerived": false,
                           "label": "fluency",
@@ -1100,8 +1100,8 @@
                         "click",
                         "submit"
                       ],
-                      "topRow": 68,
-                      "bottomRow": 73,
+                      "topRow": 71,
+                      "bottomRow": 76,
                       "parentRowSpace": 10,
                       "type": "BUTTON_WIDGET",
                       "hideCard": false,
@@ -1159,7 +1159,7 @@
                       "animateLoading": true,
                       "parentColumnSpace": 10.8265625,
                       "dynamicTriggerPathList": [],
-                      "leftColumn": 33,
+                      "leftColumn": 32,
                       "dynamicBindingPathList": [
                         {
                           "key": "accentColor"
@@ -1176,7 +1176,7 @@
                       "labelTextSize": "0.875rem",
                       "isRequired": false,
                       "isDeprecated": false,
-                      "rightColumn": 60,
+                      "rightColumn": 59,
                       "dynamicHeight": "FIXED",
                       "widgetId": "f4ogalmp57",
                       "accentColor": "{{appsmith.theme.colors.primaryColor}}",

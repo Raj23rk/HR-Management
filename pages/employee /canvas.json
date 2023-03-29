@@ -13,7 +13,7 @@
           "detachFromLayout": true,
           "widgetId": "0",
           "topRow": 0,
-          "bottomRow": 380,
+          "bottomRow": 590,
           "containerStyle": "none",
           "snapRows": 63,
           "parentRowSpace": 1,
@@ -203,10 +203,13 @@
               "dynamicPropertyPathList": [
                 {
                   "key": "primaryColumns.customColumn1.onClick"
+                },
+                {
+                  "key": "primaryColumns.customColumn2.onClick"
                 }
               ],
               "displayName": "Table",
-              "bottomRow": 33,
+              "bottomRow": 59,
               "columnWidthMap": {
                 "task": 245,
                 "step": 70,
@@ -222,6 +225,9 @@
               "dynamicTriggerPathList": [
                 {
                   "key": "primaryColumns.customColumn1.onClick"
+                },
+                {
+                  "key": "primaryColumns.customColumn2.onClick"
                 }
               ],
               "borderWidth": "0",
@@ -494,7 +500,8 @@
                   "borderRadius": "{{emp_tab.processedTableData.map((currentRow, currentIndex) => ( appsmith.theme.borderRadius.appBorderRadius))}}",
                   "boxShadow": "{{emp_tab.processedTableData.map((currentRow, currentIndex) => ( 'none'))}}",
                   "customAlias": "",
-                  "buttonLabel": "View"
+                  "buttonLabel": "View",
+                  "onClick": "{{navigateTo('employee view', {employeename:emp_tab.triggeredRow.employeename,\nDesignation:emp_tab.triggeredRow.Designation,\nScore:emp_tab.triggeredRow.Score,Skills:emp_tab.triggeredRow.Skills\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t \n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t});}}"
                 },
                 "customColumn3": {
                   "allowCellWrapping": false,
@@ -968,66 +975,6 @@
                     },
                     {
                       "boxShadow": "none",
-                      "widgetName": "emp_des",
-                      "displayName": "Input",
-                      "iconSVG": "/static/media/icon.9f505595da61a34f563dba82adeb06ec.svg",
-                      "searchTags": [
-                        "form",
-                        "text input",
-                        "number",
-                        "textarea"
-                      ],
-                      "topRow": 29,
-                      "bottomRow": 33,
-                      "parentRowSpace": 10,
-                      "labelWidth": "8",
-                      "autoFocus": false,
-                      "type": "INPUT_WIDGET_V2",
-                      "hideCard": false,
-                      "animateLoading": true,
-                      "parentColumnSpace": 12.246875,
-                      "dynamicTriggerPathList": [],
-                      "resetOnSubmit": true,
-                      "leftColumn": 33,
-                      "dynamicBindingPathList": [
-                        {
-                          "key": "accentColor"
-                        },
-                        {
-                          "key": "borderRadius"
-                        }
-                      ],
-                      "labelPosition": "Left",
-                      "labelStyle": "",
-                      "inputType": "TEXT",
-                      "placeholderText": "Employee designation",
-                      "isDisabled": false,
-                      "key": "kifarowwot",
-                      "labelTextSize": "0.875rem",
-                      "isRequired": false,
-                      "isDeprecated": false,
-                      "rightColumn": 62,
-                      "dynamicHeight": "FIXED",
-                      "widgetId": "yygll9355x",
-                      "accentColor": "{{appsmith.theme.colors.primaryColor}}",
-                      "showStepArrows": false,
-                      "minWidth": 450,
-                      "isVisible": true,
-                      "label": "Designation",
-                      "version": 2,
-                      "parentId": "jogog6ev4p",
-                      "labelAlignment": "left",
-                      "renderMode": "CANVAS",
-                      "isLoading": false,
-                      "responsiveBehavior": "fill",
-                      "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
-                      "maxDynamicHeight": 9000,
-                      "iconAlign": "left",
-                      "defaultText": "",
-                      "minDynamicHeight": 4
-                    },
-                    {
-                      "boxShadow": "none",
                       "widgetName": "emp_gen",
                       "displayName": "Input",
                       "iconSVG": "/static/media/icon.9f505595da61a34f563dba82adeb06ec.svg",
@@ -1237,7 +1184,7 @@
                       "labelPosition": "Left",
                       "labelStyle": "",
                       "inputType": "TEXT",
-                      "placeholderText": "Employee Skills",
+                      "placeholderText": "Employee Score",
                       "isDisabled": false,
                       "key": "oyfpi128rb",
                       "labelTextSize": "0.875rem",
@@ -1305,6 +1252,60 @@
                       "rightColumn": 29,
                       "dynamicHeight": "FIXED",
                       "widgetId": "sewdcxd2c0",
+                      "accentColor": "{{appsmith.theme.colors.primaryColor}}",
+                      "minWidth": 450,
+                      "isVisible": true,
+                      "version": 1,
+                      "parentId": "jogog6ev4p",
+                      "labelAlignment": "left",
+                      "renderMode": "CANVAS",
+                      "isLoading": false,
+                      "responsiveBehavior": "fill",
+                      "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+                      "maxDynamicHeight": 9000,
+                      "minDynamicHeight": 4
+                    },
+                    {
+                      "boxShadow": "none",
+                      "widgetName": "emp_des",
+                      "isFilterable": true,
+                      "displayName": "Select",
+                      "iconSVG": "/static/media/icon.bd99caba5853ad71e4b3d8daffacb3a2.svg",
+                      "labelText": "Designation",
+                      "searchTags": [
+                        "dropdown"
+                      ],
+                      "topRow": 29,
+                      "bottomRow": 33,
+                      "parentRowSpace": 10,
+                      "labelWidth": "8",
+                      "type": "SELECT_WIDGET",
+                      "serverSideFiltering": false,
+                      "hideCard": false,
+                      "defaultOptionValue": "",
+                      "animateLoading": true,
+                      "parentColumnSpace": 12.121875,
+                      "dynamicTriggerPathList": [],
+                      "leftColumn": 33,
+                      "dynamicBindingPathList": [
+                        {
+                          "key": "accentColor"
+                        },
+                        {
+                          "key": "borderRadius"
+                        }
+                      ],
+                      "labelPosition": "Left",
+                      "options": "[\n  {\n    \"label\": \"Developer\",\n    \"value\": \"Developer\"\n  },\n  {\n    \"label\": \"Tester\",\n    \"value\": \"Tester\"\n  },\n  {\n    \"label\": \"Designer\",\n    \"value\": \"Designer\"\n  }\n]",
+                      "placeholderText": "Select option",
+                      "isDisabled": false,
+                      "key": "syxb2jrn96",
+                      "labelTextSize": "0.875rem",
+                      "isRequired": false,
+                      "isDeprecated": false,
+                      "rightColumn": 62,
+                      "dynamicHeight": "FIXED",
+                      "widgetId": "5npujvaejk",
                       "accentColor": "{{appsmith.theme.colors.primaryColor}}",
                       "minWidth": 450,
                       "isVisible": true,

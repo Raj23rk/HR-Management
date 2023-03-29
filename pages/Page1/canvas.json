@@ -13,7 +13,7 @@
           "detachFromLayout": true,
           "widgetId": "0",
           "topRow": 0,
-          "bottomRow": 750,
+          "bottomRow": 380,
           "containerStyle": "none",
           "snapRows": 55,
           "parentRowSpace": 1,
@@ -26,88 +26,88 @@
           "leftColumn": 0,
           "children": [
             {
-              "boxShadow": "{{appsmith.theme.boxShadow.appBoxShadow}}",
-              "widgetName": "ex",
-              "borderColor": "#E0DEDE",
-              "isCanvas": true,
-              "displayName": "Container",
-              "iconSVG": "/static/media/icon.1977dca3370505e2db3a8e44cfd54907.svg",
-              "searchTags": [
-                "div",
-                "parent",
-                "group"
-              ],
-              "topRow": 0,
-              "bottomRow": 75,
-              "parentRowSpace": 10,
-              "type": "CONTAINER_WIDGET",
-              "hideCard": false,
-              "shouldScrollContents": true,
+              "boxShadow": "none",
+              "dateFormat": "YYYY-MM-DD HH:mm",
+              "iconSVG": "/static/media/icon.300e5ab8e2e1c26c7a0bad06116842b7.svg",
+              "topRow": 16,
+              "labelWidth": 5,
+              "type": "DATE_PICKER_WIDGET2",
               "animateLoading": true,
-              "parentColumnSpace": 13.765625,
-              "dynamicTriggerPathList": [],
-              "leftColumn": 0,
+              "leftColumn": 19,
               "dynamicBindingPathList": [
+                {
+                  "key": "accentColor"
+                },
                 {
                   "key": "borderRadius"
                 },
                 {
-                  "key": "boxShadow"
+                  "key": "defaultDate"
                 }
               ],
-              "children": [
-                {
-                  "widgetName": "Canvas1",
-                  "displayName": "Canvas",
-                  "topRow": 0,
-                  "bottomRow": 750,
-                  "parentRowSpace": 1,
-                  "type": "CANVAS_WIDGET",
-                  "canExtend": false,
-                  "hideCard": true,
-                  "minHeight": 100,
-                  "parentColumnSpace": 1,
-                  "leftColumn": 0,
-                  "dynamicBindingPathList": [],
-                  "children": [],
-                  "key": "6lnzcj02zv",
-                  "isDeprecated": false,
-                  "rightColumn": 330.375,
-                  "detachFromLayout": true,
-                  "widgetId": "3ytfrxbsvm",
-                  "containerStyle": "none",
-                  "minWidth": 450,
-                  "isVisible": true,
-                  "version": 1,
-                  "parentId": "ag7kbwirqx",
-                  "renderMode": "CANVAS",
-                  "isLoading": false,
-                  "responsiveBehavior": "fill",
-                  "flexLayers": []
-                }
-              ],
-              "borderWidth": "1",
-              "key": "rk8i4f42al",
-              "backgroundColor": "#FFFFFF",
-              "isDeprecated": false,
-              "rightColumn": 64,
+              "isDisabled": false,
+              "isRequired": false,
               "dynamicHeight": "FIXED",
-              "widgetId": "ag7kbwirqx",
-              "containerStyle": "card",
-              "minWidth": 450,
+              "accentColor": "{{appsmith.theme.colors.primaryColor}}",
               "isVisible": true,
-              "version": 1,
-              "parentId": "0",
-              "renderMode": "CANVAS",
+              "datePickerType": "DATE_PICKER",
+              "version": 2,
               "isLoading": false,
-              "responsiveBehavior": "fill",
+              "timePrecision": "minute",
               "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+              "closeOnSelection": true,
+              "widgetName": "DatePicker1",
+              "minDate": "1920-12-31T18:30:00.000Z",
+              "dynamicPropertyPathList": [
+                {
+                  "key": "defaultDate"
+                }
+              ],
+              "displayName": "DatePicker",
+              "searchTags": [
+                "calendar"
+              ],
+              "bottomRow": 23,
+              "shortcuts": false,
+              "parentRowSpace": 10,
+              "hideCard": false,
+              "parentColumnSpace": 13.765625,
+              "dynamicTriggerPathList": [],
+              "labelPosition": "Top",
+              "key": "9ptcddp5k9",
+              "labelTextSize": "0.875rem",
+              "defaultDate": "{{da.data}}",
+              "isDeprecated": false,
+              "rightColumn": 39,
+              "widgetId": "yfx5ljdkm7",
+              "minWidth": 450,
+              "label": "Label",
+              "parentId": "0",
+              "labelAlignment": "left",
+              "renderMode": "CANVAS",
+              "responsiveBehavior": "fill",
               "maxDynamicHeight": 9000,
-              "minDynamicHeight": 10
+              "firstDayOfWeek": 0,
+              "maxDate": "2121-12-31T18:29:00.000Z",
+              "minDynamicHeight": 4
             }
           ]
         },
-        "layoutOnLoadActions": [],
+        "layoutOnLoadActions": [
+          [
+            {
+              "id": "Page1_da",
+              "name": "da",
+              "confirmBeforeExecute": false,
+              "pluginType": "API",
+              "jsonPathKeys": [
+                "moment().add(1,\"days\").format(\"YYYY-MM-DDT00:mm:ss+05:30\")",
+                "moment().format(\"YYYY-MM-DDT00:mm:ss+05:30\")"
+              ],
+              "timeoutInMillisecond": 10000
+            }
+          ]
+        ],
         "layoutOnLoadActionErrors": [],
         "validOnPageLoadActions": true,
         "id": "Page1",
@@ -120,5 +120,5 @@
     "policies": []
   },
   "deleted": false,
-  "gitSyncId": "64081d9720d355269dd6b6f0_641d4ef74b58b56f8e3781b9"
+  "gitSyncId": "64081d9720d355269dd6b6f0_6422c9783052f51c375e343c"
 }

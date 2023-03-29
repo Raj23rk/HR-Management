@@ -121,7 +121,7 @@
                 }
               },
               "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
-              "columnUpdatedAt": 1679994703493,
+              "columnUpdatedAt": 1680065018560,
               "defaultSelectedRowIndices": [
                 0
               ],
@@ -262,8 +262,8 @@
                   "enableSort": true,
                   "isVisible": true,
                   "isDisabled": false,
-                  "isCellEditable": true,
-                  "isEditable": true,
+                  "isCellEditable": false,
+                  "isEditable": false,
                   "isCellVisible": true,
                   "isDerived": false,
                   "label": "Round",
@@ -291,8 +291,8 @@
                   "enableSort": true,
                   "isVisible": true,
                   "isDisabled": false,
-                  "isCellEditable": true,
-                  "isEditable": true,
+                  "isCellEditable": false,
+                  "isEditable": false,
                   "isCellVisible": true,
                   "isDerived": false,
                   "label": "Type",
@@ -320,8 +320,8 @@
                   "enableSort": true,
                   "isVisible": true,
                   "isDisabled": false,
-                  "isCellEditable": true,
-                  "isEditable": true,
+                  "isCellEditable": false,
+                  "isEditable": false,
                   "isCellVisible": true,
                   "isDerived": false,
                   "label": "interviewerremark",
@@ -349,8 +349,8 @@
                   "enableSort": true,
                   "isVisible": true,
                   "isDisabled": false,
-                  "isCellEditable": true,
-                  "isEditable": true,
+                  "isCellEditable": false,
+                  "isEditable": false,
                   "isCellVisible": true,
                   "isDerived": false,
                   "label": "Result",
@@ -378,8 +378,8 @@
                   "enableSort": true,
                   "isVisible": true,
                   "isDisabled": false,
-                  "isCellEditable": true,
-                  "isEditable": true,
+                  "isCellEditable": false,
+                  "isEditable": false,
                   "isCellVisible": true,
                   "isDerived": false,
                   "label": "score",
@@ -1781,6 +1781,17 @@
               "pluginType": "DB",
               "jsonPathKeys": [],
               "timeoutInMillisecond": 10000
+            },
+            {
+              "id": "applicant in_tab.loadTableData",
+              "name": "tab.loadTableData",
+              "collectionId": "applicant in_tab",
+              "confirmBeforeExecute": false,
+              "pluginType": "JS",
+              "jsonPathKeys": [
+                "() => {\n  storeValue('dataTable', [{\n    Round: 'Round1',\n    Type: 'interview',\n    interviewerremark: 'good',\n    Result: 'good',\n    score: 70\n  }]);\n}"
+              ],
+              "timeoutInMillisecond": 10000
             }
           ],
           [
@@ -1792,17 +1803,6 @@
               "pluginType": "JS",
               "jsonPathKeys": [
                 "async () => {\n  if (appsmith.URL.queryParams?.Name) {\n    app_name.inputText = appsmith.URL.queryParams?.Name;\n  } else {\n    app_name.inputText = '';\n  }\n  if (appsmith.URL.queryParams?.Email) {\n    job_email.inputText = appsmith.URL.queryParams?.Email;\n  } else {\n    job_email.inputText = '';\n  }\n  if (appsmith.URL.queryParams?.skills) {\n    skil.inputText = appsmith.URL.queryParams?.skills;\n  } else {\n    skil.inputText = '';\n  }\n  if (appsmith.URL.queryParams?.mobileno) {\n    mobile.inputText = appsmith.URL.queryParams?.mobileno;\n  } else {\n    mobile.inputText = '';\n  }\n}"
-              ],
-              "timeoutInMillisecond": 10000
-            },
-            {
-              "id": "applicant in_tab.loadTableData",
-              "name": "tab.loadTableData",
-              "collectionId": "applicant in_tab",
-              "confirmBeforeExecute": false,
-              "pluginType": "JS",
-              "jsonPathKeys": [
-                "() => {\n  storeValue('dataTable', [{\n    Round: 'Round1',\n    Type: 'interview',\n    interviewerremark: 'good',\n    Result: 'good',\n    score: 70\n  }]);\n}"
               ],
               "timeoutInMillisecond": 10000
             }

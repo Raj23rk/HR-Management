@@ -1,7 +1,7 @@
 {
   "unpublishedPage": {
-    "name": "Page1",
-    "slug": "page1",
+    "name": "calender",
+    "slug": "calender",
     "layouts": [
       {
         "viewMode": false,
@@ -13,7 +13,7 @@
           "detachFromLayout": true,
           "widgetId": "0",
           "topRow": 0,
-          "bottomRow": 380,
+          "bottomRow": 560,
           "containerStyle": "none",
           "snapRows": 55,
           "parentRowSpace": 1,
@@ -27,17 +27,17 @@
           "children": []
         },
         "layoutOnLoadActions": [],
-        "layoutOnLoadActionErrors": [],
         "validOnPageLoadActions": true,
-        "id": "Page1",
+        "id": "calender",
         "deleted": false,
         "policies": [],
         "userPermissions": []
       }
     ],
     "userPermissions": [],
-    "policies": []
+    "policies": [],
+    "isHidden": false
   },
   "deleted": false,
-  "gitSyncId": "64081d9720d355269dd6b6f0_6422c9783052f51c375e343c"
+  "gitSyncId": "64081d9720d355269dd6b6f0_64242c80f02d0b4638f27d70"
 }

@@ -1829,7 +1829,7 @@
               "horizontalAlignment": "CENTER",
               "isVisibleSearch": false,
               "originalTopRow": 5,
-              "isVisiblePagination": false,
+              "isVisiblePagination": true,
               "verticalAlignment": "CENTER"
             },
             {

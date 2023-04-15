@@ -127,6 +127,11 @@
                     {
                       "boxShadow": "none",
                       "widgetName": "Name",
+                      "dynamicPropertyPathList": [
+                        {
+                          "key": "isRequired"
+                        }
+                      ],
                       "displayName": "Input",
                       "iconSVG": "/static/media/icon.9f505595da61a34f563dba82adeb06ec.svg",
                       "searchTags": [
@@ -158,7 +163,7 @@
                       "isDisabled": false,
                       "key": "aymrxdup99",
                       "labelTextSize": "0.875rem",
-                      "isRequired": false,
+                      "isRequired": "true",
                       "isDeprecated": false,
                       "rightColumn": 16,
                       "dynamicHeight": "FIXED",
@@ -216,8 +221,9 @@
                       "inputType": "TEXT",
                       "isDisabled": false,
                       "key": "aymrxdup99",
+                      "validation": "",
                       "labelTextSize": "0.875rem",
-                      "isRequired": false,
+                      "isRequired": true,
                       "isDeprecated": false,
                       "rightColumn": 31,
                       "dynamicHeight": "FIXED",
@@ -276,7 +282,7 @@
                       "isDisabled": false,
                       "key": "aymrxdup99",
                       "labelTextSize": "0.875rem",
-                      "isRequired": false,
+                      "isRequired": true,
                       "isDeprecated": false,
                       "rightColumn": 48,
                       "dynamicHeight": "FIXED",
@@ -301,8 +307,7 @@
                     {
                       "boxShadow": "none",
                       "widgetName": "Date_nof_birth",
-                      "minDate": "1920-12-31T18:30:00.000Z",
-                      "dateFormat": "YYYY-MM-DD HH:mm",
+                      "dateFormat": "DD-MM-YYYY",
                       "displayName": "DatePicker",
                       "iconSVG": "/static/media/icon.300e5ab8e2e1c26c7a0bad06116842b7.svg",
                       "searchTags": [
@@ -331,8 +336,7 @@
                       "isDisabled": false,
                       "key": "ywqy7nda7x",
                       "labelTextSize": "0.875rem",
-                      "isRequired": false,
-                      "defaultDate": "2023-03-09T05:48:20.345Z",
+                      "isRequired": true,
                       "isDeprecated": false,
                       "rightColumn": 63,
                       "dynamicHeight": "FIXED",
@@ -1291,7 +1295,7 @@
                       "maxNumFiles": "10"
                     },
                     {
-                      "resetFormOnClick": false,
+                      "resetFormOnClick": true,
                       "boxShadow": "none",
                       "widgetName": "submit",
                       "onClick": "{{insert.run()}}",

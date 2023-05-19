@@ -19,7 +19,7 @@
           "parentRowSpace": 1,
           "type": "CANVAS_WIDGET",
           "canExtend": true,
-          "version": 77,
+          "version": 79,
           "minHeight": 1292,
           "dynamicTriggerPathList": [],
           "parentColumnSpace": 1,
@@ -830,6 +830,9 @@
                         },
                         {
                           "key": "primaryColumns.fluency.computedValue"
+                        },
+                        {
+                          "key": "primaryColumns.SNO.computedValue"
                         }
                       ],
                       "needsHeightForContent": true,
@@ -837,6 +840,7 @@
                       "delimiter": ",",
                       "defaultSelectedRowIndex": 0,
                       "showInlineEditingOptionDropdown": true,
+                      "onAddNewRowDiscard": "",
                       "accentColor": "{{appsmith.theme.colors.primaryColor}}",
                       "isVisibleFilters": false,
                       "isVisible": true,
@@ -868,7 +872,7 @@
                         }
                       },
                       "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
-                      "columnUpdatedAt": 1679994677788,
+                      "columnUpdatedAt": 1683808967639,
                       "defaultSelectedRowIndices": [
                         0
                       ],
@@ -879,7 +883,8 @@
                         "EditActions1",
                         "skils",
                         "yearsofexperience",
-                        "fluency"
+                        "fluency",
+                        "SNO"
                       ],
                       "dynamicPropertyPathList": [
                         {
@@ -890,6 +895,9 @@
                         },
                         {
                           "key": "primaryColumns.EditActions1.isSaveDisabled"
+                        },
+                        {
+                          "key": "onAddNewRowSave"
                         }
                       ],
                       "displayName": "Table",
@@ -1064,6 +1072,36 @@
                           "isSaveVisible": true,
                           "isDiscardVisible": true,
                           "computedValue": "{{Table1.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"fluency\"]))}}",
+                          "sticky": "",
+                          "validation": {},
+                          "cellBackground": ""
+                        },
+                        "SNO": {
+                          "allowCellWrapping": false,
+                          "allowSameOptionsInNewRow": true,
+                          "index": 3,
+                          "width": 150,
+                          "originalId": "SNO",
+                          "id": "SNO",
+                          "alias": "SNO",
+                          "horizontalAlignment": "LEFT",
+                          "verticalAlignment": "CENTER",
+                          "columnType": "number",
+                          "textColor": "",
+                          "textSize": "0.875rem",
+                          "fontStyle": "",
+                          "enableFilter": true,
+                          "enableSort": true,
+                          "isVisible": true,
+                          "isDisabled": false,
+                          "isCellEditable": false,
+                          "isEditable": false,
+                          "isCellVisible": true,
+                          "isDerived": false,
+                          "label": "SNO",
+                          "isSaveVisible": true,
+                          "isDiscardVisible": true,
+                          "computedValue": "{{Table1.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"SNO\"]))}}",
                           "sticky": "",
                           "validation": {},
                           "cellBackground": ""
@@ -2978,9 +3016,7 @@
               "pluginType": "DB",
               "jsonPathKeys": [],
               "timeoutInMillisecond": 10000
-            }
-          ],
-          [
+            },
             {
               "id": "Job_save_queries.loadTableData",
               "name": "save_queries.loadTableData",

@@ -1,0 +1,67 @@
+{
+  "unpublishedPage": {
+    "name": "Application List",
+    "slug": "application-list",
+    "layouts": [
+      {
+        "viewMode": false,
+        "dsl": {
+          "widgetName": "MainContainer",
+          "backgroundColor": "none",
+          "rightColumn": 1224,
+          "snapColumns": 64,
+          "detachFromLayout": true,
+          "widgetId": "0",
+          "topRow": 0,
+          "bottomRow": 790,
+          "containerStyle": "none",
+          "snapRows": 63,
+          "parentRowSpace": 1,
+          "type": "CANVAS_WIDGET",
+          "canExtend": true,
+          "version": 80,
+          "minHeight": 650,
+          "parentColumnSpace": 1,
+          "dynamicBindingPathList": [],
+          "leftColumn": 0
+        },
+        "layoutOnLoadActions": [
+          [
+            {
+              "id": "Application List_Register",
+              "name": "Register",
+              "confirmBeforeExecute": false,
+              "pluginType": "DB",
+              "jsonPathKeys": [],
+              "timeoutInMillisecond": 10000
+            }
+          ],
+          [
+            {
+              "id": "Application List_node_query.getOrderIDFromURL",
+              "name": "node_query.getOrderIDFromURL",
+              "collectionId": "Application List_node_query",
+              "confirmBeforeExecute": false,
+              "pluginType": "JS",
+              "jsonPathKeys": [
+                "async () => {\n  if (appsmith.URL.queryParams?.jobname) {\n    pro_name.text = appsmith.URL.queryParams?.jobname;\n  } else {\n    pro_name.text = '';\n  }\n  if (appsmith.URL.queryParams?.Noofvacancies) {\n    vacant.text = appsmith.URL.queryParams?.Noofvacancies;\n  } else {\n    vacant.text = '';\n  }\n  if (appsmith.URL.queryParams?.StartDate) {\n    dates.text = appsmith.URL.queryParams?.StartDate;\n  } else {\n    dates.text = '';\n  }\n  if (appsmith.URL.queryParams?.Enddate) {\n    endate.text = appsmith.URL.queryParams?.Enddate;\n  } else {\n    endate.text = '';\n  }\n}"
+              ],
+              "timeoutInMillisecond": 10000
+            }
+          ]
+        ],
+        "layoutOnLoadActionErrors": [],
+        "validOnPageLoadActions": true,
+        "id": "Application List",
+        "deleted": false,
+        "policies": [],
+        "userPermissions": []
+      }
+    ],
+    "userPermissions": [],
+    "policies": [],
+    "isHidden": false
+  },
+  "deleted": false,
+  "gitSyncId": "64081d9720d355269dd6b6f0_64083a38e4907a30b50f1163"
+}

@@ -1,0 +1,78 @@
+{
+  "unpublishedPage": {
+    "name": "applicant in",
+    "slug": "applicant-in",
+    "layouts": [
+      {
+        "viewMode": false,
+        "dsl": {
+          "widgetName": "MainContainer",
+          "backgroundColor": "none",
+          "rightColumn": 1224,
+          "snapColumns": 64,
+          "detachFromLayout": true,
+          "widgetId": "0",
+          "topRow": 0,
+          "bottomRow": 940,
+          "containerStyle": "none",
+          "snapRows": 48,
+          "parentRowSpace": 1,
+          "type": "CANVAS_WIDGET",
+          "canExtend": true,
+          "version": 80,
+          "minHeight": 500,
+          "parentColumnSpace": 1,
+          "dynamicBindingPathList": [],
+          "leftColumn": 0
+        },
+        "layoutOnLoadActions": [
+          [
+            {
+              "id": "applicant in_get",
+              "name": "get",
+              "confirmBeforeExecute": false,
+              "pluginType": "DB",
+              "jsonPathKeys": [],
+              "timeoutInMillisecond": 10000
+            },
+            {
+              "id": "applicant in_tab.loadTableData",
+              "name": "tab.loadTableData",
+              "collectionId": "applicant in_tab",
+              "confirmBeforeExecute": false,
+              "pluginType": "JS",
+              "jsonPathKeys": [
+                "() => {\n  storeValue('dataTable', [{\n    Round: 'Round1',\n    Type: 'interview',\n    interviewerremark: 'good',\n    Result: 'good',\n    score: 70\n  }]);\n}"
+              ],
+              "timeoutInMillisecond": 10000
+            }
+          ],
+          [
+            {
+              "id": "applicant in_node_quer.getOrderIDFromURL",
+              "name": "node_quer.getOrderIDFromURL",
+              "collectionId": "applicant in_node_quer",
+              "confirmBeforeExecute": false,
+              "pluginType": "JS",
+              "jsonPathKeys": [
+                "async () => {\n  if (appsmith.URL.queryParams?.Name) {\n    app_name.inputText = appsmith.URL.queryParams?.Name;\n  } else {\n    app_name.inputText = '';\n  }\n  if (appsmith.URL.queryParams?.Email) {\n    job_email.inputText = appsmith.URL.queryParams?.Email;\n  } else {\n    job_email.inputText = '';\n  }\n  if (appsmith.URL.queryParams?.skills) {\n    skil.inputText = appsmith.URL.queryParams?.skills;\n  } else {\n    skil.inputText = '';\n  }\n  if (appsmith.URL.queryParams?.mobileno) {\n    mobile.inputText = appsmith.URL.queryParams?.mobileno;\n  } else {\n    mobile.inputText = '';\n  }\n}"
+              ],
+              "timeoutInMillisecond": 10000
+            }
+          ]
+        ],
+        "layoutOnLoadActionErrors": [],
+        "validOnPageLoadActions": true,
+        "id": "applicant in",
+        "deleted": false,
+        "policies": [],
+        "userPermissions": []
+      }
+    ],
+    "userPermissions": [],
+    "policies": [],
+    "isHidden": false
+  },
+  "deleted": false,
+  "gitSyncId": "64081d9720d355269dd6b6f0_641837d9ec20775f76c4df2e"
+}

@@ -1,0 +1,57 @@
+{
+  "unpublishedPage": {
+    "name": "employee view",
+    "slug": "employee-view",
+    "layouts": [
+      {
+        "viewMode": false,
+        "dsl": {
+          "widgetName": "MainContainer",
+          "backgroundColor": "none",
+          "rightColumn": 1224,
+          "snapColumns": 64,
+          "detachFromLayout": true,
+          "widgetId": "0",
+          "topRow": 0,
+          "bottomRow": 380,
+          "containerStyle": "none",
+          "snapRows": 55,
+          "parentRowSpace": 1,
+          "type": "CANVAS_WIDGET",
+          "canExtend": true,
+          "version": 78,
+          "minHeight": 570,
+          "parentColumnSpace": 1,
+          "dynamicBindingPathList": [],
+          "leftColumn": 0
+        },
+        "layoutOnLoadActions": [
+          [
+            {
+              "id": "employee view_node_query.getOrderIDFromURL",
+              "name": "node_query.getOrderIDFromURL",
+              "collectionId": "employee view_node_query",
+              "confirmBeforeExecute": false,
+              "pluginType": "JS",
+              "jsonPathKeys": [
+                "async () => {\n  if (appsmith.URL.queryParams?.employeename) {\n    ename.text = appsmith.URL.queryParams?.employeename;\n  } else {\n    ename.text = '';\n  }\n  if (appsmith.URL.queryParams?.Designation) {\n    des.text = appsmith.URL.queryParams?.Designation;\n  } else {\n    des.text = '';\n  }\n  if (appsmith.URL.queryParams?.Skills) {\n    Skils.text = appsmith.URL.queryParams?.Skills;\n  } else {\n    Skils.text = '';\n  }\n  if (appsmith.URL.queryParams?.Score) {\n    score.text = appsmith.URL.queryParams?.Score;\n  } else {\n    score.text = '';\n  }\n}"
+              ],
+              "timeoutInMillisecond": 10000
+            }
+          ]
+        ],
+        "layoutOnLoadActionErrors": [],
+        "validOnPageLoadActions": true,
+        "id": "employee view",
+        "deleted": false,
+        "policies": [],
+        "userPermissions": []
+      }
+    ],
+    "userPermissions": [],
+    "policies": [],
+    "isHidden": false
+  },
+  "deleted": false,
+  "gitSyncId": "64081d9720d355269dd6b6f0_641d4ef74b58b56f8e3781b9"
+}

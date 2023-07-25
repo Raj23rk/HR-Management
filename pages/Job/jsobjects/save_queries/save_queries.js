@@ -19,6 +19,7 @@ export default {
 		storeValue('dataTable',existing_obj);
 	},
 	
+	
 	printValue: () => {
 		console.log(appsmith.store.dataTable);
 	}
